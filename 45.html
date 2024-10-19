@@ -662,6 +662,70 @@
 </section>
 
 
+<!-- Compact Contact Us Section -->
+<section id="contact-us" class="py-8 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            
+            <!-- Left: Image (50%) -->
+            <div class="flex items-center justify-center">
+                <img src="images/contact-us-image.jpg" alt="Contact Us" class="w-full h-auto rounded-lg shadow-lg">
+            </div>
+
+            <!-- Right: Contact Methods (50%) -->
+            <div class="flex flex-col justify-center bg-white p-4 rounded-lg shadow-lg">
+                <h2 class="text-3xl font-extrabold text-gray-900 mb-4">Get in Touch</h2>
+
+                <p class="text-md text-gray-700 mb-4">We'd love to hear from you. Reach out with any questions or enquiries.</p>
+
+                <!-- Contact Form -->
+                <form id="contactForm" action="https://formspree.io/f/mjkvvnkn" method="POST" class="space-y-3">
+                    <div class="flex flex-col">
+                        <label for="name" class="text-sm font-medium text-gray-700">Your Name</label>
+                        <input type="text" id="name" name="name" class="p-2 border border-gray-300 rounded-lg" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="flex flex-col">
+                        <label for="email" class="text-sm font-medium text-gray-700">Email Address</label>
+                        <input type="email" id="email" name="email" class="p-2 border border-gray-300 rounded-lg" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="flex flex-col">
+                        <label for="phone" class="text-sm font-medium text-gray-700">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" class="p-2 border border-gray-300 rounded-lg" placeholder="Enter your phone number" required>
+                    </div>
+
+                    <div class="flex flex-col">
+                        <label for="message" class="text-sm font-medium text-gray-700">Message</label>
+                        <textarea id="message" name="message" class="p-2 border border-gray-300 rounded-lg" placeholder="Your message or enquiry" rows="3" required></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="w-full bg-red-600 text-white font-semibold py-2 text-sm rounded-lg hover:bg-red-500 transition duration-200">Send Message</button>
+                </form>
+
+                <!-- WhatsApp Button -->
+                <div class="mt-4 text-center">
+                    <a href="https://wa.me/919611027980" target="_blank" class="inline-block bg-green-500 text-white font-semibold py-2 px-3 text-sm rounded-lg hover:bg-green-400 transition duration-200">Chat on WhatsApp</a>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="mt-4">
+                    <h4 class="text-md font-semibold text-gray-900">Phone</h4>
+                    <p class="text-red-600 hover:text-red-800">
+                        <a href="tel:+919611027980">+91-9611027980</a>
+                    </p>
+
+                    <h4 class="mt-2 text-md font-semibold text-gray-900">Email</h4>
+                    <p class="text-gray-700">info@networkershome.com</p>
+
+                    <h4 class="mt-2 text-md font-semibold text-gray-900">Address</h4>
+                    <p class="text-gray-700">Networkers Home, Bengaluru, India</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 <!-- Footer Section -->
@@ -788,6 +852,7 @@
         document.getElementById(tabId).classList.remove('hidden');
     }
 </script>
+
 
 
 <!-- Side Popup Banner (Even Smaller Size) -->
