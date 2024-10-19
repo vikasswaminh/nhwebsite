@@ -62,14 +62,15 @@
 
 
 
-<!-- Hero Banner Section with Animated Text -->
-<section class="bg-white text-gray-900 py-16">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center lg:text-left">
-    <h1 class="text-5xl lg:text-6xl font-extrabold mb-4 text-gray-900">
+<!-- Hero Banner Section with Animated Text and Background Image -->
+<section class="relative bg-cover bg-center bg-no-repeat text-gray-900 py-16" style="background-image: url('images/your-background.jpg');">
+  <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center lg:text-left">
+    <h1 class="text-5xl lg:text-6xl font-extrabold mb-4 text-white">
       Welcome to the Future of 
       <span class="text-gradient font-extrabold" id="animated-text">Networking</span>
     </h1>
-    <p class="text-xl lg:text-2xl font-light mb-6 max-w-3xl mx-auto lg:mx-0 text-gray-700">
+    <p class="text-xl lg:text-2xl font-light mb-6 max-w-3xl mx-auto lg:mx-0 text-gray-300">
       Elevate your networking career with world-class certification training from Networkers Home. From CCNA to CCIE, we offer hands-on experience with real-world lab environments, preparing you for top roles in the networking industry.
     </p>
     <div class="flex justify-center lg:justify-start space-x-4">
@@ -78,7 +79,6 @@
     </div>
   </div>
 </section>
-
 
 <!-- Add Styles for Text Gradient and Animation -->
 <style>
@@ -95,6 +95,17 @@
     10%, 30% { opacity: 1; }
     40%, 100% { opacity: 0; }
   }
+
+  /* Background image overlay */
+  .relative {
+    position: relative;
+    z-index: 1;
+  }
+
+  .absolute {
+    position: absolute;
+    z-index: 0;
+  }
 </style>
 
 <!-- JavaScript for Word Rotation -->
@@ -110,6 +121,7 @@
   
   setInterval(changeWord, 4000); // Change word every 4 seconds
 </script>
+
 
 
 
