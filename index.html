@@ -118,114 +118,48 @@
 
 
 
-<section class="relative bg-white text-gray-900 h-[77vh] flex flex-col justify-center items-center overflow-hidden">
-    <!-- Particle Background -->
-    <div id="particles-js"></div>
+<!-- Hero Banner Section with Career Progress Gradient -->
+<section class="relative text-gray-900 h-[77vh] flex flex-col justify-center items-center" style="background: linear-gradient(90deg, #4facfe, #00f2fe, #ff5f6d);">
+  <!-- Main Content (Text & Courses) -->
+  <div class="relative z-10">
+    <!-- Main Heading -->
+    <h1 class="text-4xl md:text-5xl font-extrabold text-center mb-4 text-white">
+      Join the Education Revolution 🚀
+    </h1>
 
-    <!-- Main Content (Text & Courses) -->
-    <div class="relative z-10">
-      <!-- Main Heading -->
-      <h1 class="text-4xl md:text-5xl font-extrabold text-center mb-4">
-        Join the Education Revolution 🚀
-      </h1>
+    <!-- Subheading -->
+    <h2 class="text-xl md:text-2xl text-white text-center mb-8">
+      India's Best CCIE Lab Training
+    </h2>
 
-      <!-- Subheading -->
-      <h2 class="text-xl md:text-2xl text-gray-800 text-center mb-8">
-        India's Best CCIE Lab Training
-      </h2>
+    <!-- Course Boxes -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-4xl px-4">
+      <!-- Course 1 -->
+      <a href="#" class="border-4 border-gray-800 bg-white rounded-lg p-4 text-center shadow-lg hover:bg-gray-100 transition-colors duration-200">
+        <h3 class="text-lg font-bold text-gray-900 mb-2">CCNA Certification</h3>
+        <p class="text-gray-700 mb-4">Start your networking career with CCNA.</p>
+      </a>
 
-      <!-- Course Boxes -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-4xl px-4">
-        <!-- Course 1 -->
-        <a href="#" class="border-4 border-gray-800 rounded-lg p-4 text-center shadow-lg hover:bg-gray-100 transition-colors duration-200">
-          <h3 class="text-lg font-bold text-gray-900 mb-2">CCNA Certification</h3>
-          <p class="text-gray-700 mb-4">Start your networking career with CCNA.</p>
-        </a>
+      <!-- Course 2 -->
+      <a href="#" class="border-4 border-gray-800 bg-white rounded-lg p-4 text-center shadow-lg hover:bg-gray-100 transition-colors duration-200">
+        <h3 class="text-lg font-bold text-gray-900 mb-2">CCNP Certification</h3>
+        <p class="text-gray-700 mb-4">Advance your skills with CCNP-level training.</p>
+      </a>
 
-        <!-- Course 2 -->
-        <a href="#" class="border-4 border-gray-800 rounded-lg p-4 text-center shadow-lg hover:bg-gray-100 transition-colors duration-200">
-          <h3 class="text-lg font-bold text-gray-900 mb-2">CCNP Certification</h3>
-          <p class="text-gray-700 mb-4">Advance your skills with CCNP-level training.</p>
-        </a>
+      <!-- Course 3 -->
+      <a href="#" class="border-4 border-gray-800 bg-white rounded-lg p-4 text-center shadow-lg hover:bg-gray-100 transition-colors duration-200">
+        <h3 class="text-lg font-bold text-gray-900 mb-2">CCIE Enterprise</h3>
+        <p class="text-gray-700 mb-4">Become a networking expert with CCIE Enterprise.</p>
+      </a>
 
-        <!-- Course 3 -->
-        <a href="#" class="border-4 border-gray-800 rounded-lg p-4 text-center shadow-lg hover:bg-gray-100 transition-colors duration-200">
-          <h3 class="text-lg font-bold text-gray-900 mb-2">CCIE Enterprise</h3>
-          <p class="text-gray-700 mb-4">Become a networking expert with CCIE Enterprise.</p>
-        </a>
-
-        <!-- Course 4 -->
-        <a href="#" class="border-4 border-gray-800 rounded-lg p-4 text-center shadow-lg hover:bg-gray-100 transition-colors duration-200">
-          <h3 class="text-lg font-bold text-gray-900 mb-2">CCIE Security</h3>
-          <p class="text-gray-700 mb-4">Master security technologies with CCIE Security.</p>
-        </a>
-      </div>
+      <!-- Course 4 -->
+      <a href="#" class="border-4 border-gray-800 bg-white rounded-lg p-4 text-center shadow-lg hover:bg-gray-100 transition-colors duration-200">
+        <h3 class="text-lg font-bold text-gray-900 mb-2">CCIE Security</h3>
+        <p class="text-gray-700 mb-4">Master security technologies with CCIE Security.</p>
+      </a>
     </div>
-  </section>
-
-  <!-- Particles.js configuration -->
-  <script>
-    particlesJS('particles-js', {
-      particles: {
-        number: {
-          value: 200,  // Increase for more particles
-          density: {
-            enable: true,
-            value_area: 800 // Spread particles across the area
-          }
-        },
-        color: {
-          value: "#000000"  // Particle color (black)
-        },
-        shape: {
-          type: "circle",  // Particle shape
-          stroke: {
-            width: 1,
-            color: "#ff0000"  // Red stroke color for particles
-          }
-        },
-        opacity: {
-          value: 0.5,
-          random: true
-        },
-        size: {
-          value: 3,
-          random: true
-        },
-        line_linked: {
-          enable: true,
-          distance: 150,  // Distance for particles to connect
-          color: "#000000",  // Line color (black)
-          opacity: 0.4,
-          width: 2
-        },
-        move: {
-          enable: true,
-          speed: 3,  // Speed of particle movement
-          direction: "none",
-          random: true,
-          straight: false,
-          out_mode: "out",
-          bounce: false
-        }
-      },
-      interactivity: {
-        detect_on: "canvas",
-        events: {
-          onhover: {
-            enable: true,
-            mode: "repulse"  // Repulse particles when mouse hovers
-          },
-          onclick: {
-            enable: true,
-            mode: "push"  // Add particles on click
-          },
-          resize: true
-        }
-      },
-      retina_detect: true
-    });
-  </script>
+  </div>
+</section>
 
     
 
