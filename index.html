@@ -10,6 +10,35 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <!-- Favicon -->
     <link rel="icon" href="images/nh2.webp" type="image/webp">
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <style>
+    /* Ensure the particles container takes full size of the section */
+    #particles-js {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: white; /* White background */
+      z-index: 0;
+    }
+
+    /* Style to position the section content above the particles */
+    .relative {
+      position: relative;
+    }
+
+    /* Make the whole box clickable */
+    a {
+      display: block;
+      text-decoration: none;
+      z-index: 10;
+    }
+
+    a:hover {
+      cursor: pointer;
+    }
+  </style>
+    
 </head>
 <body>
 
@@ -89,95 +118,116 @@
 
 
 
-<!-- Hero Banner Section with Neurological Connection Vector Background -->
 <section class="relative bg-white text-gray-900 h-[77vh] flex flex-col justify-center items-center overflow-hidden">
-  <!-- Neurological Connection Vector (Background) -->
-  <div class="absolute inset-0 pointer-events-none opacity-20">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 800" preserveAspectRatio="xMidYMid slice" style="min-width:100%; min-height:100%;">
-      <g stroke-width="2" stroke="#000" fill="none">
-        <!-- Circle and Line Connections -->
-        <circle cx="200" cy="150" r="5" stroke="red" />
-        <circle cx="350" cy="250" r="8" stroke="black" />
-        <circle cx="500" cy="100" r="6" stroke="red" />
-        <circle cx="750" cy="200" r="7" stroke="black" />
-        <circle cx="900" cy="150" r="5" stroke="red" />
-        <circle cx="1100" cy="300" r="8" stroke="black" />
-        <circle cx="1250" cy="100" r="6" stroke="red" />
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
 
-        <!-- Connecting Lines -->
-        <line x1="200" y1="150" x2="350" y2="250" stroke="gray" />
-        <line x1="350" y1="250" x2="500" y2="100" stroke="gray" />
-        <line x1="500" y1="100" x2="750" y2="200" stroke="gray" />
-        <line x1="750" y1="200" x2="900" y2="150" stroke="gray" />
-        <line x1="900" y1="150" x2="1100" y2="300" stroke="gray" />
-        <line x1="1100" y1="300" x2="1250" y2="100" stroke="gray" />
+    <!-- Main Content (Text & Courses) -->
+    <div class="relative z-10">
+      <!-- Main Heading -->
+      <h1 class="text-4xl md:text-5xl font-extrabold text-center mb-4">
+        Join the Education Revolution 🚀
+      </h1>
 
-        <!-- More circles and connections for a complex look -->
-        <circle cx="300" cy="600" r="7" stroke="black" />
-        <circle cx="600" cy="450" r="5" stroke="red" />
-        <circle cx="900" cy="550" r="7" stroke="black" />
-        <circle cx="1200" cy="400" r="8" stroke="red" />
-        
-        <line x1="300" y1="600" x2="600" y2="450" stroke="gray" />
-        <line x1="600" y1="450" x2="900" y2="550" stroke="gray" />
-        <line x1="900" y1="550" x2="1200" y2="400" stroke="gray" />
-      </g>
-    </svg>
-  </div>
+      <!-- Subheading -->
+      <h2 class="text-xl md:text-2xl text-gray-800 text-center mb-8">
+        India's Best CCIE Lab Training
+      </h2>
 
-  <!-- Main Content (Text & Courses) -->
-  <div class="relative z-10">
-    <!-- Main Heading -->
-    <h1 class="text-4xl md:text-5xl font-extrabold text-center mb-4">
-      Join the Education Revolution 🚀
-    </h1>
+      <!-- Course Boxes -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-4xl px-4">
+        <!-- Course 1 -->
+        <a href="#" class="border-4 border-gray-800 rounded-lg p-4 text-center shadow-lg hover:bg-gray-100 transition-colors duration-200">
+          <h3 class="text-lg font-bold text-gray-900 mb-2">CCNA Certification</h3>
+          <p class="text-gray-700 mb-4">Start your networking career with CCNA.</p>
+        </a>
 
-    <!-- Subheading -->
-    <h2 class="text-xl md:text-2xl text-gray-800 text-center mb-8">
-      India's Best CCIE Lab Training
-    </h2>
+        <!-- Course 2 -->
+        <a href="#" class="border-4 border-gray-800 rounded-lg p-4 text-center shadow-lg hover:bg-gray-100 transition-colors duration-200">
+          <h3 class="text-lg font-bold text-gray-900 mb-2">CCNP Certification</h3>
+          <p class="text-gray-700 mb-4">Advance your skills with CCNP-level training.</p>
+        </a>
 
-    <!-- Course Boxes -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-4xl px-4">
-      <!-- Course 1 -->
-      <a href="#" class="border-4 border-gray-800 rounded-lg p-4 text-center shadow-lg hover:bg-gray-100 transition-colors duration-200">
-        <h3 class="text-lg font-bold text-gray-900 mb-2">CCNA Certification</h3>
-        <p class="text-gray-700 mb-4">Start your networking career with CCNA.</p>
-      </a>
+        <!-- Course 3 -->
+        <a href="#" class="border-4 border-gray-800 rounded-lg p-4 text-center shadow-lg hover:bg-gray-100 transition-colors duration-200">
+          <h3 class="text-lg font-bold text-gray-900 mb-2">CCIE Enterprise</h3>
+          <p class="text-gray-700 mb-4">Become a networking expert with CCIE Enterprise.</p>
+        </a>
 
-      <!-- Course 2 -->
-      <a href="#" class="border-4 border-gray-800 rounded-lg p-4 text-center shadow-lg hover:bg-gray-100 transition-colors duration-200">
-        <h3 class="text-lg font-bold text-gray-900 mb-2">CCNP Certification</h3>
-        <p class="text-gray-700 mb-4">Advance your skills with CCNP-level training.</p>
-      </a>
-
-      <!-- Course 3 -->
-      <a href="#" class="border-4 border-gray-800 rounded-lg p-4 text-center shadow-lg hover:bg-gray-100 transition-colors duration-200">
-        <h3 class="text-lg font-bold text-gray-900 mb-2">CCIE Enterprise</h3>
-        <p class="text-gray-700 mb-4">Become a networking expert with CCIE Enterprise.</p>
-      </a>
-
-      <!-- Course 4 -->
-      <a href="#" class="border-4 border-gray-800 rounded-lg p-4 text-center shadow-lg hover:bg-gray-100 transition-colors duration-200">
-        <h3 class="text-lg font-bold text-gray-900 mb-2">CCIE Security</h3>
-        <p class="text-gray-700 mb-4">Master security technologies with CCIE Security.</p>
-      </a>
+        <!-- Course 4 -->
+        <a href="#" class="border-4 border-gray-800 rounded-lg p-4 text-center shadow-lg hover:bg-gray-100 transition-colors duration-200">
+          <h3 class="text-lg font-bold text-gray-900 mb-2">CCIE Security</h3>
+          <p class="text-gray-700 mb-4">Master security technologies with CCIE Security.</p>
+        </a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Optional styling for background -->
-<style>
-  a {
-    display: block;
-    text-decoration: none;
-  }
+  <!-- Particles.js configuration -->
+  <script>
+    particlesJS('particles-js', {
+      particles: {
+        number: {
+          value: 200,  // Increase for more particles
+          density: {
+            enable: true,
+            value_area: 800 // Spread particles across the area
+          }
+        },
+        color: {
+          value: "#000000"  // Particle color (black)
+        },
+        shape: {
+          type: "circle",  // Particle shape
+          stroke: {
+            width: 1,
+            color: "#ff0000"  // Red stroke color for particles
+          }
+        },
+        opacity: {
+          value: 0.5,
+          random: true
+        },
+        size: {
+          value: 3,
+          random: true
+        },
+        line_linked: {
+          enable: true,
+          distance: 150,  // Distance for particles to connect
+          color: "#000000",  // Line color (black)
+          opacity: 0.4,
+          width: 2
+        },
+        move: {
+          enable: true,
+          speed: 3,  // Speed of particle movement
+          direction: "none",
+          random: true,
+          straight: false,
+          out_mode: "out",
+          bounce: false
+        }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: {
+            enable: true,
+            mode: "repulse"  // Repulse particles when mouse hovers
+          },
+          onclick: {
+            enable: true,
+            mode: "push"  // Add particles on click
+          },
+          resize: true
+        }
+      },
+      retina_detect: true
+    });
+  </script>
 
-  a:hover {
-    cursor: pointer;
-  }
-</style>
-
+    
 
     
 <!-- Action Speaks Louder Than Words Section with 10 Placements and 10 CCIE Results -->
