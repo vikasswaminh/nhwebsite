@@ -106,75 +106,62 @@
 
 
 
-<!-- Hero Banner Section with Everything Centered -->
-<section class="relative text-gray-900 h-[85vh] flex justify-center items-center mb-16 px-6">
-  <div class="flex flex-col lg:flex-row w-full max-w-7xl justify-center items-center">
-    
-    <!-- Left Image (30%) -->
-    <div class="w-full lg:w-3/12 flex justify-center lg:justify-center mb-4 lg:mb-0">
-      <img src="images/leftside.png" alt="Left Image Description" class="w-10/12 h-auto rounded-lg shadow-lg" />
-    </div>
-    
-    <!-- Text Section (40%) -->
-    <div class="w-full lg:w-5/12 flex flex-col justify-center items-center text-center px-4 mb-4 lg:mb-0">
-  <!-- Main Heading -->
-  <h1 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">
-    Online or Classroom 📝💻
-  </h1>
+<!-- SaaS Style Hero Banner for CCNA Certification -->
+<section class="bg-gradient-to-b from-white to-gray-100 py-20">
+  <div class="max-w-7xl mx-auto px-6 lg:flex lg:justify-between lg:items-center">
 
-      <!-- Subheading -->
-      <h2 class="text-xl md:text-2xl text-gray-800 mb-4">
-       Practical Hands on Training Assured
-      </h2>
-
-      <!-- Buttons under the Subheading -->
-      <div class="flex justify-center gap-4">
-        <!-- All Courses Button (Black) -->
-        <a href="https://www.networkershome.com/networkershome-all-courses.html" class="bg-black text-white font-semibold py-2 px-6 rounded-lg hover:bg-gray-800 transition-colors duration-200">
-          All Courses
-        </a>
-
-        <!-- Enroll Now Button (Red) -->
-        <a href="https://www.networkershome.com/contactus.html" class="bg-red-600 text-white font-semibold py-2 px-6 rounded-lg hover:bg-red-500 transition-colors duration-200">
+    <!-- Left Section (Text and CTA) -->
+    <div class="lg:w-6/12 mb-12 lg:mb-0">
+      <h1 class="text-5xl lg:text-6xl font-bold tracking-tight text-gray-900 leading-tight mb-6 animate-fade-in">
+        Master CCNA Certification <br> <span class="text-indigo-600">and Elevate Your Career</span>
+      </h1>
+      <p class="text-xl text-gray-700 mb-8 animate-fade-in">
+        Gain industry-recognized networking skills and prepare for top roles with hands-on training in our comprehensive <span class="font-semibold text-indigo-600">CCNA certification course</span>. Whether you're a beginner or IT professional, this course is designed to help you succeed.
+      </p>
+      <div class="flex space-x-4 animate-fade-in">
+        <a href="https://www.networkershome.com/contactus.html" class="bg-indigo-600 text-white font-semibold py-3 px-8 rounded-md shadow hover:bg-indigo-500 transition duration-200 ease-in-out">
           Enroll Now
+        </a>
+        <a href="https://www.networkershome.com/contactus.html" class="bg-gray-200 text-gray-800 font-semibold py-3 px-8 rounded-md shadow hover:bg-gray-300 transition duration-200 ease-in-out">
+          View Schedule
         </a>
       </div>
     </div>
 
-    <!-- Right Image (20%) -->
-    <div class="w-full lg:w-2/12 flex justify-center lg:justify-center">
-      <img src="images/rightside.png" alt="Right Image Description" class="w-10/12 h-auto rounded-lg shadow-lg" />
+    <!-- Right Section (Image) -->
+    <div class="lg:w-5/12">
+      <img src="images/student.webp" alt="Student Preparing for CCNA" class="w-full h-auto rounded-lg shadow-md">
     </div>
-    
+
   </div>
 </section>
 
-<!-- Course Boxes -->
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 w-full max-w-6xl mx-auto px-4">
-  <!-- Course 1 -->
-  <a href="#" class="border-4 border-gray-800 bg-white rounded-lg p-6 text-center shadow-lg hover:bg-gray-100 transition duration-200">
-    <h3 class="text-lg font-bold text-gray-900 mb-2">CCNA Certification</h3>
-    <p class="text-gray-700">Start your networking career with CCNA.</p>
-  </a>
+<!-- Additional CSS for SaaS Style and Animations -->
+<style>
+  /* Gradient Background */
+  .bg-gradient-to-b {
+    background-image: linear-gradient(to bottom, white, #f3f4f6);
+  }
 
-  <!-- Course 2 -->
-  <a href="#" class="border-4 border-gray-800 bg-white rounded-lg p-6 text-center shadow-lg hover:bg-gray-100 transition duration-200">
-    <h3 class="text-lg font-bold text-gray-900 mb-2">CCNP Certification</h3>
-    <p class="text-gray-700">Advance your skills with CCNP-level training.</p>
-  </a>
+  /* Hover effects and transitions */
+  .hover\:bg-indigo-500:hover {
+    background-color: #6366f1;
+  }
 
-  <!-- Course 3 -->
-  <a href="#" class="border-4 border-gray-800 bg-white rounded-lg p-6 text-center shadow-lg hover:bg-gray-100 transition duration-200">
-    <h3 class="text-lg font-bold text-gray-900 mb-2">CCIE Enterprise</h3>
-    <p class="text-gray-700">Become a networking expert with CCIE Enterprise.</p>
-  </a>
+  .hover\:bg-gray-300:hover {
+    background-color: #e5e7eb;
+  }
 
-  <!-- Course 4 -->
-  <a href="#" class="border-4 border-gray-800 bg-white rounded-lg p-6 text-center shadow-lg hover:bg-gray-100 transition duration-200">
-    <h3 class="text-lg font-bold text-gray-900 mb-2">CCIE Security</h3>
-    <p class="text-gray-700">Master security technologies with CCIE Security.</p>
-  </a>
-</div>
+  /* Fade-in Animation */
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 1.5s ease-in-out;
+  }
+</style>
 
     
 <!-- Action Speaks Louder Than Words Section with 10 Placements and 10 CCIE Results -->
