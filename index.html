@@ -14,13 +14,31 @@
 
 <!-- Notification Bar -->
 <!-- Announcement Banner with Strong Gradient -->
-<div class="bg-gradient-to-r from-red-700 via-red-600 to-yellow-500 text-white text-center py-4 relative shadow-lg">
-  <p class="font-bold text-lg uppercase tracking-wide">
-    Upcoming Schedule - <a href="#schedule" class="underline hover:text-yellow-200 transition duration-300">Check Now</a>
+<!-- Announcement Banner with Emojis, Contact Info, and Strong Gradient -->
+<div class="bg-gradient-to-r from-red-700 via-red-600 to-yellow-500 text-white text-center py-3 relative shadow-lg">
+  <p class="font-bold text-sm tracking-wide flex items-center justify-center space-x-4">
+    📅 Upcoming Schedule - <a href="#schedule" class="underline hover:text-yellow-200 transition duration-300">Check Now</a>
   </p>
-  <button class="absolute right-4 top-3 text-white font-bold text-2xl" onclick="this.parentElement.style.display='none';">✕</button>
+
+  <!-- Contact Info -->
+  <div class="flex justify-center space-x-4 mt-2">
+    <!-- Phone -->
+    <a href="tel:+1234567890" class="flex items-center space-x-1 hover:text-yellow-200 transition duration-300">
+      📞 <span>+123 456 7890</span>
+    </a>
+    <!-- WhatsApp -->
+    <a href="https://wa.me/1234567890" class="flex items-center space-x-1 hover:text-yellow-200 transition duration-300">
+      💬 <span>WhatsApp</span>
+    </a>
+    <!-- Email -->
+    <a href="mailto:info@networkershome.com" class="flex items-center space-x-1 hover:text-yellow-200 transition duration-300">
+      ✉️ <span>info@networkershome.com</span>
+    </a>
+  </div>
+
+  <button class="absolute right-4 top-2 text-white font-bold text-lg" onclick="this.parentElement.style.display='none';">✕</button>
 </div>
->
+
 
 <section class="h-auto bg-white px-4 sm:px-6 lg:px-8">
     <div class="py-8">
