@@ -86,8 +86,8 @@
 
 
 
-<!-- CCNA Certification Hero Banner Section with White Background and Red/Black Font -->
-<section class="bg-white text-gray-900 py-16">
+<!-- CCNA Certification Hero Banner Section with White Background, Red/Black Font, and Strong Border -->
+<section class="bg-white text-gray-900 py-16 ">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center lg:items-start">
     
     <!-- Left Section (70% for Text) -->
@@ -114,19 +114,25 @@
 
 
 
-</script>
-
-<!-- CCNA Course Content Section with Tabs -->
 <section class="p-8">
-    <div class="flex max-w-7xl mx-auto">
+    <!-- Section Heading and Subheading -->
+    <div class="text-center mb-8">
+        <h1 class="text-4xl font-extrabold mb-2">Full Course Information</h1>
+        <h2 class="text-lg text-gray-600">Everything you need to know about the CCNA Certification</h2>
+    </div>
+
+    <div class="flex max-w-7xl mx-auto border border-gray-300 rounded-lg shadow-lg">
         <!-- Main Content -->
-        <div class="w-full lg:w-3/4 bg-white p-6 rounded-lg shadow-lg">
+        <div class="w-full lg:w-3/4 bg-white p-6 border-r border-gray-300">
             <!-- Tabs Navigation -->
-            <div class="flex mb-6" role="tablist">
-                <button role="tab" aria-controls="course-info" aria-selected="true" onclick="showTab('course-info')" class="px-4 py-2 text-md font-semibold hover:bg-gray-200 focus:outline-none">Course Info</button>
-                <button role="tab" aria-controls="course-benefits" aria-selected="false" onclick="showTab('course-benefits')" class="ml-4 px-4 py-2 text-md font-semibold hover:bg-gray-200 focus:outline-none">Course Benefits</button>
-                <button role="tab" aria-controls="course-schedule" aria-selected="false" onclick="showTab('course-schedule')" class="ml-4 px-4 py-2 text-md font-semibold hover:bg-gray-200 focus:outline-none">Course Schedule</button>
-                <button role="tab" aria-controls="faqs" aria-selected="false" onclick="showTab('faqs')" class="ml-4 px-4 py-2 text-md font-semibold hover:bg-gray-200 focus:outline-none">FAQs</button>
+            <div class="flex mb-6 border-b border-gray-300 pb-4" role="tablist">
+                <button role="tab" aria-controls="course-info" aria-selected="true" onclick="showTab('course-info')" class="px-4 py-2 text-md font-bold hover:bg-gray-200 focus:outline-none">Course Info</button>
+                <div class="border-l border-gray-300 mx-2"></div>
+                <button role="tab" aria-controls="course-benefits" aria-selected="false" onclick="showTab('course-benefits')" class="px-4 py-2 text-md font-bold hover:bg-gray-200 focus:outline-none">Course Benefits</button>
+                <div class="border-l border-gray-300 mx-2"></div>
+                <button role="tab" aria-controls="course-schedule" aria-selected="false" onclick="showTab('course-schedule')" class="px-4 py-2 text-md font-bold hover:bg-gray-200 focus:outline-none">Course Schedule</button>
+                <div class="border-l border-gray-300 mx-2"></div>
+                <button role="tab" aria-controls="faqs" aria-selected="false" onclick="showTab('faqs')" class="px-4 py-2 text-md font-bold hover:bg-gray-200 focus:outline-none">FAQs</button>
             </div>
 
             <!-- Tabs Content -->
@@ -189,7 +195,7 @@
             <!-- FAQs Tab -->
             <div id="faqs" class="tab-content hidden">
                 <h2 class="text-3xl font-bold mb-4">Frequently Asked Questions About CCNA Certification</h2>
-                <div class="space-y-4">
+                <div class="space-y-4 text-sm">
                     <div>
                         <h3 class="text-xl font-semibold mb-4">1. What is CCNA Certification?</h3>
                         <p class="text-md"><strong>CCNA (Cisco Certified Network Associate)</strong> is an entry-level networking certification that validates your ability to install, configure, and troubleshoot networks. It is offered by Cisco.</p>
@@ -216,14 +222,14 @@
 
         <!-- Sidebar -->
         <aside class="hidden lg:block lg:w-1/4 ml-6">
-            <div class="bg-white p-6 rounded-lg shadow-lg">
+            <div class="bg-white p-6 rounded-lg shadow-lg border border-gray-300">
                 <h3 class="text-2xl font-bold mb-4">CCNA Course Fee & Payment Plan</h3>
                 <p class="text-md mb-4">Our <strong>CCNA certification training</strong> is competitively priced for Indian students, making it affordable without compromising on quality.</p>
-                <div class="bg-gray-100 p-4 rounded-lg mb-4">
+                <div class="bg-gray-100 p-4 rounded-lg mb-4 border border-gray-300">
                     <h4 class="text-xl font-bold mb-2">Course Fee</h4>
                     <p class="text-md">₹60,000</p>
                 </div>
-                <div class="bg-gray-100 p-4 rounded-lg">
+                <div class="bg-gray-100 p-4 rounded-lg border border-gray-300">
                     <h4 class="text-xl font-bold mb-2">Payment Plan</h4>
                     <ul class="list-disc pl-5 space-y-2">
                         <li>One-time payment: ₹60,000</li>
@@ -238,125 +244,133 @@
 </section>
 
 
-<!-- CCNA Course Curriculum Section with Accordion Layout -->
-<section class="p-8">
+
+<!-- CCNA Course Curriculum Section with Accordion Layout and Strong Border -->
+<section class="p-8 border-4 border-gray-700 rounded-lg">
+    <!-- Section Heading and Subheading -->
     <div class="max-w-7xl mx-auto text-center mb-12">
         <h2 class="text-4xl font-extrabold text-gray-900">CCNA Course Curriculum</h2>
-        <p class="text-lg text-gray-700 mt-4">Explore the comprehensive curriculum designed to provide hands-on experience and a deep understanding of networking concepts, technologies, and tools.</p>
+        <p class="text-lg text-gray-700 mt-4 font-semibold">A comprehensive guide to mastering essential networking concepts, technologies, and tools.</p>
     </div>
 
-    <div class="max-w-7xl mx-auto">
-        <!-- Accordion Item 1: Network Fundamentals -->
-        <div class="border-b">
-            <button class="w-full text-left py-4 px-6 text-lg font-bold bg-gray-100 hover:bg-gray-200 focus:outline-none" onclick="toggleAccordion('fundamentals')">
-                Network Fundamentals
-            </button>
-            <div id="fundamentals" class="hidden px-6 py-4 text-gray-700">
-                <p class="text-md mb-4">In this module, you’ll learn the basic concepts of networking, which form the foundation for understanding more advanced topics. You’ll cover the OSI and TCP/IP models, network topologies, and key components like routers, switches, and firewalls.</p>
-                <ul class="list-disc pl-5 space-y-2">
-                    <li><strong>OSI Model & TCP/IP Model:</strong> Detailed explanation of the 7 layers in the OSI model and the 4 layers in the TCP/IP model, and how data flows through each layer.</li>
-                    <li><strong>Network Topologies:</strong> Bus, Star, Ring, and Mesh topologies and how they influence network design and performance.</li>
-                    <li><strong>Cisco Routers and Switches:</strong> Understanding routers, switches, hubs, and bridges, and their roles in network communication.</li>
-                    <li><strong>IPv4 and IPv6 Addressing:</strong> Basics of IP addressing, subnetting, and network masks. Introduction to IPv6 addressing schemes.</li>
-                    <li><strong>Data Encapsulation:</strong> How data packets are created, encapsulated, and transmitted across a network.</li>
-                    <li><strong>Network Devices:</strong> Overview of key devices like routers, switches, modems, firewalls, and access points.</li>
-                    <li><strong>Physical Media:</strong> Introduction to cables (Ethernet, Fiber Optic, Coaxial), and wireless communication standards (Wi-Fi).</li>
-                </ul>
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <!-- Left Column Accordion Items -->
+        <div>
+            <!-- Accordion Item 1: Network Fundamentals -->
+            <div class="border-b">
+                <button class="w-full text-left py-4 px-6 text-lg font-bold bg-gray-100 hover:bg-gray-200 focus:outline-none" onclick="toggleAccordion('fundamentals')">
+                    Network Fundamentals
+                </button>
+                <div id="fundamentals" class="hidden px-6 py-4 text-gray-700">
+                    <p class="text-md mb-4">In this module, you’ll learn the basic concepts of networking, which form the foundation for understanding more advanced topics. You’ll cover the OSI and TCP/IP models, network topologies, and key components like routers, switches, and firewalls.</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>OSI Model & TCP/IP Model:</strong> Detailed explanation of the 7 layers in the OSI model and the 4 layers in the TCP/IP model, and how data flows through each layer.</li>
+                        <li><strong>Network Topologies:</strong> Bus, Star, Ring, and Mesh topologies and how they influence network design and performance.</li>
+                        <li><strong>Cisco Routers and Switches:</strong> Understanding routers, switches, hubs, and bridges, and their roles in network communication.</li>
+                        <li><strong>IPv4 and IPv6 Addressing:</strong> Basics of IP addressing, subnetting, and network masks. Introduction to IPv6 addressing schemes.</li>
+                        <li><strong>Data Encapsulation:</strong> How data packets are created, encapsulated, and transmitted across a network.</li>
+                        <li><strong>Network Devices:</strong> Overview of key devices like routers, switches, modems, firewalls, and access points.</li>
+                        <li><strong>Physical Media:</strong> Introduction to cables (Ethernet, Fiber Optic, Coaxial), and wireless communication standards (Wi-Fi).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Accordion Item 2: Routing and Switching -->
+            <div class="border-b">
+                <button class="w-full text-left py-4 px-6 text-lg font-bold bg-gray-100 hover:bg-gray-200 focus:outline-none" onclick="toggleAccordion('routing-switching')">
+                    Routing and Switching Essentials
+                </button>
+                <div id="routing-switching" class="hidden px-6 py-4 text-gray-700">
+                    <p class="text-md mb-4">This module dives deep into configuring, managing, and troubleshooting routers and switches. You will gain hands-on experience with Cisco hardware and software.</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>Static and Dynamic Routing:</strong> Understanding static routing, dynamic routing protocols like RIP, OSPF, and EIGRP.</li>
+                        <li><strong>Routing Tables:</strong> Learning how routers make forwarding decisions based on routing tables.</li>
+                        <li><strong>VLANs and Trunking:</strong> Configuring VLANs and how trunking is used to manage multiple VLANs across switches.</li>
+                        <li><strong>Spanning Tree Protocol (STP):</strong> Understanding how STP prevents loops in a network and ensures redundancy.</li>
+                        <li><strong>Switch Configuration:</strong> Configuring Cisco switches for security, VLANs, and performance optimization.</li>
+                        <li><strong>Router Configuration:</strong> Hands-on practice configuring Cisco routers using the CLI interface for IP routing, static routes, and NAT.</li>
+                        <li><strong>EtherChannel:</strong> Configuring EtherChannel for link aggregation to increase bandwidth and redundancy.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Accordion Item 3: IP Services and Connectivity -->
+            <div class="border-b">
+                <button class="w-full text-left py-4 px-6 text-lg font-bold bg-gray-100 hover:bg-gray-200 focus:outline-none" onclick="toggleAccordion('ip-services')">
+                    IP Services and Connectivity
+                </button>
+                <div id="ip-services" class="hidden px-6 py-4 text-gray-700">
+                    <p class="text-md mb-4">In this module, you will learn the various IP services that are essential for modern networking, including DHCP, DNS, NAT, and NTP.</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>DHCP (Dynamic Host Configuration Protocol):</strong> Configuring and troubleshooting DHCP servers and how they assign IP addresses to clients.</li>
+                        <li><strong>DNS (Domain Name System):</strong> Understanding how DNS works, configuring DNS servers, and troubleshooting domain name resolution issues.</li>
+                        <li><strong>NAT (Network Address Translation):</strong> Implementing NAT to translate private IP addresses to public IPs, enabling internet connectivity for internal devices.</li>
+                        <li><strong>Access Control Lists (ACLs):</strong> Configuring ACLs for traffic filtering and security on Cisco routers and switches.</li>
+                        <li><strong>WAN Connectivity:</strong> Introduction to WAN technologies like MPLS, Metro Ethernet, and broadband connections.</li>
+                        <li><strong>NTP (Network Time Protocol):</strong> Configuring NTP for time synchronization across network devices.</li>
+                        <li><strong>IP SLA (Service Level Agreement):</strong> Implementing IP SLA to measure network performance and ensure QoS (Quality of Service).</li>
+                    </ul>
+                </div>
             </div>
         </div>
 
-        <!-- Accordion Item 2: Routing and Switching -->
-        <div class="border-b">
-            <button class="w-full text-left py-4 px-6 text-lg font-bold bg-gray-100 hover:bg-gray-200 focus:outline-none" onclick="toggleAccordion('routing-switching')">
-                Routing and Switching Essentials
-            </button>
-            <div id="routing-switching" class="hidden px-6 py-4 text-gray-700">
-                <p class="text-md mb-4">This module dives deep into configuring, managing, and troubleshooting routers and switches. You will gain hands-on experience with Cisco hardware and software.</p>
-                <ul class="list-disc pl-5 space-y-2">
-                    <li><strong>Static and Dynamic Routing:</strong> Understanding static routing, dynamic routing protocols like RIP, OSPF, and EIGRP.</li>
-                    <li><strong>Routing Tables:</strong> Learning how routers make forwarding decisions based on routing tables.</li>
-                    <li><strong>VLANs and Trunking:</strong> Configuring VLANs and how trunking is used to manage multiple VLANs across switches.</li>
-                    <li><strong>Spanning Tree Protocol (STP):</strong> Understanding how STP prevents loops in a network and ensures redundancy.</li>
-                    <li><strong>Switch Configuration:</strong> Configuring Cisco switches for security, VLANs, and performance optimization.</li>
-                    <li><strong>Router Configuration:</strong> Hands-on practice configuring Cisco routers using the CLI interface for IP routing, static routes, and NAT.</li>
-                    <li><strong>EtherChannel:</strong> Configuring EtherChannel for link aggregation to increase bandwidth and redundancy.</li>
-                </ul>
+        <!-- Right Column Accordion Items -->
+        <div>
+            <!-- Accordion Item 4: Network Security -->
+            <div class="border-b">
+                <button class="w-full text-left py-4 px-6 text-lg font-bold bg-gray-100 hover:bg-gray-200 focus:outline-none" onclick="toggleAccordion('network-security')">
+                    Network Security
+                </button>
+                <div id="network-security" class="hidden px-6 py-4 text-gray-700">
+                    <p class="text-md mb-4">Learn about the essential security concepts needed to protect modern networks, including firewalls, VPNs, access control, and encryption.</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>Firewalls:</strong> Configuring firewall rules and understanding how firewalls filter network traffic for enhanced security.</li>
+                        <li><strong>VPNs (Virtual Private Networks):</strong> Implementing VPNs for secure remote access and site-to-site connectivity.</li>
+                        <li><strong>Encryption:</strong> Learning about encryption protocols like SSL, TLS, and IPsec for secure data transmission.</li>
+                        <li><strong>Network Authentication:</strong> Configuring network authentication using protocols like 802.1x and RADIUS.</li>
+                        <li><strong>Access Control:</strong> Understanding MAC address filtering, port security, and network-based access control (NAC).</li>
+                        <li><strong>Security Best Practices:</strong> Applying security policies and procedures to mitigate risks like DDoS attacks, malware, and phishing.</li>
+                        <li><strong>VPN Configuration:</strong> Configuring SSL VPN and IPsec VPN for secure remote access to corporate networks.</li>
+                    </ul>
+                </div>
             </div>
-        </div>
 
-        <!-- Accordion Item 3: IP Services and Connectivity -->
-        <div class="border-b">
-            <button class="w-full text-left py-4 px-6 text-lg font-bold bg-gray-100 hover:bg-gray-200 focus:outline-none" onclick="toggleAccordion('ip-services')">
-                IP Services and Connectivity
-            </button>
-            <div id="ip-services" class="hidden px-6 py-4 text-gray-700">
-                <p class="text-md mb-4">In this module, you will learn the various IP services that are essential for modern networking, including DHCP, DNS, NAT, and NTP.</p>
-                <ul class="list-disc pl-5 space-y-2">
-                    <li><strong>DHCP (Dynamic Host Configuration Protocol):</strong> Configuring and troubleshooting DHCP servers and how they assign IP addresses to clients.</li>
-                    <li><strong>DNS (Domain Name System):</strong> Understanding how DNS works, configuring DNS servers, and troubleshooting domain name resolution issues.</li>
-                    <li><strong>NAT (Network Address Translation):</strong> Implementing NAT to translate private IP addresses to public IPs, enabling internet connectivity for internal devices.</li>
-                    <li><strong>Access Control Lists (ACLs):</strong> Configuring ACLs for traffic filtering and security on Cisco routers and switches.</li>
-                    <li><strong>WAN Connectivity:</strong> Introduction to WAN technologies like MPLS, Metro Ethernet, and broadband connections.</li>
-                    <li><strong>NTP (Network Time Protocol):</strong> Configuring NTP for time synchronization across network devices.</li>
-                    <li><strong>IP SLA (Service Level Agreement):</strong> Implementing IP SLA to measure network performance and ensure QoS (Quality of Service).</li>
-                </ul>
+            <!-- Accordion Item 5: Network Automation -->
+            <div class="border-b">
+                <button class="w-full text-left py-4 px-6 text-lg font-bold bg-gray-100 hover:bg-gray-200 focus:outline-none" onclick="toggleAccordion('automation')">
+                    Network Automation and Programmability
+                </button>
+                <div id="automation" class="hidden px-6 py-4 text-gray-700">
+                    <p class="text-md mb-4">Network automation is becoming increasingly important in modern network environments. In this module, you'll learn the basics of network automation and how it can enhance efficiency.</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>Introduction to Automation:</strong> Understanding the need for automation in networking and the basic concepts behind programmable networks.</li>
+                        <li><strong>Python for Network Engineers:</strong> Learning Python scripting for automating common network tasks.</li>
+                        <li><strong>REST APIs:</strong> Using REST APIs to interact with network devices and automate configuration management.</li>
+                        <li><strong>SDN (Software-Defined Networking):</strong> Introduction to SDN architecture and how it enables centralized network management.</li>
+                        <li><strong>Network Programmability:</strong> Using tools like Ansible and Puppet to automate network configuration.</li>
+                        <li><strong>Model-Driven Telemetry:</strong> Gathering network performance data in real-time through telemetry for proactive monitoring.</li>
+                        <li><strong>Automation Tools:</strong> Introduction to network automation tools like Cisco DNA Center and Python scripts for configuration tasks.</li>
+                    </ul>
+                </div>
             </div>
-        </div>
 
-        <!-- Accordion Item 4: Network Security -->
-        <div class="border-b">
-            <button class="w-full text-left py-4 px-6 text-lg font-bold bg-gray-100 hover:bg-gray-200 focus:outline-none" onclick="toggleAccordion('network-security')">
-                Network Security
-            </button>
-            <div id="network-security" class="hidden px-6 py-4 text-gray-700">
-                <p class="text-md mb-4">Learn about the essential security concepts needed to protect modern networks, including firewalls, VPNs, access control, and encryption.</p>
-                <ul class="list-disc pl-5 space-y-2">
-                    <li><strong>Firewalls:</strong> Configuring firewall rules and understanding how firewalls filter network traffic for enhanced security.</li>
-                    <li><strong>VPNs (Virtual Private Networks):</strong> Implementing VPNs for secure remote access and site-to-site connectivity.</li>
-                    <li><strong>Encryption:</strong> Learning about encryption protocols like SSL, TLS, and IPsec for secure data transmission.</li>
-                    <li><strong>Network Authentication:</strong> Configuring network authentication using protocols like 802.1x and RADIUS.</li>
-                    <li><strong>Access Control:</strong> Understanding MAC address filtering, port security, and network-based access control (NAC).</li>
-                    <li><strong>Security Best Practices:</strong> Applying security policies and procedures to mitigate risks like DDoS attacks, malware, and phishing.</li>
-                    <li><strong>VPN Configuration:</strong> Configuring SSL VPN and IPsec VPN for secure remote access to corporate networks.</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Accordion Item 5: Network Automation -->
-        <div class="border-b">
-            <button class="w-full text-left py-4 px-6 text-lg font-bold bg-gray-100 hover:bg-gray-200 focus:outline-none" onclick="toggleAccordion('automation')">
-                Network Automation and Programmability
-            </button>
-            <div id="automation" class="hidden px-6 py-4 text-gray-700">
-                <p class="text-md mb-4">Network automation is becoming increasingly important in modern network environments. In this module, you'll learn the basics of network automation and how it can enhance efficiency.</p>
-                <ul class="list-disc pl-5 space-y-2">
-                    <li><strong>Introduction to Automation:</strong> Understanding the need for automation in networking and the basic concepts behind programmable networks.</li>
-                    <li><strong>Python for Network Engineers:</strong> Learning Python scripting for automating common network tasks.</li>
-                    <li><strong>REST APIs:</strong> Using REST APIs to interact with network devices and automate configuration management.</li>
-                    <li><strong>SDN (Software-Defined Networking):</strong> Introduction to SDN architecture and how it enables centralized network management.</li>
-                    <li><strong>Network Programmability:</strong> Using tools like Ansible and Puppet to automate network configuration.</li>
-                    <li><strong>Model-Driven Telemetry:</strong> Gathering network performance data in real-time through telemetry for proactive monitoring.</li>
-                    <li><strong>Automation Tools:</strong> Introduction to network automation tools like Cisco DNA Center and Python scripts for configuration tasks.</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Accordion Item 6: Exam Preparation -->
-        <div class="border-b">
-            <button class="w-full text-left py-4 px-6 text-lg font-bold bg-gray-100 hover:bg-gray-200 focus:outline-none" onclick="toggleAccordion('exam-prep')">
-                CCNA Exam Preparation
-            </button>
-            <div id="exam-prep" class="hidden px-6 py-4 text-gray-700">
-                <p class="text-md mb-4">This module focuses on the best practices for preparing and passing the CCNA certification exam. You'll go through mock tests, sample questions, and a review of key concepts.</p>
-                <ul class="list-disc pl-5 space-y-2">
-                    <li><strong>CCNA Exam Overview:</strong> Understanding the structure of the CCNA exam, topics covered, and how the questions are distributed.</li>
-                    <li><strong>Exam Strategies:</strong> Tips and strategies for managing time, solving multiple-choice questions, and answering scenario-based questions effectively.</li>
-                    <li><strong>Mock Tests:</strong> Practice with CCNA mock exams to get familiar with the test format and timing.</li>
-                    <li><strong>Review of Key Concepts:</strong> A comprehensive review of essential concepts like routing, switching, IP addressing, network security, and automation.</li>
-                    <li><strong>Study Resources:</strong> Recommended study materials, practice labs, and simulators to enhance your preparation.</li>
-                    <li><strong>Exam Simulation:</strong> Experience a real exam environment with CCNA exam simulations.</li>
-                    <li><strong>Last-Minute Tips:</strong> Guidance on how to revise efficiently in the final days leading to the exam.</li>
-                </ul>
+            <!-- Accordion Item 6: Exam Preparation -->
+            <div class="border-b">
+                <button class="w-full text-left py-4 px-6 text-lg font-bold bg-gray-100 hover:bg-gray-200 focus:outline-none" onclick="toggleAccordion('exam-prep')">
+                    CCNA Exam Preparation
+                </button>
+                <div id="exam-prep" class="hidden px-6 py-4 text-gray-700">
+                    <p class="text-md mb-4">This module focuses on the best practices for preparing and passing the CCNA certification exam. You'll go through mock tests, sample questions, and a review of key concepts.</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>CCNA Exam Overview:</strong> Understanding the structure of the CCNA exam, topics covered, and how the questions are distributed.</li>
+                        <li><strong>Exam Strategies:</strong> Tips and strategies for managing time, solving multiple-choice questions, and answering scenario-based questions effectively.</li>
+                        <li><strong>Mock Tests:</strong> Practice with CCNA mock exams to get familiar with the test format and timing.</li>
+                        <li><strong>Review of Key Concepts:</strong> A comprehensive review of essential concepts like routing, switching, IP addressing, network security, and automation.</li>
+                        <li><strong>Study Resources:</strong> Recommended study materials, practice labs, and simulators to enhance your preparation.</li>
+                        <li><strong>Exam Simulation:</strong> Experience a real exam environment with CCNA exam simulations.</li>
+                        <li><strong>Last-Minute Tips:</strong> Guidance on how to revise efficiently in the final days leading to the exam.</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -372,11 +386,10 @@
 
 
 
-
     
 
 <!-- Team Section -->
-<section class="w-full bg-white py-16">
+<section class="w-full bg-white py-16 border-b border-gray-300">
     <div class="max-w-7xl mx-auto">
         <h2 class="text-4xl font-bold text-center mb-12">Meet Our Team</h2>
 
@@ -562,8 +575,8 @@
 </section>
 
 
-    <!-- FAQ and Blog Section -->
-<section class="bg-gray-100 py-16">
+    <!-- FAQ and Blog Section with Strong Borders -->
+<section class="w-full bg-white py-16 border-b border-gray-300">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex">
     
     <!-- FAQs Section (70%) -->
@@ -572,54 +585,46 @@
 
       <div class="space-y-6">
         
-        <!-- FAQ 1 -->
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <h3 class="text-2xl font-semibold mb-2"> What types of courses are offered at Networkers Home?</h3>
-          <p class="text-gray-600">
-            Networkers Home offers a wide range of networking, security, and cloud certifications. The most popular ones include CCNA (Cisco Certified Network Associate), CCNP (Cisco Certified Network Professional), CCIE (Cisco Certified Internetwork Expert), and courses in cybersecurity, ethical hacking, and cloud technologies</p>
+        <!-- FAQ 1 with Strong Border -->
+        <div class="bg-white p-6 rounded-lg shadow-md border-4 border-gray-700">
+          <h3 class="text-2xl font-semibold mb-2">What types of courses are offered at Networkers Home?</h3>
+          <p class="text-gray-600">Networkers Home offers a wide range of networking, security, and cloud certifications. The most popular ones include CCNA (Cisco Certified Network Associate), CCNP (Cisco Certified Network Professional), CCIE (Cisco Certified Internetwork Expert), and courses in cybersecurity, ethical hacking, and cloud technologies.</p>
         </div>
 
-        <!-- FAQ 2 -->
-        <div class="bg-white p-6 rounded-lg shadow-md">
+        <!-- FAQ 2 with Strong Border -->
+        <div class="bg-white p-6 rounded-lg shadow-md border-4 border-gray-700">
           <h3 class="text-2xl font-semibold mb-2">What certifications can I achieve through Networkers Home?</h3>
-          <p class="text-gray-600">
-            Certifications like CCNA, CCNP, CCIE, AWS Certified Solutions Architect, and CompTIA Security+ are among the key certifications. They also offer certifications for cybersecurity professionals, such as CEH (Certified Ethical Hacker), CISSP (Certified Information Systems Security Professional), and CISM (Certified Information Security Manager) </p>
+          <p class="text-gray-600">Certifications like CCNA, CCNP, CCIE, AWS Certified Solutions Architect, and CompTIA Security+ are among the key certifications. They also offer certifications for cybersecurity professionals, such as CEH (Certified Ethical Hacker), CISSP (Certified Information Systems Security Professional), and CISM (Certified Information Security Manager).</p>
         </div>
 
-        <!-- FAQ 3 -->
-        <div class="bg-white p-6 rounded-lg shadow-md">
+        <!-- FAQ 3 with Strong Border -->
+        <div class="bg-white p-6 rounded-lg shadow-md border-4 border-gray-700">
           <h3 class="text-2xl font-semibold mb-2">What kind of certification will I receive after completing the course?</h3>
-          <p class="text-gray-600">
-            Upon successful completion of the course, you will receive a professional certification recognized by top industry players. This certification can boost your career prospects in AI-related roles and showcase your expertise to potential employers.
-          </p>
+          <p class="text-gray-600">Upon successful completion of the course, you will receive a professional certification recognized by top industry players. This certification can boost your career prospects in AI-related roles and showcase your expertise to potential employers.</p>
         </div>
 
-        <!-- FAQ 4 -->
-        <div class="bg-white p-6 rounded-lg shadow-md">
+        <!-- FAQ 4 with Strong Border -->
+        <div class="bg-white p-6 rounded-lg shadow-md border-4 border-gray-700">
           <h3 class="text-2xl font-semibold mb-2">Is the training available online, or do I need to attend in person?</h3>
-          <p class="text-gray-600">
-            Networkers Home offers both online and in-person training programs. Online training is conducted through live virtual classes, making it accessible to students worldwide.</p>
+          <p class="text-gray-600">Networkers Home offers both online and in-person training programs. Online training is conducted through live virtual classes, making it accessible to students worldwide.</p>
         </div>
 
-        <!-- FAQ 5 -->
-        <div class="bg-white p-6 rounded-lg shadow-md">
+        <!-- FAQ 5 with Strong Border -->
+        <div class="bg-white p-6 rounded-lg shadow-md border-4 border-gray-700">
           <h3 class="text-2xl font-semibold mb-2">What are the prerequisites for enrolling in a CCIE course?</h3>
-          <p class="text-gray-600">
-            To enroll in the CCIE course, candidates generally need a solid understanding of networking fundamentals and should ideally have completed CCNA and CCNP certifications. Some experience working in networking environments is also recommended.</p>
+          <p class="text-gray-600">To enroll in the CCIE course, candidates generally need a solid understanding of networking fundamentals and should ideally have completed CCNA and CCNP certifications. Some experience working in networking environments is also recommended.</p>
         </div>
 
-        <!-- FAQ 6 -->
-        <div class="bg-white p-6 rounded-lg shadow-md">
+        <!-- FAQ 6 with Strong Border -->
+        <div class="bg-white p-6 rounded-lg shadow-md border-4 border-gray-700">
           <h3 class="text-2xl font-semibold mb-2">Does Networkers Home provide job placement assistance after training?</h3>
-          <p class="text-gray-600">
-            Yes, Networkers Home offers job placement assistance to its students. They have partnerships with various IT and networking companies and provide guidance for interviews, resume building, and job opportunities. </p>
+          <p class="text-gray-600">Yes, Networkers Home offers job placement assistance to its students. They have partnerships with various IT and networking companies and provide guidance for interviews, resume building, and job opportunities.</p>
         </div>
 
-        <!-- FAQ 7 -->
-        <div class="bg-white p-6 rounded-lg shadow-md">
+        <!-- FAQ 7 with Strong Border -->
+        <div class="bg-white p-6 rounded-lg shadow-md border-4 border-gray-700">
           <h3 class="text-2xl font-semibold mb-2">What is included in the course materials and training resources?</h3>
-          <p class="text-gray-600">
-            Students receive access to lab facilities, study materials, virtual labs, and real-world network configurations. Networkers Home provides 24/7 access to practice labs for certain courses, ensuring hands-on experience with industry-standard equipment. </p>
+          <p class="text-gray-600">Students receive access to lab facilities, study materials, virtual labs, and real-world network configurations. Networkers Home provides 24/7 access to practice labs for certain courses, ensuring hands-on experience with industry-standard equipment.</p>
         </div>
 
       </div>
@@ -629,18 +634,18 @@
     <aside class="w-full lg:w-3/10" style="width: 30%;">
       <h3 class="text-3xl font-bold mb-6">Latest Blogs</h3>
 
-      <!-- Blog 1 -->
-      <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-6">
+      <!-- Blog 1 with Strong Border -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-6 border-4 border-gray-700">
         <img src="images/blog2.webp" alt="Blog 1" class="w-full h-48 object-cover">
         <div class="p-4">
-          <h4 class="text-xl font-bold mb-2">CCIE Scope- Increasing day by day </h4>
-          <p class="text-gray-600 mb-2">Discover how Networkers Home can elevate your career with world-class networking certifications and hands-on training, from CCNA to CCIE</p>
+          <h4 class="text-xl font-bold mb-2">CCIE Scope- Increasing day by day</h4>
+          <p class="text-gray-600 mb-2">Discover how Networkers Home can elevate your career with world-class networking certifications and hands-on training, from CCNA to CCIE.</p>
           <a href="https://www.networkershome.com/ccie-scope-career-opportunities" class="text-indigo-600 hover:underline font-semibold">Read More</a>
         </div>
       </div>
 
-      <!-- Blog 2 -->
-      <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-6">
+      <!-- Blog 2 with Strong Border -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-6 border-4 border-gray-700">
         <img src="images/blog1.webp" alt="Blog 2" class="w-full h-48 object-cover">
         <div class="p-4">
           <h4 class="text-xl font-bold mb-2">Cloud Certifications- Future of IT Industry</h4>
@@ -649,15 +654,16 @@
         </div>
       </div>
 
-      <!-- Blog 3 -->
-      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+      <!-- Blog 3 with Strong Border -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden border-4 border-gray-700">
         <img src="images/blog3.webp" alt="Blog 3" class="w-full h-48 object-cover">
         <div class="p-4">
-          <h4 class="text-xl font-bold mb-2">Top Placement coureses today for Non-programmers</h4>
+          <h4 class="text-xl font-bold mb-2">Top Placement courses today for Non-programmers</h4>
           <p class="text-gray-600 mb-2">Discover the top placement courses for non-programmers that open doors to high-demand careers in fields like networking, cybersecurity, and cloud computing.</p>
           <a href="https://www.networkershome.com/ccie-scope-career-opportunities" class="text-indigo-600 hover:underline font-semibold">Read More</a>
         </div>
       </div>
+
     </aside>
 
   </div>
