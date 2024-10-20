@@ -1,6 +1,3 @@
-
-
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,16 +8,36 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <!-- Favicon -->
     <link rel="icon" href="images/nh2.webp" type="image/webp">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
 
-<!-- Notification Bar -->
-<div class="bg-gradient-to-r from-red-600 to-red-400 text-white text-center py-3 relative">
-  <p class="font-bold text-lg">
-    Upcoming schedule - <a href="#schedule" class="underline hover:text-gray-200">Check Now</a>
+<!-- Announcement Banner with Emojis, Contact Info, and Strong Gradient -->
+<div class="bg-gradient-to-r from-red-700 via-red-600 to-yellow-500 text-white text-center py-3 relative shadow-lg">
+  <p class="font-bold text-sm tracking-wide flex items-center justify-center space-x-4">
+    📅 Upcoming Schedule - <a href="#schedule" class="underline hover:text-yellow-200 transition duration-300">Check Now</a>
   </p>
-  <button class="absolute right-4 top-3 text-white font-bold" onclick="this.parentElement.style.display='none';">✕</button>
+
+  <!-- Contact Info -->
+  <div class="flex justify-center space-x-4 mt-2">
+    <!-- Phone -->
+    <a href="tel:+919611027980" class="flex items-center space-x-1 hover:text-yellow-200 transition duration-300">
+      📞 <span>+91-9611027980</span>
+    </a>
+    <!-- WhatsApp -->
+    <a href="https://wa.me/919611027980" class="flex items-center space-x-1 hover:text-yellow-200 transition duration-300">
+      💬 <span>WhatsApp</span>
+    </a>
+    <!-- Email -->
+    <a href="mailto:info@networkershome.com" class="flex items-center space-x-1 hover:text-yellow-200 transition duration-300">
+      ✉️ <span>info@networkershome.com</span>
+    </a>
+  </div>
+
+  <button class="absolute right-4 top-2 text-white font-bold text-lg" onclick="this.parentElement.style.display='none';">✕</button>
 </div>
+
+    
 
 <section class="h-auto bg-white px-4 sm:px-6 lg:px-8">
     <div class="py-8">
@@ -83,6 +100,7 @@
     }
   }
 </script>
+
 
 
 
