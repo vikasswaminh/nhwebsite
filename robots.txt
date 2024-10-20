@@ -1,0 +1,19 @@
+User-agent: *
+# Allow all crawlers to index important pages
+Allow: /
+
+# Disallow sensitive areas
+Disallow: /privacy-policy
+Disallow: /terms-of-service
+Disallow: /support
+
+# Block search engines from indexing admin or internal pages (if applicable)
+Disallow: /admin
+Disallow: /login
+Disallow: /register
+
+# Specify sitemap location
+Sitemap: https://www.networkershome.com/sitemap.xml
+
+# Optional: Crawl-delay can help reduce server load
+Crawl-delay: 10
