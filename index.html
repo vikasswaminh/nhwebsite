@@ -89,21 +89,38 @@
 
 
 
-<!-- Hero Banner Section with Vector Animation in Background -->
+<!-- Hero Banner Section with Neurological Connection Vector Background -->
 <section class="relative bg-white text-gray-900 h-[77vh] flex flex-col justify-center items-center overflow-hidden">
-  <!-- SVG Vector Animation (Background) -->
-  <div class="absolute inset-0 pointer-events-none opacity-30">
-    <!-- You can replace this SVG with any vector animation of your choice -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" style="min-width:100%; min-height:100%;">
-      <g fill="none" stroke="red" stroke-width="2">
-        <circle cx="200" cy="200" r="100">
-          <animate attributeName="r" from="50" to="150" dur="4s" repeatCount="indefinite" />
-          <animate attributeName="stroke" values="red;black;red" dur="4s" repeatCount="indefinite" />
-        </circle>
-        <circle cx="600" cy="200" r="100">
-          <animate attributeName="r" from="50" to="150" dur="4s" repeatCount="indefinite" />
-          <animate attributeName="stroke" values="black;red;black" dur="4s" repeatCount="indefinite" />
-        </circle>
+  <!-- Neurological Connection Vector (Background) -->
+  <div class="absolute inset-0 pointer-events-none opacity-20">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 800" preserveAspectRatio="xMidYMid slice" style="min-width:100%; min-height:100%;">
+      <g stroke-width="2" stroke="#000" fill="none">
+        <!-- Circle and Line Connections -->
+        <circle cx="200" cy="150" r="5" stroke="red" />
+        <circle cx="350" cy="250" r="8" stroke="black" />
+        <circle cx="500" cy="100" r="6" stroke="red" />
+        <circle cx="750" cy="200" r="7" stroke="black" />
+        <circle cx="900" cy="150" r="5" stroke="red" />
+        <circle cx="1100" cy="300" r="8" stroke="black" />
+        <circle cx="1250" cy="100" r="6" stroke="red" />
+
+        <!-- Connecting Lines -->
+        <line x1="200" y1="150" x2="350" y2="250" stroke="gray" />
+        <line x1="350" y1="250" x2="500" y2="100" stroke="gray" />
+        <line x1="500" y1="100" x2="750" y2="200" stroke="gray" />
+        <line x1="750" y1="200" x2="900" y2="150" stroke="gray" />
+        <line x1="900" y1="150" x2="1100" y2="300" stroke="gray" />
+        <line x1="1100" y1="300" x2="1250" y2="100" stroke="gray" />
+
+        <!-- More circles and connections for a complex look -->
+        <circle cx="300" cy="600" r="7" stroke="black" />
+        <circle cx="600" cy="450" r="5" stroke="red" />
+        <circle cx="900" cy="550" r="7" stroke="black" />
+        <circle cx="1200" cy="400" r="8" stroke="red" />
+        
+        <line x1="300" y1="600" x2="600" y2="450" stroke="gray" />
+        <line x1="600" y1="450" x2="900" y2="550" stroke="gray" />
+        <line x1="900" y1="550" x2="1200" y2="400" stroke="gray" />
       </g>
     </svg>
   </div>
@@ -149,17 +166,18 @@
   </div>
 </section>
 
-<!-- Optional styling for a background image (if needed) -->
+<!-- Optional styling for background -->
 <style>
   a {
-    display: block; /* Ensures the whole block is clickable */
-    text-decoration: none; /* Removes underline on the text */
+    display: block;
+    text-decoration: none;
   }
 
   a:hover {
     cursor: pointer;
   }
 </style>
+
 
     
 <!-- Action Speaks Louder Than Words Section with 10 Placements and 10 CCIE Results -->
