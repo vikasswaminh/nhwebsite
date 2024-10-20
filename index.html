@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,35 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <!-- Favicon -->
     <link rel="icon" href="images/nh2.webp" type="image/webp">
-
-    <!-- Particles.js for animated background -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <style>
-      /* Full-width particles background */
-      #particles-js {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: white;
-        z-index: 0;
-      }
-
-      /* Make sure content overlays particles */
-      .relative {
-        position: relative;
-        z-index: 10;
-      }
-
-      /* Remove underline for links and make the whole box clickable */
-      a {
-        display: block;
-        text-decoration: none;
-      }
-
-      a:hover {
-        cursor: pointer;
-      }
-    </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
 
@@ -49,26 +20,72 @@
   <button class="absolute right-4 top-3 text-white font-bold" onclick="this.parentElement.style.display='none';">✕</button>
 </div>
 
-<!-- Navigation Section -->
-<section class="h-auto bg-white px-6 sm:px-8 lg:px-10">
-    <div class="py-6">
+<section class="h-auto bg-white px-4 sm:px-6 lg:px-8">
+    <div class="py-8">
         <div class="mx-auto max-w-7xl">
-            <div class="relative z-50 flex justify-between items-center">
+            <div class="relative z-50 flex justify-between" aria-label="Primary Navigation">
                 
-                <!-- Logo -->
-                <a href="https://www.networkershome.com">
-                    <img src="images/nh1.webp" alt="Networkers Home" class="h-auto w-auto" style="width: 250px; height: 50px;"> <!-- Logo with 250x50 size -->
-                </a>
+                <!-- Logo and Navbar -->
+                <div class="flex items-center md:gap-x-8">
+                    <a href="https://www.networkershome.com">
+                        <img src="images/nh1.webp" alt="Networkers Home" class="h-auto w-auto" style="width: 250px; height: 50px;"> <!-- Logo with 250x50 size -->
+                    </a>
+                    <div id="menu" class="hidden md:flex md:flex-row flex-col md:relative absolute md:w-auto w-full md:bg-none bg-white top-0 md:mt-0 mt-20 md:border-0 border border-gray-100 md:shadow-none shadow md:rounded-none rounded-lg md:gap-x-3 text-lg md:divide-y-0 divide-y divide-gray-100 md:text-sm font-medium">
+                        <a class="block md:inline-block md:rounded-full py-4 md:py-2.5 px-4 text-slate-500 md:text-left text-center hover:bg-slate-100 hover:text-slate-900" href="https://www.networkershome.com/networkershome-all-courses.html">Courses</a>
+                        <a class="block md:inline-block md:rounded-full py-4 md:py-2.5 px-4 text-slate-500 md:text-left text-center hover:bg-slate-100 hover:text-slate-900" href="https://ccie.networkershome.com">LMS</a>
+                        <a class="block md:inline-block md:rounded-full py-4 md:py-2.5 px-4 text-slate-500 md:text-left text-center hover:bg-slate-100 hover:text-slate-900" href="https://www.networkershome.com/placements">Placements</a>
+                    </div>
+                </div>
 
-                <!-- Call to Action Buttons -->
-                <div class="flex items-center gap-x-5 font-medium">
-                    <a class="hidden md:block py-2.5 px-4 text-slate-500 bg-slate-100 rounded-full hover:bg-slate-200 hover:text-slate-900" href="https://www.networkershome.com/jobs">Jobs</a>
-                    <a class="inline-flex rounded-full items-center py-2.5 px-5 bg-gradient-to-r from-indigo-600 to-blue-500 hover:from-indigo-500 hover:to-blue-400 font-semibold text-white" href="https://www.networkershome.com/contactus.html">Contact us</a>
+                <!-- Call to Action & Mobile Menu -->
+                <div class="flex items-center gap-x-5 font-medium md:gap-x-6">
+                    <div class="flex space-x-4 text-sm">
+                        <div class="hidden md:block">
+                            <a class="inline-block py-2.5 px-4 text-slate-500 rounded-full bg-slate-100 font-medium hover:bg-slate-100 hover:text-slate-900" href="https://www.networkershome.com/jobs">Jobs</a>
+                        </div>
+                        <a class="group inline-flex rounded-full items-center justify-center py-2.5 px-5 bg-gradient-to-r from-indigo-600 to-blue-500 hover:from-indigo-500 hover:to-blue-400 font-semibold text-white focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="https://www.networkershome.com/contactus">Contact <span class="hidden lg:inline ml-1">us </span></a>
+                    </div>
+
+                    <!-- Mobile Menu Toggle -->
+                    <div id="menu-open" onclick="toggleMenu()" class="-mr-1 md:hidden">
+                        <button class="relative z-10 flex h-8 w-8 items-center justify-center" type="button" aria-expanded="false">
+                            <svg class="h-6 w-6 mr-4 overflow-visible stroke-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"></path></svg>
+                        </button>
+                    </div>
+                    <div id="menu-close" onclick="toggleMenu()" class="-mr-1 hidden">
+                        <button class="relative z-10 flex h-8 w-8 items-center justify-center" type="button" aria-expanded="false">
+                            <svg class="h-6 w-6 mr-4 overflow-visible stroke-slate-700" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<!-- JavaScript to Toggle Mobile Menu -->
+<script>
+  function toggleMenu() {
+    var menu = document.getElementById('menu');
+    var openBtn = document.getElementById('menu-open');
+    var closeBtn = document.getElementById('menu-close');
+
+    if (menu.classList.contains('hidden')) {
+      menu.classList.remove('hidden');
+      openBtn.classList.add('hidden');
+      closeBtn.classList.remove('hidden');
+    } else {
+      menu.classList.add('hidden');
+      openBtn.classList.remove('hidden');
+      closeBtn.classList.add('hidden');
+    }
+  }
+</script>
+
+
+
+
+
 
 <!-- Hero Banner Section with Image alongside Heading and Subheading -->
 <section class="relative text-gray-900 h-[85vh] flex flex-col justify-center items-center mb-16 px-6">
