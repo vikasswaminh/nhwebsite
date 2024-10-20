@@ -87,117 +87,74 @@
 
 
 
-<!-- Hero Banner Section with Image alongside Heading and Subheading -->
-<section class="relative text-gray-900 h-[85vh] flex flex-col justify-center items-center mb-16 px-6">
-  <!-- Heading and Image Container -->
-  <div class="flex flex-col lg:flex-row justify-center items-center w-full max-w-6xl mb-10">
-    <!-- Text Section (70%) -->
-    <div class="w-full lg:w-7/12 text-center lg:text-left mb-8 lg:mb-0">
+<!-- Hero Banner Section with Left and Right Images, Heading, Subheading, and Buttons -->
+<section class="relative text-gray-900 h-[85vh] flex justify-center items-center mb-16 px-6">
+  <div class="flex w-full max-w-7xl">
+    
+    <!-- Left Image (30%) -->
+    <div class="w-3/12 flex justify-center lg:justify-start">
+      <img src="images/left-image.webp" alt="Left Image Description" class="w-10/12 h-auto rounded-lg shadow-lg" />
+    </div>
+    
+    <!-- Text Section (40%) -->
+    <div class="w-5/12 flex flex-col justify-center text-center lg:text-left px-4">
       <!-- Main Heading -->
       <h1 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">
         Join the Education Revolution 🚀
       </h1>
       <!-- Subheading -->
-      <h2 class="text-xl md:text-2xl text-gray-800">
+      <h2 class="text-xl md:text-2xl text-gray-800 mb-4">
         India's Best CCIE Lab Training
       </h2>
+
+      <!-- Buttons under the Subheading -->
+      <div class="flex justify-center lg:justify-start gap-4">
+        <!-- All Courses Button (Black) -->
+        <a href="https://www.networkershome.com/networkershome-all-courses.html" class="bg-black text-white font-semibold py-2 px-6 rounded-lg hover:bg-gray-800 transition-colors duration-200">
+          All Courses
+        </a>
+
+        <!-- Enroll Now Button (Red) -->
+        <a href="https://www.networkershome.com/contactus.html" class="bg-red-600 text-white font-semibold py-2 px-6 rounded-lg hover:bg-red-500 transition-colors duration-200">
+          Enroll Now
+        </a>
+      </div>
     </div>
 
-    <!-- Image Section (30%) -->
-    <div class="w-full lg:w-5/12 flex justify-center lg:justify-end">
-    <img src="images/03.webp" alt="Descriptive Image Alt Text" class="w-10/12 h-1/2 rounded-lg shadow-lg" />
-</div>
-  </div>
-
-  <!-- Course Boxes -->
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 w-full max-w-6xl">
-    <!-- Course 1 -->
-    <a href="#" class="border-4 border-gray-800 bg-white rounded-lg p-6 text-center shadow-lg hover:bg-gray-100 transition duration-200">
-      <h3 class="text-lg font-bold text-gray-900 mb-2">CCNA Certification</h3>
-      <p class="text-gray-700">Start your networking career with CCNA.</p>
-    </a>
-
-    <!-- Course 2 -->
-    <a href="#" class="border-4 border-gray-800 bg-white rounded-lg p-6 text-center shadow-lg hover:bg-gray-100 transition duration-200">
-      <h3 class="text-lg font-bold text-gray-900 mb-2">CCNP Certification</h3>
-      <p class="text-gray-700">Advance your skills with CCNP-level training.</p>
-    </a>
-
-    <!-- Course 3 -->
-    <a href="#" class="border-4 border-gray-800 bg-white rounded-lg p-6 text-center shadow-lg hover:bg-gray-100 transition duration-200">
-      <h3 class="text-lg font-bold text-gray-900 mb-2">CCIE Enterprise</h3>
-      <p class="text-gray-700">Become a networking expert with CCIE Enterprise.</p>
-    </a>
-
-    <!-- Course 4 -->
-    <a href="#" class="border-4 border-gray-800 bg-white rounded-lg p-6 text-center shadow-lg hover:bg-gray-100 transition duration-200">
-      <h3 class="text-lg font-bold text-gray-900 mb-2">CCIE Security</h3>
-      <p class="text-gray-700">Master security technologies with CCIE Security.</p>
-    </a>
+    <!-- Right Image (20%) -->
+    <div class="w-2/12 flex justify-center lg:justify-end">
+      <img src="images/right-image.webp" alt="Right Image Description" class="w-10/12 h-auto rounded-lg shadow-lg" />
+    </div>
+    
   </div>
 </section>
 
-<!-- Initialize Particles.js for background effect -->
-<script>
-  particlesJS('particles-js', {
-    particles: {
-      number: {
-        value: 100,
-        density: {
-          enable: true,
-          value_area: 800
-        }
-      },
-      color: {
-        value: "#000000"
-      },
-      shape: {
-        type: "circle",
-        stroke: {
-          width: 1,
-          color: "#ff0000"
-        }
-      },
-      opacity: {
-        value: 0.5,
-        random: true
-      },
-      size: {
-        value: 3,
-        random: true
-      },
-      line_linked: {
-        enable: true,
-        distance: 150,
-        color: "#000000",
-        opacity: 0.4,
-        width: 1
-      },
-      move: {
-        enable: true,
-        speed: 2,
-        direction: "none",
-        random: true,
-        out_mode: "out"
-      }
-    },
-    interactivity: {
-      detect_on: "canvas",
-      events: {
-        onhover: {
-          enable: true,
-          mode: "repulse"
-        },
-        onclick: {
-          enable: true,
-          mode: "push"
-        },
-        resize: true
-      }
-    },
-    retina_detect: true
-  });
-</script>
+<!-- Course Boxes -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 w-full max-w-6xl mx-auto px-4">
+  <!-- Course 1 -->
+  <a href="#" class="border-4 border-gray-800 bg-white rounded-lg p-6 text-center shadow-lg hover:bg-gray-100 transition duration-200">
+    <h3 class="text-lg font-bold text-gray-900 mb-2">CCNA Certification</h3>
+    <p class="text-gray-700">Start your networking career with CCNA.</p>
+  </a>
+
+  <!-- Course 2 -->
+  <a href="#" class="border-4 border-gray-800 bg-white rounded-lg p-6 text-center shadow-lg hover:bg-gray-100 transition duration-200">
+    <h3 class="text-lg font-bold text-gray-900 mb-2">CCNP Certification</h3>
+    <p class="text-gray-700">Advance your skills with CCNP-level training.</p>
+  </a>
+
+  <!-- Course 3 -->
+  <a href="#" class="border-4 border-gray-800 bg-white rounded-lg p-6 text-center shadow-lg hover:bg-gray-100 transition duration-200">
+    <h3 class="text-lg font-bold text-gray-900 mb-2">CCIE Enterprise</h3>
+    <p class="text-gray-700">Become a networking expert with CCIE Enterprise.</p>
+  </a>
+
+  <!-- Course 4 -->
+  <a href="#" class="border-4 border-gray-800 bg-white rounded-lg p-6 text-center shadow-lg hover:bg-gray-100 transition duration-200">
+    <h3 class="text-lg font-bold text-gray-900 mb-2">CCIE Security</h3>
+    <p class="text-gray-700">Master security technologies with CCIE Security.</p>
+  </a>
+</div>
 
     
 <!-- Action Speaks Louder Than Words Section with 10 Placements and 10 CCIE Results -->
