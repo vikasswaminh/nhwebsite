@@ -289,106 +289,177 @@
 </script>
 
 
-<!-- CCIE Security Placement Program Section with Gradient Blue Background -->
+<!-- CCNA Course Section with Gradient Blue Background -->
 <section class="p-8 rounded-lg bg-gradient-to-r from-blue-500 to-blue-800">
     <!-- Section Heading and Subheading -->
     <div class="max-w-7xl mx-auto text-center mb-12">
-        <h2 class="text-4xl font-extrabold text-white">CCIE Security Placement Program</h2>
-        <p class="text-lg text-white mt-4 font-semibold">A comprehensive training program covering CCNA to CCIE Security certifications, ensuring mastery in network security and guaranteed placement.</p>
+        <h2 class="text-4xl font-extrabold text-white">CCNA Certification Course</h2>
+        <p class="text-lg text-white mt-4 font-semibold">A comprehensive training program covering the essential skills and knowledge to become a certified Cisco networking professional.</p>
     </div>
 
     <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
         <!-- Left Column Accordion Items -->
         <div>
-            <!-- Accordion Item 1: CCNA (Cisco Certified Network Associate) -->
+            <!-- Accordion Item 1: Introduction to Networking -->
             <div class="mb-4">
-                <button class="w-full text-left py-4 px-6 text-lg font-bold bg-white text-gray-900 hover:bg-gray-100 focus:outline-none rounded-lg" onclick="toggleAccordion('ccna')">
-                    CCNA (Cisco Certified Network Associate)
+                <button class="w-full text-left py-4 px-6 text-lg font-bold bg-white text-gray-900 hover:bg-gray-100 focus:outline-none rounded-lg" onclick="toggleAccordion('networking-intro')">
+                    Introduction to Networking
                 </button>
-                <div id="ccna" class="hidden px-6 py-4 text-gray-200 bg-blue-900 rounded-lg mt-2">
-                    <p class="text-md mb-4">Gain foundational networking knowledge with the CCNA certification, including the following topics:</p>
+                <div id="networking-intro" class="hidden px-6 py-4 text-gray-200 bg-blue-900 rounded-lg mt-2">
+                    <p class="text-md mb-4">
+                        The first step in your CCNA journey is gaining a strong foundation in the basics of networking. In this section, you will learn about the fundamental concepts of computer networks, how data travels across networks, and the different types of networks that exist today.
+                    </p>
                     <ul class="list-disc pl-5 space-y-2">
-                        <li><strong>Network Fundamentals:</strong> OSI & TCP/IP Models, routers, switches, and IP addressing (IPv4/IPv6).</li>
-                        <li><strong>Routing & Switching:</strong> VLANs, Spanning Tree Protocol, NAT, and ACLs.</li>
-                        <li><strong>IP Services & Security:</strong> DHCP, DNS, firewalls, VPNs, and basic encryption.</li>
+                        <li><strong>Networking Basics:</strong> Learn about network types such as LAN, WAN, and PAN. Understand what makes up a network, including routers, switches, and end devices.</li>
+                        <li><strong>Network Topologies:</strong> Discover how different network topologies like star, mesh, and bus networks are designed for different scenarios and their benefits.</li>
+                        <li><strong>OSI and TCP/IP Models:</strong> Gain an understanding of the OSI and TCP/IP reference models, which define the rules and protocols governing network communication.</li>
                     </ul>
+                    <p class="text-md mt-4">
+                        By the end of this section, you will be familiar with networking fundamentals, including how devices communicate, the role of protocols, and basic troubleshooting techniques.
+                    </p>
                 </div>
             </div>
 
-            <!-- Accordion Item 2: CCNP Enterprise (3 Modules) -->
+            <!-- Accordion Item 2: Network Protocols and Communication -->
             <div class="mb-4">
-                <button class="w-full text-left py-4 px-6 text-lg font-bold bg-white text-gray-900 hover:bg-gray-100 focus:outline-none rounded-lg" onclick="toggleAccordion('ccnp-enterprise')">
-                    CCNP Enterprise (3 Modules)
+                <button class="w-full text-left py-4 px-6 text-lg font-bold bg-white text-gray-900 hover:bg-gray-100 focus:outline-none rounded-lg" onclick="toggleAccordion('network-protocols')">
+                    Network Protocols and Communication
                 </button>
-                <div id="ccnp-enterprise" class="hidden px-6 py-4 text-gray-200 bg-blue-900 rounded-lg mt-2">
-                    <p class="text-md mb-4">Advance your networking skills with the following three modules in CCNP Enterprise:</p>
+                <div id="network-protocols" class="hidden px-6 py-4 text-gray-200 bg-blue-900 rounded-lg mt-2">
+                    <p class="text-md mb-4">
+                        Protocols are the language of networking. In this section, you will dive into the protocols that allow devices on a network to communicate effectively. Learn about IP addressing, DNS, DHCP, and other critical protocols.
+                    </p>
                     <ul class="list-disc pl-5 space-y-2">
-                        <li><strong>ENCOR (Enterprise Core):</strong> Layer 2/3 technologies, automation, and programmability.</li>
-                        <li><strong>ENARSI (Advanced Routing):</strong> OSPF, EIGRP, BGP, and VPN solutions.</li>
-                        <li><strong>Cisco SD-WAN:</strong> SD-WAN architecture, policies, and vManage configuration.</li>
+                        <li><strong>IP Addressing:</strong> Discover the role of IPv4 and IPv6 addressing in modern networks. Learn how IP addresses are structured, how subnetting works, and the differences between public and private addresses.</li>
+                        <li><strong>Routing Protocols:</strong> Explore key routing protocols such as RIP, OSPF, and EIGRP, which are used to direct traffic between networks. Learn how routers use these protocols to make routing decisions.</li>
+                        <li><strong>Communication Protocols:</strong> Delve into communication protocols like TCP and UDP, which dictate how data is packaged and transmitted across a network. Understand the differences between connection-oriented and connectionless communication.</li>
                     </ul>
+                    <p class="text-md mt-4">
+                        By the end of this section, you will have a solid understanding of how different protocols work together to create seamless communication across networks.
+                    </p>
                 </div>
             </div>
 
-            <!-- Accordion Item 3: CCNP Security (3 Modules) -->
+            <!-- Accordion Item 3: Switching Technologies -->
             <div class="mb-4">
-                <button class="w-full text-left py-4 px-6 text-lg font-bold bg-white text-gray-900 hover:bg-gray-100 focus:outline-none rounded-lg" onclick="toggleAccordion('ccnp-security')">
-                    CCNP Security (3 Modules)
+                <button class="w-full text-left py-4 px-6 text-lg font-bold bg-white text-gray-900 hover:bg-gray-100 focus:outline-none rounded-lg" onclick="toggleAccordion('switching-tech')">
+                    Switching Technologies
                 </button>
-                <div id="ccnp-security" class="hidden px-6 py-4 text-gray-200 bg-blue-900 rounded-lg mt-2">
-                    <p class="text-md mb-4">Prepare for advanced security roles with the following CCNP Security modules:</p>
+                <div id="switching-tech" class="hidden px-6 py-4 text-gray-200 bg-blue-900 rounded-lg mt-2">
+                    <p class="text-md mb-4">
+                        Switching is the backbone of local area networks (LANs). In this section, you will learn how switches work, how they forward data, and how they are configured to manage network traffic.
+                    </p>
                     <ul class="list-disc pl-5 space-y-2">
-                        <li><strong>Secure Network Infrastructure:</strong> Layer 2/3 security, firewalls, and VPNs.</li>
-                        <li><strong>Cisco ISE:</strong> Identity Services Engine for role-based access and device authentication.</li>
-                        <li><strong>Security Operations:</strong> Firewall monitoring, orchestration, and response.</li>
+                        <li><strong>Layer 2 Switching:</strong> Understand how switches operate at Layer 2 of the OSI model, how they use MAC addresses to forward data, and the basics of VLANs (Virtual Local Area Networks).</li>
+                        <li><strong>VLANs:</strong> Learn how to segment a network into smaller, manageable sections using VLANs, improving both security and performance.</li>
+                        <li><strong>STP (Spanning Tree Protocol):</strong> Discover how STP prevents network loops, which can cause major disruptions, by ensuring a loop-free topology in switched networks.</li>
                     </ul>
+                    <p class="text-md mt-4">
+                        By the end of this section, you will know how switches play a crucial role in creating efficient and scalable networks.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Accordion Item 4: Routing Technologies -->
+            <div class="mb-4">
+                <button class="w-full text-left py-4 px-6 text-lg font-bold bg-white text-gray-900 hover:bg-gray-100 focus:outline-none rounded-lg" onclick="toggleAccordion('routing-tech')">
+                    Routing Technologies
+                </button>
+                <div id="routing-tech" class="hidden px-6 py-4 text-gray-200 bg-blue-900 rounded-lg mt-2">
+                    <p class="text-md mb-4">
+                        Routing enables data to travel between different networks. In this section, you will explore the different types of routers, routing protocols, and how routers make decisions on where to send data packets.
+                    </p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>Static vs. Dynamic Routing:</strong> Learn the differences between static routing (manually configured) and dynamic routing (using protocols like OSPF and EIGRP).</li>
+                        <li><strong>Routing Tables:</strong> Understand how routers build and maintain routing tables to store path information and determine the best routes for forwarding traffic.</li>
+                        <li><strong>Routing Protocols:</strong> Study advanced protocols like BGP (Border Gateway Protocol), which is used for routing traffic across the internet.</li>
+                    </ul>
+                    <p class="text-md mt-4">
+                        By the end of this section, you will have the knowledge to configure routers and optimize network traffic through effective routing strategies.
+                    </p>
                 </div>
             </div>
         </div>
 
         <!-- Right Column Accordion Items -->
         <div>
-            <!-- Accordion Item 4: CCIE Security Written Exam Preparation -->
+            <!-- Accordion Item 5: IP Services and Security -->
             <div class="mb-4">
-                <button class="w-full text-left py-4 px-6 text-lg font-bold bg-white text-gray-900 hover:bg-gray-100 focus:outline-none rounded-lg" onclick="toggleAccordion('ccie-written')">
-                    CCIE Security Written Exam Preparation
+                <button class="w-full text-left py-4 px-6 text-lg font-bold bg-white text-gray-900 hover:bg-gray-100 focus:outline-none rounded-lg" onclick="toggleAccordion('ip-services')">
+                    IP Services and Security
                 </button>
-                <div id="ccie-written" class="hidden px-6 py-4 text-gray-200 bg-blue-900 rounded-lg mt-2">
-                    <p class="text-md mb-4">Master security concepts in preparation for the CCIE Security written exam, including:</p>
+                <div id="ip-services" class="hidden px-6 py-4 text-gray-200 bg-blue-900 rounded-lg mt-2">
+                    <p class="text-md mb-4">
+                        In this section, you will learn about the various IP services that support and secure networks. Topics such as DHCP, DNS, NAT, and IP security will be covered in detail.
+                    </p>
                     <ul class="list-disc pl-5 space-y-2">
-                        <li><strong>Advanced Security Protocols:</strong> AAA, VPNs, firewalls, and Cisco Stealthwatch.</li>
-                        <li><strong>Network Threats & Mitigation:</strong> Best practices for securing networks against cyber risks.</li>
-                        <li><strong>Secure Network Design:</strong> End-to-end security architecture, policy management, and firewalls.</li>
+                        <li><strong>DHCP and DNS:</strong> Learn how DHCP automates IP address assignment and how DNS resolves domain names to IP addresses for efficient web browsing.</li>
+                        <li><strong>NAT (Network Address Translation):</strong> Discover how NAT enables multiple devices on a private network to share a single public IP address, enhancing both security and IP address conservation.</li>
+                        <li><strong>Network Security:</strong> Explore how firewalls, VPNs, and Access Control Lists (ACLs) are used to protect network traffic from unauthorized access and cyber threats.</li>
                     </ul>
+                    <p class="text-md mt-4">
+                        By the end of this section, you will be able to implement essential IP services and security measures in a network.
+                    </p>
                 </div>
             </div>
 
-            <!-- Accordion Item 5: CCIE Security Lab Preparation -->
+            <!-- Accordion Item 6: Wireless Technologies -->
             <div class="mb-4">
-                <button class="w-full text-left py-4 px-6 text-lg font-bold bg-white text-gray-900 hover:bg-gray-100 focus:outline-none rounded-lg" onclick="toggleAccordion('ccie-lab')">
-                    CCIE Security Lab Preparation
+                <button class="w-full text-left py-4 px-6 text-lg font-bold bg-white text-gray-900 hover:bg-gray-100 focus:outline-none rounded-lg" onclick="toggleAccordion('wireless-tech')">
+                    Wireless Technologies
                 </button>
-                <div id="ccie-lab" class="hidden px-6 py-4 text-gray-200 bg-blue-900 rounded-lg mt-2">
-                    <p class="text-md mb-4">Get ready for the practical CCIE Security Lab exam with hands-on training in:</p>
+                <div id="wireless-tech" class="hidden px-6 py-4 text-gray-200 bg-blue-900 rounded-lg mt-2">
+                    <p class="text-md mb-4">
+                        In today's world, wireless networks are more important than ever. This section will introduce you to the fundamentals of wireless networking, from Wi-Fi standards to securing a wireless network.
+                    </p>
                     <ul class="list-disc pl-5 space-y-2">
-                        <li><strong>Firewalls & VPNs:</strong> Real-world configuration of Cisco ASA and Firepower firewalls, and VPN solutions.</li>
-                        <li><strong>Intrusion Detection & Prevention:</strong> Implementing and managing Cisco ISE for network security.</li>
-                        <li><strong>Mock Labs & Simulation:</strong> Simulate lab scenarios and real exam environments for ultimate preparation.</li>
+                        <li><strong>Wi-Fi Standards:</strong> Understand the different Wi-Fi standards (802.11 a/b/g/n/ac) and how they affect speed, range, and frequency.</li>
+                        <li><strong>Wireless Access Points (WAPs):</strong> Learn how WAPs function, how to configure them, and how they provide wireless connectivity to users.</li>
+                        <li><strong>Wireless Security:</strong> Discover how encryption protocols such as WPA2 and WPA3 protect wireless communications from unauthorized access.</li>
                     </ul>
+                    <p class="text-md mt-4">
+                        By the end of this section, you will be equipped with the skills to design, deploy, and secure wireless networks.
+                    </p>
                 </div>
             </div>
 
-            <!-- Accordion Item 6: Network Automation and Programmability -->
+            <!-- Accordion Item 7: Network Automation and Programmability -->
             <div class="mb-4">
                 <button class="w-full text-left py-4 px-6 text-lg font-bold bg-white text-gray-900 hover:bg-gray-100 focus:outline-none rounded-lg" onclick="toggleAccordion('automation')">
                     Network Automation and Programmability
                 </button>
                 <div id="automation" class="hidden px-6 py-4 text-gray-200 bg-blue-900 rounded-lg mt-2">
-                    <p class="text-md mb-4">Learn how to automate and programmatically manage your network:</p>
+                    <p class="text-md mb-4">
+                        With the rise of automation in networking, this section introduces you to the world of network automation, programmability, and how to manage networks more efficiently using modern tools.
+                    </p>
                     <ul class="list-disc pl-5 space-y-2">
-                        <li><strong>Python & Ansible:</strong> Automate network tasks using scripting and Ansible playbooks.</li>
-                        <li><strong>SDN & Telemetry:</strong> Centralized management using Cisco DNA Center and network telemetry.</li>
+                        <li><strong>Automation Tools:</strong> Learn how to automate routine network tasks using Python scripts and Ansible playbooks, simplifying network management.</li>
+                        <li><strong>Software-Defined Networking (SDN):</strong> Explore the concepts of SDN and how it allows centralized control of network traffic, enhancing flexibility and performance.</li>
+                        <li><strong>Telemetry and Analytics:</strong> Discover how network telemetry tools provide real-time insights and data to improve network performance and security.</li>
                     </ul>
+                    <p class="text-md mt-4">
+                        By the end of this section, you will have the skills to automate network tasks and manage large-scale networks programmatically.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Accordion Item 8: Troubleshooting and Exam Preparation -->
+            <div class="mb-4">
+                <button class="w-full text-left py-4 px-6 text-lg font-bold bg-white text-gray-900 hover:bg-gray-100 focus:outline-none rounded-lg" onclick="toggleAccordion('troubleshooting')">
+                    Troubleshooting and Exam Preparation
+                </button>
+                <div id="troubleshooting" class="hidden px-6 py-4 text-gray-200 bg-blue-900 rounded-lg mt-2">
+                    <p class="text-md mb-4">
+                        This final section covers troubleshooting techniques and exam preparation strategies. You will learn how to diagnose and resolve common networking issues while also getting ready for the CCNA certification exam.
+                    </p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>Network Troubleshooting:</strong> Learn how to systematically identify and resolve network issues using tools like ping, traceroute, and network analyzers.</li>
+                        <li><strong>Common Problems:</strong> Understand how to diagnose and fix common issues such as IP conflicts, routing loops, and slow network performance.</li>
+                        <li><strong>Exam Preparation:</strong> Get tips and study strategies to help you succeed in the CCNA certification exam, including mock exams, study groups, and lab simulations.</li>
+                    </ul>
+                    <p class="text-md mt-4">
+                        By the end of this section, you will be ready to troubleshoot network issues and confidently take the CCNA exam.
+                    </p>
                 </div>
             </div>
         </div>
