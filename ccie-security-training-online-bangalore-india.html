@@ -1,107 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Become a top security expert with CCIE Security training from Networkers Home. Our comprehensive course prepares you for the CCIE Security certification, covering CCNA to CCIE Security, network automation, and real-world lab scenarios, with 100% job placement support.">
-    <meta name="keywords" content="CCIE Security training, CCIE Security certification, Networkers Home, CCNA Security, CCNP Security, Cisco certifications, security expert, CCIE Security lab, network security training, cybersecurity certification">
-    <title>CCIE Security Certification Training - Networkers Home</title>
+    <meta name="description" content="Master networking technologies with Networkers Home. From CCNA to CCIE, we offer top networking certification training and career placement services.">
+    <meta name="keywords" content="networking courses, CCIE training, CCNA certification, Networkers Home, networking placement, Cisco certifications">
+    <title>Networkers Home - Master Networking Certifications</title>
+
+    <!-- Tailwind CSS for Modern, Responsive Design -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
     <!-- Favicon -->
     <link rel="icon" href="images/nh2.webp" type="image/webp">
+
+    <!-- Animate.css for Animations -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
+<body class="bg-gray-50">
 
-<body>
+    <!-- Header with Logo and Navigation -->
+    <section class="h-auto bg-white px-4 sm:px-6 lg:px-8 shadow-sm">
+        <div class="py-6">
+            <div class="mx-auto max-w-7xl flex justify-between items-center">
 
-<!-- Announcement Banner with Emojis, Contact Info, and Strong Gradient -->
-<!-- Announcement Banner with Emojis, Contact Info, and Strong Gradient -->
-<div class="bg-gradient-to-r from-red-700 via-red-600 to-yellow-500 text-white text-center py-3 relative shadow-lg">
-  <p class="font-bold text-sm tracking-wide flex items-center justify-center space-x-4">
-    📅 Upcoming Schedule - <a href="#schedule" class="underline hover:text-yellow-200 transition duration-300">Check Now</a>
-  </p>
-
-  <!-- Contact Info -->
-  <div class="flex justify-center space-x-4 mt-2">
-    <!-- Phone -->
-    <a href="tel:+919611027980" class="flex items-center space-x-1 hover:text-yellow-200 transition duration-300">
-      📞 <span>+91-9611027980</span>
-    </a>
-    <!-- WhatsApp -->
-    <a href="https://wa.me/919611027980" class="flex items-center space-x-1 hover:text-yellow-200 transition duration-300">
-      💬 <span>WhatsApp</span>
-    </a>
-    <!-- Email -->
-    <a href="mailto:info@networkershome.com" class="flex items-center space-x-1 hover:text-yellow-200 transition duration-300">
-      ✉️ <span>info@networkershome.com</span>
-    </a>
-  </div>
-
-  <button class="absolute right-4 top-2 text-white font-bold text-lg" onclick="this.parentElement.style.display='none';">✕</button>
-</div>
-
-
-
-    
-<section class="h-auto bg-white px-4 sm:px-6 lg:px-8">
-    <div class="py-8">
-        <div class="mx-auto max-w-7xl">
-            <div class="relative z-50 flex justify-between" aria-label="Primary Navigation">
-                
                 <!-- Logo and Navbar -->
-                <div class="flex items-center md:gap-x-8">
+                <div class="flex items-center gap-x-8">
                     <a href="https://www.networkershome.com">
-                        <img src="images/nh1.webp" alt="Networkers Home" class="h-auto w-auto" style="width: 250px; height: 50px;"> <!-- Logo with 250x50 size -->
+                        <img src="images/nh1.webp" alt="Networkers Home" class="h-auto w-auto" style="width: 100%; max-width: 300px; height: auto;"> <!-- Responsive Logo -->
                     </a>
-                    <div id="menu" class="hidden md:flex md:flex-row flex-col md:relative absolute md:w-auto w-full md:bg-none bg-white top-0 md:mt-0 mt-20 md:border-0 border border-gray-100 md:shadow-none shadow md:rounded-none rounded-lg md:gap-x-3 text-lg md:divide-y-0 divide-y divide-gray-100 md:text-sm font-medium">
-                        <a class="block md:inline-block md:rounded-full py-4 md:py-2.5 px-4 text-slate-500 md:text-left text-center hover:bg-slate-100 hover:text-slate-900" href="https://www.networkershome.com/networkershome-all-courses.html">Courses</a>
-                        <a class="block md:inline-block md:rounded-full py-4 md:py-2.5 px-4 text-slate-500 md:text-left text-center hover:bg-slate-100 hover:text-slate-900" href="https://ccie.networkershome.com">LMS</a>
-                        <a class="block md:inline-block md:rounded-full py-4 md:py-2.5 px-4 text-slate-500 md:text-left text-center hover:bg-slate-100 hover:text-slate-900" href="https://www.networkershome.com/placements">Placements</a>
-                    </div>
+                    <nav class="hidden md:flex gap-x-6">
+                        <a href="https://www.networkershome.com/networkershome-all-courses.html" class="text-slate-500 hover:text-slate-900 transition duration-300">Courses</a>
+                        <a href="https://ccie.networkershome.com" class="text-slate-500 hover:text-slate-900 transition duration-300">LMS</a>
+                        <a href="https://www.networkershome.com/placements" class="text-slate-500 hover:text-slate-900 transition duration-300">Placements</a>
+                        <a href="https://www.networkershome.com/contactus" class="text-slate-500 hover:text-slate-900 transition duration-300">Contact Us</a>
+                    </nav>
                 </div>
 
                 <!-- Call to Action & Mobile Menu -->
-                <div class="flex items-center gap-x-5 font-medium md:gap-x-6">
-                    <div class="flex space-x-4 text-sm">
-                        <div class="hidden md:block">
-                            <a class="inline-block py-2.5 px-4 text-slate-500 rounded-full bg-slate-100 font-medium hover:bg-slate-100 hover:text-slate-900" href="https://www.networkershome.com/jobs">Jobs</a>
-                        </div>
-                        <a class="group inline-flex rounded-full items-center justify-center py-2.5 px-5 bg-gradient-to-r from-indigo-600 to-blue-500 hover:from-indigo-500 hover:to-blue-400 font-semibold text-white focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="https://www.networkershome.com/contactus">Contact <span class="hidden lg:inline ml-1">us </span></a>
-                    </div>
-
+                <div class="flex items-center gap-x-5 md:gap-x-6">
                     <!-- Mobile Menu Toggle -->
-                    <div id="menu-open" onclick="toggleMenu()" class="-mr-1 md:hidden">
-                        <button class="relative z-10 flex h-8 w-8 items-center justify-center" type="button" aria-expanded="false">
-                            <svg class="h-6 w-6 mr-4 overflow-visible stroke-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"></path></svg>
-                        </button>
-                    </div>
-                    <div id="menu-close" onclick="toggleMenu()" class="-mr-1 hidden">
-                        <button class="relative z-10 flex h-8 w-8 items-center justify-center" type="button" aria-expanded="false">
-                            <svg class="h-6 w-6 mr-4 overflow-visible stroke-slate-700" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 111.414 1.414L11.414 10l4.293 4.293a1 1 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 01-1.414-1.414L8.586 10 4.293 5.707a1 1 010-1.414z" clip-rule="evenodd"></path></svg>
-                        </button>
-                    </div>
+                    <button id="menu-open" onclick="toggleMenu()" class="md:hidden">
+                        <svg class="h-6 w-6 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"></path></svg>
+                    </button>
+
+                    <button id="menu-close" onclick="toggleMenu()" class="hidden md:hidden">
+                        <svg class="h-6 w-6 text-slate-700" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- JavaScript to Toggle Mobile Menu -->
-<script>
-  function toggleMenu() {
-    var menu = document.getElementById('menu');
-    var openBtn = document.getElementById('menu-open');
-    var closeBtn = document.getElementById('menu-close');
+    <!-- Mobile Menu -->
+    <nav id="menu" class="hidden md:hidden flex flex-col items-center bg-white shadow-md w-full p-6">
+        <a href="https://www.networkershome.com/networkershome-all-courses.html" class="block py-2 text-slate-500 hover:text-slate-900">Courses</a>
+        <a href="https://ccie.networkershome.com" class="block py-2 text-slate-500 hover:text-slate-900">LMS</a>
+        <a href="https://www.networkershome.com/placements" class="block py-2 text-slate-500 hover:text-slate-900">Placements</a>
+        <a href="https://www.networkershome.com/contactus" class="block py-2 text-slate-500 hover:text-slate-900">Contact Us</a>
+        <a href="https://www.networkershome.com/jobs" class="block py-2 text-slate-500 hover:text-slate-900">Jobs</a>
+    </nav>
 
-    if (menu.classList.contains('hidden')) {
-      menu.classList.remove('hidden');
-      openBtn.classList.add('hidden');
-      closeBtn.classList.remove('hidden');
-    } else {
-      menu.classList.add('hidden');
-      openBtn.classList.remove('hidden');
-      closeBtn.classList.add('hidden');
-    }
-  }
-</script>
+    <!-- JavaScript to Toggle Mobile Menu -->
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            var openBtn = document.getElementById('menu-open');
+            var closeBtn = document.getElementById('menu-close');
+
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                openBtn.classList.add('hidden');
+                closeBtn.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+                openBtn.classList.remove('hidden');
+                closeBtn.classList.add('hidden');
+            }
+        }
+    </script>
 
 
 <!-- Hero Banner with Blue to Teal Gradient Background -->
