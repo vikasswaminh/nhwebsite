@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Master networking technologies with Networkers Home. From CCNA to CCIE, we offer top networking certification training and career placement services.">
-    <meta name="keywords" content="networking courses, CCIE training, CCNA certification, Networkers Home, networking placement, Cisco certifications">
-    <title>Networkers Home - Master Networking Certifications</title>
+    <meta name="description" content="Become a certified Palo Alto Networks expert with Networkers Home’s PCNSE course. Our Palo Alto PCNSE certification training covers firewall configuration, security policies, and advanced threat management, offering hands-on labs and flexible online learning. Enroll now and secure your PCNSE certification.">
+    <meta name="keywords" content="Palo Alto PCNSE course, PCNSE certification, PCNSE training, online PCNSE course, Palo Alto Networks certification, PCNSE exam prep, Palo Alto firewall course, PCNSE certification online, advanced firewall security, network security training, PCNSE course with placement">
+    <title>Palo Alto PCNSE Course Online - Master PCNSE Certification</title>
 
     <!-- Tailwind CSS for Modern, Responsive Design -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -60,8 +60,39 @@
         <a href="https://www.networkershome.com/jobs" class="block py-2 text-slate-500 hover:text-slate-900">Jobs</a>
     </nav>
 
-    <!-- JavaScript to Toggle Mobile Menu -->
+    <!-- Diwali Offer Section -->
+    <div id="diwali-offer" style="position:fixed; bottom:0; width:100%; background: linear-gradient(135deg, #663399, #FF8800); color:white; font-family: 'Lato', sans-serif; padding: 20px 0; text-align:center; z-index:999;">
+        <div style="display:flex; flex-direction:column; align-items:center; justify-content:center;">
+            <h2 style="margin: 0; font-size: 1.5em;">🎉 Special Diwali Offer! 20% Off on All Courses 🎉</h2>
+            <p style="margin: 5px 0; font-size: 1.2em;">Celebrate this Diwali with a bright future. Enroll now and save 20% on all our courses!</p>
+            <p style="font-size: 1em; margin: 5px 0;">Use Code: DIWALI20</p>
+            <div style="display: flex; justify-content: center; align-items: center; margin-top: 10px;">
+                <div style="margin-right: 15px;">
+                    <a href="tel:+919611027980" style="color: white; text-decoration: none; font-size: 1.2em;">
+                        📞 Call Us: +91-9611027980
+                    </a>
+                </div>
+                <div>
+                    <a href="https://wa.me/919611027980" target="_blank" style="color: white; text-decoration: none; font-size: 1.2em;">
+                        💬 WhatsApp Us: +91-9611027980
+                    </a>
+                </div>
+            </div>
+        </div>
+        <span id="close-popup" style="position:absolute; top:10px; right:20px; cursor:pointer; color:white; font-size:1.5em;">&times;</span>
+    </div>
+
     <script>
+        // Show the Diwali offer popup after 5 seconds
+        setTimeout(function() {
+            document.getElementById("diwali-offer").style.display = "block";
+        }, 5000);
+
+        // Close the popup when clicked
+        document.getElementById("close-popup").onclick = function() {
+            document.getElementById("diwali-offer").style.display = "none";
+        };
+
         function toggleMenu() {
             var menu = document.getElementById('menu');
             var openBtn = document.getElementById('menu-open');
