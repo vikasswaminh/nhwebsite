@@ -1,92 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-   
-   <!-- Cisco Certifications -->
-   <url>
-      <loc>https://www.networkershome.com/ccna-certification</loc>
-      <lastmod>2024-10-19</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>1.0</priority>
-   </url>
-   <url>
-      <loc>https://www.networkershome.com/ccnp-enterprise-certification</loc>
-      <lastmod>2024-10-19</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.9</priority>
-   </url>
-   <url>
-      <loc>https://www.networkershome.com/ccie-security-certification</loc>
-      <lastmod>2024-10-19</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.9</priority>
-   </url>
-   <url>
-      <loc>https://www.networkershome.com/ccie-enterprise-certification</loc>
-      <lastmod>2024-10-19</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.9</priority>
-   </url>
 
-   <!-- Cybersecurity Certifications -->
-   <url>
-      <loc>https://www.networkershome.com/ceh-certification</loc>
-      <lastmod>2024-10-19</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.8</priority>
-   </url>
-   <url>
-      <loc>https://www.networkershome.com/cissp-certification</loc>
-      <lastmod>2024-10-19</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.8</priority>
-   </url>
-   <url>
-      <loc>https://www.networkershome.com/comptia-security-certification</loc>
-      <lastmod>2024-10-19</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.8</priority>
-   </url>
+  <!-- Home Page -->
+  <url>
+    <loc>https://www.networkershome.com/</loc>
+    <priority>1.00</priority>
+    <changefreq>daily</changefreq>
+  </url>
 
-   <!-- Cloud & DevOps Certifications -->
-   <url>
-      <loc>https://www.networkershome.com/aws-solutions-architect-certification</loc>
-      <lastmod>2024-10-19</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.9</priority>
-   </url>
-   <url>
-      <loc>https://www.networkershome.com/azure-administrator-certification</loc>
-      <lastmod>2024-10-19</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.9</priority>
-   </url>
+  <!-- Certifications Section -->
+  <url>
+    <loc>https://www.networkershome.com/ccna-training</loc>
+    <priority>0.80</priority>
+    <changefreq>weekly</changefreq>
+  </url>
 
-   <!-- Blogs (if available) -->
-   <url>
-      <loc>https://www.networkershome.com/blog/post-1</loc>
-      <lastmod>2024-10-19</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.7</priority>
-   </url>
-   <url>
-      <loc>https://www.networkershome.com/blog/post-2</loc>
-      <lastmod>2024-10-19</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.7</priority>
-   </url>
+  <url>
+    <loc>https://www.networkershome.com/ccnp-enterprise-certification</loc>
+    <priority>0.80</priority>
+    <changefreq>weekly</changefreq>
+  </url>
 
-   <!-- Miscellaneous -->
-   <url>
-      <loc>https://www.networkershome.com/privacy-policy</loc>
-      <lastmod>2024-10-19</lastmod>
-      <changefreq>yearly</changefreq>
-      <priority>0.2</priority>
-   </url>
-   <url>
-      <loc>https://www.networkershome.com/terms-of-service</loc>
-      <lastmod>2024-10-19</lastmod>
-      <changefreq>yearly</changefreq>
-      <priority>0.2</priority>
-   </url>
+  <url>
+    <loc>https://www.networkershome.com/ccie-security-certification</loc>
+    <priority>0.80</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://www.networkershome.com/ccie-enterprise-certification</loc>
+    <priority>0.80</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://www.networkershome.com/palo-alto-pcnse-certification</loc>
+    <priority>0.80</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://www.networkershome.com/aws-solutions-architect-certification</loc>
+    <priority>0.80</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Placement Programs Section -->
+  <url>
+    <loc>https://www.networkershome.com/ccna-training</loc>
+    <priority>0.75</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://www.networkershome.com/ccnp-enterprise-certification</loc>
+    <priority>0.75</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://www.networkershome.com/ccie-security-certification</loc>
+    <priority>0.75</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://www.networkershome.com/ccie-enterprise-certification</loc>
+    <priority>0.75</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://www.networkershome.com/aws-devops-engineer-certification</loc>
+    <priority>0.75</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://www.networkershome.com/aws-solutions-architect-certification</loc>
+    <priority>0.75</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Legal and Support Pages -->
+  <url>
+    <loc>https://www.networkershome.com/privacy-policy</loc>
+    <priority>0.50</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://www.networkershome.com/terms-of-service</loc>
+    <priority>0.50</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://www.networkershome.com/support</loc>
+    <priority>0.50</priority>
+    <changefreq>monthly</changefreq>
+  </url>
 
 </urlset>
