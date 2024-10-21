@@ -154,51 +154,51 @@
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
 
 
-<section class="p-8" style="background: linear-gradient(to right, #0d47a1, #1976d2);">
+<section class="p-4 sm:p-8" style="background-color: #f9f9f9;">
     <!-- Section Heading and Subheading -->
-    <div class="text-center mb-8">
-        <h1 class="text-4xl font-extrabold mb-2 text-white">Full Course Information</h1>
-        <h2 class="text-lg text-gray-300">Everything you need to know about the CCIE Security Placement Program</h2>
+    <div class="text-center mb-6 sm:mb-8">
+        <h1 class="text-2xl sm:text-4xl font-extrabold mb-2 text-gray-800">Full Course Information</h1>
+        <h2 class="text-sm sm:text-lg text-gray-600">Everything you need to know about the CCIE Security Placement Program</h2>
     </div>
 
-    <div class="flex max-w-5xl mx-auto border border-gray-300 rounded-lg shadow-lg">
+    <div class="flex flex-col sm:flex-row max-w-full sm:max-w-5xl mx-auto border border-gray-300 rounded-lg shadow-lg">
         <!-- Main Content (Centered) -->
-        <div class="w-full bg-white p-6">
+        <div class="w-full bg-white p-4 sm:p-6">
             <!-- Tabs Navigation -->
-            <div class="flex justify-center mb-6 border-b border-gray-300 pb-4" role="tablist">
-                <button role="tab" aria-controls="course-info" aria-selected="true" onclick="showTab('course-info')" class="px-4 py-2 text-md font-bold hover:bg-gray-200 focus:outline-none">Course Info</button>
-                <div class="border-l border-gray-300 mx-2"></div>
-                <button role="tab" aria-controls="course-benefits" aria-selected="false" onclick="showTab('course-benefits')" class="px-4 py-2 text-md font-bold hover:bg-gray-200 focus:outline-none">Course Benefits</button>
-                <div class="border-l border-gray-300 mx-2"></div>
-                <button role="tab" aria-controls="course-schedule" aria-selected="false" onclick="showTab('course-schedule')" class="px-4 py-2 text-md font-bold hover:bg-gray-200 focus:outline-none">Course Schedule</button>
-                <div class="border-l border-gray-300 mx-2"></div>
-                <button role="tab" aria-controls="faqs" aria-selected="false" onclick="showTab('faqs')" class="px-4 py-2 text-md font-bold hover:bg-gray-200 focus:outline-none">FAQs</button>
-                <div class="border-l border-gray-300 mx-2"></div>
-                <button role="tab" aria-controls="prerequisites" aria-selected="false" onclick="showTab('prerequisites')" class="px-4 py-2 text-md font-bold hover:bg-gray-200 focus:outline-none">Prerequisites</button>
+            <div class="flex flex-col sm:flex-row justify-center mb-6 border-b border-gray-300 pb-4" role="tablist">
+                <button role="tab" aria-controls="course-info" aria-selected="true" onclick="showTab('course-info')" class="w-full sm:w-auto px-4 py-2 text-sm sm:text-md font-bold hover:bg-gray-200 focus:outline-none">Course Info</button>
+                <div class="hidden sm:block border-l border-gray-300 mx-2"></div>
+                <button role="tab" aria-controls="course-benefits" aria-selected="false" onclick="showTab('course-benefits')" class="w-full sm:w-auto px-4 py-2 text-sm sm:text-md font-bold hover:bg-gray-200 focus:outline-none">Course Benefits</button>
+                <div class="hidden sm:block border-l border-gray-300 mx-2"></div>
+                <button role="tab" aria-controls="course-schedule" aria-selected="false" onclick="showTab('course-schedule')" class="w-full sm:w-auto px-4 py-2 text-sm sm:text-md font-bold hover:bg-gray-200 focus:outline-none">Course Schedule</button>
+                <div class="hidden sm:block border-l border-gray-300 mx-2"></div>
+                <button role="tab" aria-controls="faqs" aria-selected="false" onclick="showTab('faqs')" class="w-full sm:w-auto px-4 py-2 text-sm sm:text-md font-bold hover:bg-gray-200 focus:outline-none">FAQs</button>
+                <div class="hidden sm:block border-l border-gray-300 mx-2"></div>
+                <button role="tab" aria-controls="prerequisites" aria-selected="false" onclick="showTab('prerequisites')" class="w-full sm:w-auto px-4 py-2 text-sm sm:text-md font-bold hover:bg-gray-200 focus:outline-none">Prerequisites</button>
             </div>
 
             <!-- Tabs Content -->
             <!-- Course Info Tab -->
             <div id="course-info" class="tab-content">
-                <h2 class="text-3xl font-bold mb-4">Comprehensive CCIE Security Placement Program</h2>
-                <p class="text-md mb-4">
+                <h2 class="text-xl sm:text-3xl font-bold mb-4">Comprehensive CCIE Security Placement Program</h2>
+                <p class="text-sm sm:text-md mb-4">
                     The <strong>CCIE Security Placement Program</strong> offered by <strong>Networkers Home</strong> covers the entire spectrum of Cisco networking and security technologies, starting from <strong>CCNA</strong>, through <strong>CCNP (Routing & Switching, Enterprise, Security)</strong>, and leading to <strong>CCIE Security Written</strong> and <strong>Lab exams</strong>.
                 </p>
-                <p class="text-md mb-4">
+                <p class="text-sm sm:text-md mb-4">
                     This program provides hands-on training in advanced security technologies, firewalls, VPNs, and identity services, ensuring you gain real-world experience. You will also cover network automation and programmability to stay ahead of the curve in the fast-evolving field of network security.
                 </p>
-                <p class="text-md mb-4">
+                <p class="text-sm sm:text-md mb-4">
                     With access to our advanced labs and placement support, this program is designed to help you master security technologies and land a high-demand job in the networking industry.
                 </p>
             </div>
 
             <!-- Course Benefits Tab -->
             <div id="course-benefits" class="tab-content hidden">
-                <h2 class="text-3xl font-bold mb-4">Benefits of CCIE Security Placement Program</h2>
-                <p class="text-md mb-4">
+                <h2 class="text-xl sm:text-3xl font-bold mb-4">Benefits of CCIE Security Placement Program</h2>
+                <p class="text-sm sm:text-md mb-4">
                     The <strong>CCIE Security Placement Program</strong> offers several benefits, including:
                 </p>
-                <ul class="list-disc pl-5 space-y-2">
+                <ul class="list-disc pl-5 space-y-2 text-sm sm:text-md">
                     <li><strong>Comprehensive Coverage:</strong> The program covers CCNA, CCNP, and CCIE Security, ensuring a complete understanding of security technologies.</li>
                     <li><strong>Hands-on Labs:</strong> Practice with real Cisco devices and simulators to prepare for the job market.</li>
                     <li><strong>Placement Assistance:</strong> Our dedicated placement team works with top IT companies to help you land your dream job.</li>
@@ -210,62 +210,62 @@
 
             <!-- Course Schedule Tab -->
             <div id="course-schedule" class="tab-content hidden">
-                <h2 class="text-3xl font-bold mb-4">CCIE Security Course Schedule</h2>
-                <p class="text-md mb-4">
+                <h2 class="text-xl sm:text-3xl font-bold mb-4">CCIE Security Course Schedule</h2>
+                <p class="text-sm sm:text-md mb-4">
                     The <strong>CCIE Security Placement Program</strong> is designed to take students from beginner to expert in a structured learning environment. Below is a breakdown of the course schedule.
                 </p>
-                <ul class="list-disc pl-5 space-y-2">
+                <ul class="list-disc pl-5 space-y-2 text-sm sm:text-md">
                     <li><strong>Week 1-2:</strong> CCNA (Basics of Networking, IP Addressing, Routing, Switching, Subnetting)</li>
                     <li><strong>Week 3-5:</strong> CCNP (Routing & Switching, Security Fundamentals, OSPF, BGP, MPLS)</li>
                     <li><strong>Week 6-8:</strong> CCNP Security (Firewalls, VPN, Identity Services, Access Control)</li>
                     <li><strong>Week 9-12:</strong> CCIE Security Written (Advanced Security Concepts, Lab Practices)</li>
                     <li><strong>Week 13-16:</strong> CCIE Security Lab Preparation (Lab Scenarios, Automation, Real-world Simulations)</li>
                 </ul>
-                <p class="text-md mt-4">
+                <p class="text-sm sm:text-md mt-4">
                     Each module includes hands-on labs, project work, and simulations to ensure you are fully prepared for both the exams and real-world job roles.
                 </p>
             </div>
 
             <!-- FAQs Tab -->
             <div id="faqs" class="tab-content hidden">
-                <h2 class="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
-                <div class="space-y-4 text-sm">
+                <h2 class="text-xl sm:text-3xl font-bold mb-4">Frequently Asked Questions</h2>
+                <div class="space-y-4 text-sm sm:text-md">
                     <div>
-                        <h3 class="text-xl font-semibold mb-4">1. What is the CCIE Security Certification?</h3>
-                        <p class="text-md">The <strong>CCIE Security Certification</strong> validates expert-level knowledge of securing complex enterprise networks and provides real-world hands-on experience in security technologies.</p>
+                        <h3 class="text-lg sm:text-xl font-semibold mb-2 sm:mb-4">1. What is the CCIE Security Certification?</h3>
+                        <p class="text-sm sm:text-md">The <strong>CCIE Security Certification</strong> validates expert-level knowledge of securing complex enterprise networks and provides real-world hands-on experience in security technologies.</p>
                     </div>
                     <div>
-                        <h3 class="text-xl font-semibold mb-4">2. What are the prerequisites for this program?</h3>
-                        <p class="text-md">While there are no official prerequisites, having a <strong>CCNA or CCNP certification</strong> is recommended to get the most out of the course.</p>
+                        <h3 class="text-lg sm:text-xl font-semibold mb-2 sm:mb-4">2. What are the prerequisites for this program?</h3>
+                        <p class="text-sm sm:text-md">While there are no official prerequisites, having a <strong>CCNA or CCNP certification</strong> is recommended to get the most out of the course.</p>
                     </div>
                     <div>
-                        <h3 class="text-xl font-semibold mb-4">3. How long does it take to complete the CCIE Security program?</h3>
-                        <p class="text-md">The program spans approximately 4-6 months, depending on your progress and availability for the hands-on labs and exams.</p>
+                        <h3 class="text-lg sm:text-xl font-semibold mb-2 sm:mb-4">3. How long does it take to complete the CCIE Security program?</h3>
+                        <p class="text-sm sm:text-md">The program spans approximately 4-6 months, depending on your progress and availability for the hands-on labs and exams.</p>
                     </div>
                     <div>
-                        <h3 class="text-xl font-semibold mb-4">4. What job roles can I get with CCIE Security?</h3>
-                        <p class="text-md">With a CCIE Security certification, you can apply for roles such as <strong>Security Engineer</strong>, <strong>Network Architect</strong>, <strong>Cybersecurity Consultant</strong>, and <strong>Network Security Manager</strong>.</p>
+                        <h3 class="text-lg sm:text-xl font-semibold mb-2 sm:mb-4">4. What job roles can I get with CCIE Security?</h3>
+                        <p class="text-sm sm:text-md">With a CCIE Security certification, you can apply for roles such as <strong>Security Engineer</strong>, <strong>Network Architect</strong>, <strong>Cybersecurity Consultant</strong>, and <strong>Network Security Manager</strong>.</p>
                     </div>
                     <div>
-                        <h3 class="text-xl font-semibold mb-4">5. Does Networkers Home provide job placement support?</h3>
-                        <p class="text-md">Yes, Networkers Home offers comprehensive job placement support to help you secure a role after certification.</p>
+                        <h3 class="text-lg sm:text-xl font-semibold mb-2 sm:mb-4">5. Does Networkers Home provide job placement support?</h3>
+                        <p class="text-sm sm:text-md">Yes, Networkers Home offers comprehensive job placement support to help you secure a role after certification.</p>
                     </div>
                 </div>
             </div>
 
             <!-- Prerequisites Tab -->
             <div id="prerequisites" class="tab-content hidden">
-                <h2 class="text-3xl font-bold mb-4">Prerequisites for the CCIE Security Program</h2>
-                <p class="text-md mb-4">
+                <h2 class="text-xl sm:text-3xl font-bold mb-4">Prerequisites for the CCIE Security Program</h2>
+                <p class="text-sm sm:text-md mb-4">
                     While there are no strict prerequisites for enrolling in the <strong>CCIE Security Placement Program</strong>, the following background knowledge is highly recommended to maximize your success:
                 </p>
-                <ul class="list-disc pl-5 space-y-2">
+                <ul class="list-disc pl-5 space-y-2 text-sm sm:text-md">
                     <li><strong>Basic Networking Knowledge:</strong> Familiarity with basic networking concepts, such as IP addressing, routing protocols, and switching is essential. CCNA certification or equivalent knowledge is highly recommended.</li>
                     <li><strong>Understanding of Security Fundamentals:</strong> A solid grasp of network security fundamentals (e.g., firewalls, VPNs, encryption) is helpful, as this will be extensively covered in the course.</li>
                     <li><strong>CCNP-Level Knowledge:</strong> Although not mandatory, having a CCNP (Routing & Switching or Enterprise) certification or equivalent experience will be beneficial in tackling more advanced concepts.</li>
                     <li><strong>Hands-on Experience:</strong> Experience with real-world networking and security equipment will help you relate the theoretical knowledge to practical application during the labs.</li>
                 </ul>
-                <p class="text-md mt-4">
+                <p class="text-sm sm:text-md mt-4">
                     Don't worry if you don't meet all of these prerequisites. Our program is designed to take you from foundational skills through to expert-level mastery, with plenty of support along the way.
                 </p>
             </div>
