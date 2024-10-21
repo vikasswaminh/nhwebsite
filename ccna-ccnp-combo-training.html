@@ -1,1 +1,1231 @@
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Accelerate your networking career with our CCNA + CCNP Combo course. In just 4 months, master networking fundamentals with 1 month of CCNA (40 hours) and advance to CCNP with 3 months of in-depth training covering ENRASI, ENCOR, and SD-WAN modules. Get expert-led instruction, hands-on labs, and comprehensive exam preparation.">
+<meta name="keywords" content="CCNA CCNP Combo course, CCNA + CCNP certification, CCNA 1 month, CCNP 3 months, Cisco certifications, ENRASI, ENCOR, SD-WAN, network automation, network security, Cisco training, Networkers Home, CCNP exam prep, enterprise networking">
+<title>CCNA + CCNP Combo Course - CCNA & CCNP Certification Training - Networkers Home</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="images/nh2.webp" type="image/webp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+
+<!-- Announcement Banner with Emojis, Contact Info, and Strong Gradient -->
+<!-- Announcement Banner with Emojis, Contact Info, and Strong Gradient -->
+<div class="bg-gradient-to-r from-red-700 via-red-600 to-yellow-500 text-white text-center py-3 relative shadow-lg">
+  <p class="font-bold text-sm tracking-wide flex items-center justify-center space-x-4">
+    📅 Upcoming Schedule - <a href="#schedule" class="underline hover:text-yellow-200 transition duration-300">Check Now</a>
+  </p>
+
+  <!-- Contact Info -->
+  <div class="flex justify-center space-x-4 mt-2">
+    <!-- Phone -->
+    <a href="tel:+919611027980" class="flex items-center space-x-1 hover:text-yellow-200 transition duration-300">
+      📞 <span>+91-9611027980</span>
+    </a>
+    <!-- WhatsApp -->
+    <a href="https://wa.me/919611027980" class="flex items-center space-x-1 hover:text-yellow-200 transition duration-300">
+      💬 <span>WhatsApp</span>
+    </a>
+    <!-- Email -->
+    <a href="mailto:info@networkershome.com" class="flex items-center space-x-1 hover:text-yellow-200 transition duration-300">
+      ✉️ <span>info@networkershome.com</span>
+    </a>
+  </div>
+
+  <button class="absolute right-4 top-2 text-white font-bold text-lg" onclick="this.parentElement.style.display='none';">✕</button>
+</div>
+
+
+
+    
+<section class="h-auto bg-white px-4 sm:px-6 lg:px-8">
+    <div class="py-8">
+        <div class="mx-auto max-w-7xl">
+            <div class="relative z-50 flex justify-between" aria-label="Primary Navigation">
+                
+                <!-- Logo and Navbar -->
+                <div class="flex items-center md:gap-x-8">
+                    <a href="https://www.networkershome.com">
+                        <img src="images/nh1.webp" alt="Networkers Home" class="h-auto w-auto" style="width: 250px; height: 50px;"> <!-- Logo with 250x50 size -->
+                    </a>
+                    <div id="menu" class="hidden md:flex md:flex-row flex-col md:relative absolute md:w-auto w-full md:bg-none bg-white top-0 md:mt-0 mt-20 md:border-0 border border-gray-100 md:shadow-none shadow md:rounded-none rounded-lg md:gap-x-3 text-lg md:divide-y-0 divide-y divide-gray-100 md:text-sm font-medium">
+                        <a class="block md:inline-block md:rounded-full py-4 md:py-2.5 px-4 text-slate-500 md:text-left text-center hover:bg-slate-100 hover:text-slate-900" href="https://www.networkershome.com/networkershome-all-courses.html">Courses</a>
+                        <a class="block md:inline-block md:rounded-full py-4 md:py-2.5 px-4 text-slate-500 md:text-left text-center hover:bg-slate-100 hover:text-slate-900" href="https://ccie.networkershome.com">LMS</a>
+                        <a class="block md:inline-block md:rounded-full py-4 md:py-2.5 px-4 text-slate-500 md:text-left text-center hover:bg-slate-100 hover:text-slate-900" href="https://www.networkershome.com/placements">Placements</a>
+                    </div>
+                </div>
+
+                <!-- Call to Action & Mobile Menu -->
+                <div class="flex items-center gap-x-5 font-medium md:gap-x-6">
+                    <div class="flex space-x-4 text-sm">
+                        <div class="hidden md:block">
+                            <a class="inline-block py-2.5 px-4 text-slate-500 rounded-full bg-slate-100 font-medium hover:bg-slate-100 hover:text-slate-900" href="https://www.networkershome.com/jobs">Jobs</a>
+                        </div>
+                        <a class="group inline-flex rounded-full items-center justify-center py-2.5 px-5 bg-gradient-to-r from-indigo-600 to-blue-500 hover:from-indigo-500 hover:to-blue-400 font-semibold text-white focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="https://www.networkershome.com/contactus">Contact <span class="hidden lg:inline ml-1">us </span></a>
+                    </div>
+
+                    <!-- Mobile Menu Toggle -->
+                    <div id="menu-open" onclick="toggleMenu()" class="-mr-1 md:hidden">
+                        <button class="relative z-10 flex h-8 w-8 items-center justify-center" type="button" aria-expanded="false">
+                            <svg class="h-6 w-6 mr-4 overflow-visible stroke-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"></path></svg>
+                        </button>
+                    </div>
+                    <div id="menu-close" onclick="toggleMenu()" class="-mr-1 hidden">
+                        <button class="relative z-10 flex h-8 w-8 items-center justify-center" type="button" aria-expanded="false">
+                            <svg class="h-6 w-6 mr-4 overflow-visible stroke-slate-700" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 111.414 1.414L11.414 10l4.293 4.293a1 1 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 01-1.414-1.414L8.586 10 4.293 5.707a1 1 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- JavaScript to Toggle Mobile Menu -->
+<script>
+  function toggleMenu() {
+    var menu = document.getElementById('menu');
+    var openBtn = document.getElementById('menu-open');
+    var closeBtn = document.getElementById('menu-close');
+
+    if (menu.classList.contains('hidden')) {
+      menu.classList.remove('hidden');
+      openBtn.classList.add('hidden');
+      closeBtn.classList.remove('hidden');
+    } else {
+      menu.classList.add('hidden');
+      openBtn.classList.remove('hidden');
+      closeBtn.classList.add('hidden');
+    }
+  }
+</script>
+
+
+<!-- Hero Banner with Blue to Teal Gradient Background -->
+<section class="py-12 font-lato" style="background: linear-gradient(to right, #3b82f6, #06b6d4);">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    
+    <!-- Heading -->
+    <h1 class="text-4xl font-bold text-white mb-4">
+      Empower Your Career with Expert Online Training
+    </h1>
+
+    <!-- Underline -->
+    <div class="w-24 h-1 mx-auto bg-white mb-8"></div>
+
+    <!-- Features with Emojis -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-6">
+      
+      <!-- Feature 1 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+        <h3 class="text-lg font-semibold text-gray-700 mb-2">
+          💼 100% Job Placement
+        </h3>
+        <p class="text-gray-600 text-sm">Guaranteed placement assistance for all students after course completion.</p>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+        <h3 class="text-lg font-semibold text-gray-700 mb-2">
+          🖥️ Live Classes & Labs
+        </h3>
+        <p class="text-gray-600 text-sm">Interactive live sessions with access to virtual labs for hands-on experience.</p>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+        <h3 class="text-lg font-semibold text-gray-700 mb-2">
+          🌍 Global Certifications
+        </h3>
+        <p class="text-gray-600 text-sm">Courses aligned with global certifications like CCNA, CCNP, AWS, and more.</p>
+      </div>
+
+      <!-- Feature 4 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+        <h3 class="text-lg font-semibold text-gray-700 mb-2">
+          🧑‍🏫 Expert Trainers
+        </h3>
+        <p class="text-gray-600 text-sm">Learn from certified professionals with years of industry experience.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Tailwind CSS (Make sure to include the font Lato) -->
+
+
+<!-- Tailwind CSS (Make sure to include the font Lato) -->
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+
+<section class="p-4 sm:p-8" style="background-color: #f9f9f9;">
+    <!-- Section Heading and Subheading -->
+    <div class="text-center mb-6 sm:mb-8">
+        <h1 class="text-2xl sm:text-4xl font-extrabold mb-2 text-gray-800">Full Course Information</h1>
+        <h2 class="text-sm sm:text-lg text-gray-600">Everything you need to know about the CCNA + CCNP Enterprise Combo Course</h2>
+    </div>
+
+    <div class="flex flex-col sm:flex-row max-w-full sm:max-w-5xl mx-auto border border-gray-300 rounded-lg shadow-lg">
+        <!-- Main Content (Centered) -->
+        <div class="w-full bg-white p-4 sm:p-6">
+            <!-- Tabs Navigation -->
+            <div class="flex flex-col sm:flex-row justify-center mb-6 border-b border-gray-300 pb-4" role="tablist">
+                <button role="tab" aria-controls="course-info" aria-selected="true" onclick="showTab('course-info')" class="w-full sm:w-auto px-4 py-2 text-sm sm:text-md font-bold hover:bg-gray-200 focus:outline-none">Course Info</button>
+                <div class="hidden sm:block border-l border-gray-300 mx-2"></div>
+                <button role="tab" aria-controls="course-benefits" aria-selected="false" onclick="showTab('course-benefits')" class="w-full sm:w-auto px-4 py-2 text-sm sm:text-md font-bold hover:bg-gray-200 focus:outline-none">Course Benefits</button>
+                <div class="hidden sm:block border-l border-gray-300 mx-2"></div>
+                <button role="tab" aria-controls="course-schedule" aria-selected="false" onclick="showTab('course-schedule')" class="w-full sm:w-auto px-4 py-2 text-sm sm:text-md font-bold hover:bg-gray-200 focus:outline-none">Course Schedule</button>
+                <div class="hidden sm:block border-l border-gray-300 mx-2"></div>
+                <button role="tab" aria-controls="faqs" aria-selected="false" onclick="showTab('faqs')" class="w-full sm:w-auto px-4 py-2 text-sm sm:text-md font-bold hover:bg-gray-200 focus:outline-none">FAQs</button>
+                <div class="hidden sm:block border-l border-gray-300 mx-2"></div>
+                <button role="tab" aria-controls="prerequisites" aria-selected="false" onclick="showTab('prerequisites')" class="w-full sm:w-auto px-4 py-2 text-sm sm:text-md font-bold hover:bg-gray-200 focus:outline-none">Prerequisites</button>
+            </div>
+
+            <!-- Tabs Content -->
+            <!-- Course Info Tab -->
+            <div id="course-info" class="tab-content">
+                <h2 class="text-xl sm:text-3xl font-bold mb-4">Comprehensive CCNA + CCNP Enterprise Combo Program</h2>
+                <p class="text-sm sm:text-md mb-4">
+                    The <strong>CCNA + CCNP Enterprise Combo Program</strong> is a 4-month training program designed to take you from foundational networking concepts to advanced enterprise networking. This course covers the entire **CCNA (Cisco Certified Network Associate)** curriculum in the first month and **CCNP Enterprise** in the following three months, with a total of **100+ hours of training**.
+                </p>
+                <p class="text-sm sm:text-md mb-4">
+                    This course is ideal for those looking to gain comprehensive skills, ranging from basic networking to advanced topics such as routing, switching, and SD-WAN in an enterprise environment. You will be prepared for the **CCNA certification** exam and the **CCNP Enterprise certification** (ENCOR, ENARSI, and SD-WAN modules).
+                </p>
+                <p class="text-sm sm:text-md mb-4">
+                    The course is structured to provide hands-on labs, interactive live sessions, and exam preparation materials to ensure that you are fully equipped to pass the certification exams and excel in real-world networking scenarios.
+                </p>
+            </div>
+
+            <!-- Course Benefits Tab -->
+            <div id="course-benefits" class="tab-content hidden">
+                <h2 class="text-xl sm:text-3xl font-bold mb-4">Benefits of the CCNA + CCNP Enterprise Combo Program</h2>
+                <p class="text-sm sm:text-md mb-4">
+                    The <strong>CCNA + CCNP Enterprise Combo Program</strong> offers several benefits, including:
+                </p>
+                <ul class="list-disc pl-5 space-y-2 text-sm sm:text-md">
+                    <li><strong>Comprehensive Learning Path:</strong> Build a solid foundation with CCNA and advance to enterprise-level topics in CCNP Enterprise.</li>
+                    <li><strong>Hands-on Labs:</strong> Practice with real Cisco devices to ensure you gain the practical skills required for networking jobs.</li>
+                    <li><strong>Placement Assistance:</strong> Our placement team will help you secure top roles in IT networking after successful certification.</li>
+                    <li><strong>Expert Trainers:</strong> Learn from Cisco-certified professionals with years of industry experience.</li>
+                    <li><strong>Global Recognition:</strong> Both CCNA and CCNP certifications are globally recognized and highly valued in the networking industry.</li>
+                    <li><strong>Career Growth:</strong> This combo certification opens doors to numerous career paths, from network engineer to enterprise network architect.</li>
+                </ul>
+            </div>
+
+            <!-- Course Schedule Tab -->
+            <div id="course-schedule" class="tab-content hidden">
+                <h2 class="text-xl sm:text-3xl font-bold mb-4">CCNA + CCNP Enterprise Course Schedule</h2>
+                <p class="text-sm sm:text-md mb-4">
+                    The <strong>CCNA + CCNP Enterprise Combo Program</strong> is structured to cover CCNA in the first month, followed by the CCNP Enterprise curriculum over the next three months. Below is a breakdown of the course schedule.
+                </p>
+                <ul class="list-disc pl-5 space-y-2 text-sm sm:text-md">
+                    <li><strong>Month 1 (CCNA – 40 hours):</strong> Learn networking fundamentals, IP connectivity, network access, security, and automation.</li>
+                    <li><strong>Month 2 (CCNP ENCOR – 33 hours):</strong> Topics include enterprise architecture, virtualization, infrastructure, security, and network automation.</li>
+                    <li><strong>Month 3 (CCNP ENARSI – 33 hours):</strong> Advanced routing protocols (OSPF, EIGRP, BGP), MPLS, VPNs, and troubleshooting.</li>
+                    <li><strong>Month 4 (CCNP SD-WAN – 34 hours):</strong> Understand, configure, and deploy Cisco SD-WAN solutions for enterprise networks.</li>
+                </ul>
+                <p class="text-sm sm:text-md mt-4">
+                    Each module includes practical labs and assessments to ensure that you are fully prepared for the certification exams and can apply these skills in real-world networking environments.
+                </p>
+            </div>
+
+            <!-- FAQs Tab -->
+            <div id="faqs" class="tab-content hidden">
+                <h2 class="text-xl sm:text-3xl font-bold mb-4">Frequently Asked Questions</h2>
+                <div class="space-y-4 text-sm sm:text-md">
+                    <div>
+                        <h3 class="text-lg sm:text-xl font-semibold mb-2 sm:mb-4">1. What is the CCNA + CCNP Enterprise Combo Certification?</h3>
+                        <p class="text-sm sm:text-md">The <strong>CCNA + CCNP Enterprise Combo Certification</strong> is a comprehensive program designed to prepare you for both CCNA and CCNP Enterprise certifications, covering networking fundamentals to advanced enterprise networking concepts.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg sm:text-xl font-semibold mb-2 sm:mb-4">2. What are the prerequisites for this program?</h3>
+                        <p class="text-sm sm:text-md">There are no formal prerequisites, but having some knowledge of basic networking will help you in understanding CCNA concepts more effectively.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg sm:text-xl font-semibold mb-2 sm:mb-4">3. How long does it take to complete the CCNA + CCNP program?</h3>
+                        <p class="text-sm sm:text-md">The program spans 4 months, with **1 month** for CCNA and **3 months** for CCNP Enterprise, totaling 100+ hours of live sessions and hands-on labs.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg sm:text-xl font-semibold mb-2 sm:mb-4">4. What job roles can I get with CCNA and CCNP Enterprise certification?</h3>
+                        <p class="text-sm sm:text-md">With these certifications, you can apply for roles such as <strong>Network Engineer</strong>, <strong>Systems Administrator</strong>, <strong>Enterprise Network Architect</strong>, and <strong>SD-WAN Engineer</strong>.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg sm:text-xl font-semibold mb-2 sm:mb-4">5. Does Networkers Home provide job placement support?</h3>
+                        <p class="text-sm sm:text-md">Yes, Networkers Home provides job placement assistance to all students who complete the CCNA + CCNP program and obtain their certifications.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Prerequisites Tab -->
+            <div id="prerequisites" class="tab-content hidden">
+                <h2 class="text-xl sm:text-3xl font-bold mb-4">Prerequisites for the CCNA + CCNP Enterprise Program</h2>
+                <p class="text-sm sm:text-md mb-4">
+                    While there are no official prerequisites for the <strong>CCNA + CCNP Enterprise Combo Program</strong>, the following background knowledge is recommended:
+                </p>
+                <ul class="list-disc pl-5 space-y-2 text-sm sm:text-md">
+                    <li><strong>Basic Networking Knowledge:</strong> Familiarity with basic networking concepts like IP addressing, subnetting, and routing is beneficial.</li>
+                    <li><strong>Hands-on Experience:</strong> Some prior experience with networking devices like routers and switches is helpful but not mandatory.</li>
+                    <li><strong>CCNA-Level Knowledge:</strong> It is recommended to complete the CCNA module before moving on to the advanced CCNP Enterprise content.</li>
+                </ul>
+                <p class="text-sm sm:text-md mt-4">
+                    Don’t worry if you don’t meet all of these prerequisites. Our program is designed to build your knowledge from the ground up, ensuring you are well-prepared for both certifications and a successful networking career.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- JavaScript to Toggle Tab Content -->
+<script>
+    function showTab(id) {
+        const contents = document.querySelectorAll('.tab-content');
+        contents.forEach(content => content.classList.add('hidden'));
+        document.getElementById(id).classList.remove('hidden');
+    }
+</script>
+
+
+<!-- CCIE Security Placement Program Section with Gradient Blue Background -->
+<section class="p-8 rounded-lg bg-gradient-to-r from-blue-500 to-blue-800">
+    <!-- Section Heading and Subheading -->
+    <div class="max-w-7xl mx-auto text-center mb-12">
+        <h2 class="text-4xl font-extrabold text-white">CCIE Security Placement Program</h2>
+        <p class="text-lg text-white mt-4 font-semibold">A comprehensive training program covering CCNA to CCIE Security certifications, ensuring mastery in network security and guaranteed placement.</p>
+    </div>
+
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <!-- Left Column Accordion Items -->
+        <div>
+            <!-- Accordion Item 1: CCNA (Cisco Certified Network Associate) -->
+            <div class="mb-4">
+                <button class="w-full text-left py-4 px-6 text-lg font-bold bg-white text-gray-900 hover:bg-gray-100 focus:outline-none rounded-lg" onclick="toggleAccordion('ccna')">
+                    CCNA (Cisco Certified Network Associate)
+                </button>
+                <div id="ccna" class="hidden px-6 py-4 text-gray-200 bg-blue-900 rounded-lg mt-2">
+                    <p class="text-md mb-4">Gain foundational networking knowledge with the CCNA certification, including the following topics:</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>Network Fundamentals:</strong> OSI & TCP/IP Models, routers, switches, and IP addressing (IPv4/IPv6).</li>
+                        <li><strong>Routing & Switching:</strong> VLANs, Spanning Tree Protocol, NAT, and ACLs.</li>
+                        <li><strong>IP Services & Security:</strong> DHCP, DNS, firewalls, VPNs, and basic encryption.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Accordion Item 2: CCNP Enterprise (3 Modules) -->
+            <div class="mb-4">
+                <button class="w-full text-left py-4 px-6 text-lg font-bold bg-white text-gray-900 hover:bg-gray-100 focus:outline-none rounded-lg" onclick="toggleAccordion('ccnp-enterprise')">
+                    CCNP Enterprise (3 Modules)
+                </button>
+                <div id="ccnp-enterprise" class="hidden px-6 py-4 text-gray-200 bg-blue-900 rounded-lg mt-2">
+                    <p class="text-md mb-4">Advance your networking skills with the following three modules in CCNP Enterprise:</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>ENCOR (Enterprise Core):</strong> Layer 2/3 technologies, automation, and programmability.</li>
+                        <li><strong>ENARSI (Advanced Routing):</strong> OSPF, EIGRP, BGP, and VPN solutions.</li>
+                        <li><strong>Cisco SD-WAN:</strong> SD-WAN architecture, policies, and vManage configuration.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Accordion Item 3: CCNP Security (3 Modules) -->
+            <div class="mb-4">
+                <button class="w-full text-left py-4 px-6 text-lg font-bold bg-white text-gray-900 hover:bg-gray-100 focus:outline-none rounded-lg" onclick="toggleAccordion('ccnp-security')">
+                    CCNP Security (3 Modules)
+                </button>
+                <div id="ccnp-security" class="hidden px-6 py-4 text-gray-200 bg-blue-900 rounded-lg mt-2">
+                    <p class="text-md mb-4">Prepare for advanced security roles with the following CCNP Security modules:</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>Secure Network Infrastructure:</strong> Layer 2/3 security, firewalls, and VPNs.</li>
+                        <li><strong>Cisco ISE:</strong> Identity Services Engine for role-based access and device authentication.</li>
+                        <li><strong>Security Operations:</strong> Firewall monitoring, orchestration, and response.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column Accordion Items -->
+        <div>
+            <!-- Accordion Item 4: CCIE Security Written Exam Preparation -->
+            <div class="mb-4">
+                <button class="w-full text-left py-4 px-6 text-lg font-bold bg-white text-gray-900 hover:bg-gray-100 focus:outline-none rounded-lg" onclick="toggleAccordion('ccie-written')">
+                    CCIE Security Written Exam Preparation
+                </button>
+                <div id="ccie-written" class="hidden px-6 py-4 text-gray-200 bg-blue-900 rounded-lg mt-2">
+                    <p class="text-md mb-4">Master security concepts in preparation for the CCIE Security written exam, including:</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>Advanced Security Protocols:</strong> AAA, VPNs, firewalls, and Cisco Stealthwatch.</li>
+                        <li><strong>Network Threats & Mitigation:</strong> Best practices for securing networks against cyber risks.</li>
+                        <li><strong>Secure Network Design:</strong> End-to-end security architecture, policy management, and firewalls.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Accordion Item 5: CCIE Security Lab Preparation -->
+            <div class="mb-4">
+                <button class="w-full text-left py-4 px-6 text-lg font-bold bg-white text-gray-900 hover:bg-gray-100 focus:outline-none rounded-lg" onclick="toggleAccordion('ccie-lab')">
+                    CCIE Security Lab Preparation
+                </button>
+                <div id="ccie-lab" class="hidden px-6 py-4 text-gray-200 bg-blue-900 rounded-lg mt-2">
+                    <p class="text-md mb-4">Get ready for the practical CCIE Security Lab exam with hands-on training in:</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>Firewalls & VPNs:</strong> Real-world configuration of Cisco ASA and Firepower firewalls, and VPN solutions.</li>
+                        <li><strong>Intrusion Detection & Prevention:</strong> Implementing and managing Cisco ISE for network security.</li>
+                        <li><strong>Mock Labs & Simulation:</strong> Simulate lab scenarios and real exam environments for ultimate preparation.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Accordion Item 6: Network Automation and Programmability -->
+            <div class="mb-4">
+                <button class="w-full text-left py-4 px-6 text-lg font-bold bg-white text-gray-900 hover:bg-gray-100 focus:outline-none rounded-lg" onclick="toggleAccordion('automation')">
+                    Network Automation and Programmability
+                </button>
+                <div id="automation" class="hidden px-6 py-4 text-gray-200 bg-blue-900 rounded-lg mt-2">
+                    <p class="text-md mb-4">Learn how to automate and programmatically manage your network:</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>Python & Ansible:</strong> Automate network tasks using scripting and Ansible playbooks.</li>
+                        <li><strong>SDN & Telemetry:</strong> Centralized management using Cisco DNA Center and network telemetry.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- JavaScript to Toggle Accordion Content -->
+<script>
+    function toggleAccordion(id) {
+        var content = document.getElementById(id);
+        content.classList.toggle('hidden');
+    }
+</script>
+
+    
+<!-- Action Speaks Louder Than Words Section with 10 Placements and 10 CCIE Results -->
+<section class="bg-gray-100 py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-4xl font-bold mb-12 text-center text-gradient">Action Speaks Louder Than Words</h2>
+
+    <div class="flex flex-col lg:flex-row gap-8">
+
+      <!-- Recent Placements (50%) -->
+      <div class="w-full lg:w-1/2 bg-white p-8 rounded-lg shadow-lg border-2 border-blue-600">
+        <h3 class="text-3xl font-bold mb-6 text-center text-black">Recent Placements</h3>
+        <table class="min-w-full bg-white border border-gray-300">
+          <thead>
+            <tr class="bg-gradient-to-r from-blue-900 to-blue-600 text-white">
+              <th class="py-2 px-4 border-b">Candidate Name</th>
+              <th class="py-2 px-4 border-b">Company</th>
+              <th class="py-2 px-4 border-b">Month of Placement</th>
+            </tr>
+          </thead>
+          <tbody class="text-black">
+            <tr class="bg-gray-100">
+              <td class="py-2 px-4 border-b">John Doe</td>
+              <td class="py-2 px-4 border-b">Amazon</td>
+              <td class="py-2 px-4 border-b">August 2024</td>
+            </tr>
+            <tr>
+              <td class="py-2 px-4 border-b">Sarah Smith</td>
+              <td class="py-2 px-4 border-b">Google</td>
+              <td class="py-2 px-4 border-b">July 2024</td>
+            </tr>
+            <tr class="bg-gray-100">
+              <td class="py-2 px-4 border-b">Michael Brown</td>
+              <td class="py-2 px-4 border-b">Cisco</td>
+              <td class="py-2 px-4 border-b">June 2024</td>
+            </tr>
+            <tr>
+              <td class="py-2 px-4 border-b">Emily Davis</td>
+              <td class="py-2 px-4 border-b">Microsoft</td>
+              <td class="py-2 px-4 border-b">May 2024</td>
+            </tr>
+            <tr class="bg-gray-100">
+              <td class="py-2 px-4 border-b">David Clark</td>
+              <td class="py-2 px-4 border-b">Facebook</td>
+              <td class="py-2 px-4 border-b">April 2024</td>
+            </tr>
+            <tr>
+              <td class="py-2 px-4 border-b">Jessica White</td>
+              <td class="py-2 px-4 border-b">IBM</td>
+              <td class="py-2 px-4 border-b">March 2024</td>
+            </tr>
+            <tr class="bg-gray-100">
+              <td class="py-2 px-4 border-b">Daniel Green</td>
+              <td class="py-2 px-4 border-b">Tesla</td>
+              <td class="py-2 px-4 border-b">February 2024</td>
+            </tr>
+            <tr>
+              <td class="py-2 px-4 border-b">Sophia Brown</td>
+              <td class="py-2 px-4 border-b">Oracle</td>
+              <td class="py-2 px-4 border-b">January 2024</td>
+            </tr>
+            <tr class="bg-gray-100">
+              <td class="py-2 px-4 border-b">James Walker</td>
+              <td class="py-2 px-4 border-b">Salesforce</td>
+              <td class="py-2 px-4 border-b">December 2023</td>
+            </tr>
+            <tr>
+              <td class="py-2 px-4 border-b">Anna Harris</td>
+              <td class="py-2 px-4 border-b">Netflix</td>
+              <td class="py-2 px-4 border-b">November 2023</td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- Learn More link for Recent Placements -->
+        <div class="mt-6 text-center">
+          <a href="#recent-placements" class="text-blue-800 font-semibold hover:underline">Learn More about Placements</a>
+        </div>
+      </div>
+
+      <!-- CCIE Results (50%) -->
+      <div class="w-full lg:w-1/2 bg-white p-8 rounded-lg shadow-lg border-2 border-blue-600">
+        <h3 class="text-3xl font-bold mb-6 text-center text-black">CCIE Results</h3>
+        <table class="min-w-full bg-white border border-gray-300">
+          <thead>
+            <tr class="bg-gradient-to-r from-blue-900 to-blue-600 text-white">
+              <th class="py-2 px-4 border-b">Candidate Name</th>
+              <th class="py-2 px-4 border-b">CCIE Number</th>
+              <th class="py-2 px-4 border-b">CCIE Track</th>
+            </tr>
+          </thead>
+          <tbody class="text-black">
+            <tr class="bg-gray-100">
+              <td class="py-2 px-4 border-b">David Lee</td>
+              <td class="py-2 px-4 border-b">#65432</td>
+              <td class="py-2 px-4 border-b">CCIE Security</td>
+            </tr>
+            <tr>
+              <td class="py-2 px-4 border-b">Emily White</td>
+              <td class="py-2 px-4 border-b">#65433</td>
+              <td class="py-2 px-4 border-b">CCIE Enterprise</td>
+            </tr>
+            <tr class="bg-gray-100">
+              <td class="py-2 px-4 border-b">James Miller</td>
+              <td class="py-2 px-4 border-b">#65434</td>
+              <td class="py-2 px-4 border-b">CCIE Data Center</td>
+            </tr>
+            <tr>
+              <td class="py-2 px-4 border-b">Olivia Turner</td>
+              <td class="py-2 px-4 border-b">#65435</td>
+              <td class="py-2 px-4 border-b">CCIE Security</td>
+            </tr>
+            <tr class="bg-gray-100">
+              <td class="py-2 px-4 border-b">Liam Johnson</td>
+              <td class="py-2 px-4 border-b">#65436</td>
+              <td class="py-2 px-4 border-b">CCIE Collaboration</td>
+            </tr>
+            <tr>
+              <td class="py-2 px-4 border-b">Emma Brown</td>
+              <td class="py-2 px-4 border-b">#65437</td>
+              <td class="py-2 px-4 border-b">CCIE Enterprise</td>
+            </tr>
+            <tr class="bg-gray-100">
+              <td class="py-2 px-4 border-b">Noah Wilson</td>
+              <td class="py-2 px-4 border-b">#65438</td>
+              <td class="py-2 px-4 border-b">CCIE Data Center</td>
+            </tr>
+            <tr>
+              <td class="py-2 px-4 border-b">Ava Thomas</td>
+              <td class="py-2 px-4 border-b">#65439</td>
+              <td class="py-2 px-4 border-b">CCIE Security</td>
+            </tr>
+            <tr class="bg-gray-100">
+              <td class="py-2 px-4 border-b">Lucas Garcia</td>
+              <td class="py-2 px-4 border-b">#65440</td>
+              <td class="py-2 px-4 border-b">CCIE Collaboration</td>
+            </tr>
+            <tr>
+              <td class="py-2 px-4 border-b">Mia Martinez</td>
+              <td class="py-2 px-4 border-b">#65441</td>
+              <td class="py-2 px-4 border-b">CCIE Enterprise</td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- Learn More link for CCIE Results -->
+        <div class="mt-6 text-center">
+          <a href="#ccie-results" class="text-blue-800 font-semibold hover:underline">Learn More about CCIE Results</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Top Courses Section - Full Width (8 Courses, 4 in a Row) -->
+<section class="bg-gray-100 py-16" itemscope itemtype="https://schema.org/ItemList">
+  <meta itemprop="name" content="Networkers Home Top Networking Courses">
+  <meta itemprop="description" content="Browse our top courses, including CCNA Certification, CCNP Enterprise, CCIE Security, and more. Gain in-depth networking skills and certification.">
+  
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-4xl font-bold mb-12 text-center">Our Top Courses</h2>
+
+    <!-- Courses Grid (8 courses, 4 per row) -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      
+      <!-- Course 1 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg border-4 border-blue-600" itemscope itemtype="https://schema.org/Course">
+        <meta itemprop="name" content="CCNA Certification">
+        <meta itemprop="description" content="Gain foundational networking skills with the CCNA certification. Learn to configure, manage, and troubleshoot network infrastructure efficiently.">
+        <h3 class="text-2xl font-bold text-blue-800 mb-2" itemprop="name">CCNA Certification</h3>
+        <p class="text-gray-600 mb-4" itemprop="courseMode">
+          Gain foundational networking skills with the CCNA certification. Learn to configure, manage, and troubleshoot network infrastructure efficiently.
+        </p>
+        <a href="/courses/ccna-certification" class="text-indigo-600 font-semibold hover:underline" itemprop="url">Learn More</a>
+      </div>
+
+      <!-- Course 2 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg border-4 border-blue-600" itemscope itemtype="https://schema.org/Course">
+        <meta itemprop="name" content="CCNP Enterprise Certification">
+        <meta itemprop="description" content="Advance your networking expertise with CCNP Enterprise certification, mastering enterprise network solutions and infrastructures.">
+        <h3 class="text-2xl font-bold text-blue-800 mb-2" itemprop="name">CCNP Enterprise Certification</h3>
+        <p class="text-gray-600 mb-4" itemprop="courseMode">
+          Advance your networking expertise with CCNP Enterprise certification, mastering enterprise network solutions and infrastructures.
+        </p>
+        <a href="/courses/ccnp-enterprise-certification" class="text-indigo-600 font-semibold hover:underline" itemprop="url">Learn More</a>
+      </div>
+
+      <!-- Course 3 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg border-4 border-blue-600" itemscope itemtype="https://schema.org/Course">
+        <meta itemprop="name" content="Cisco SDWAN Certification">
+        <meta itemprop="description" content="Master the deployment and operation of SDWAN solutions to optimize your network's performance and security across multiple locations.">
+        <h3 class="text-2xl font-bold text-blue-800 mb-2" itemprop="name">Cisco SDWAN</h3>
+        <p class="text-gray-600 mb-4" itemprop="courseMode">
+          Master the deployment and operation of SDWAN solutions to optimize your network's performance and security across multiple locations.
+        </p>
+        <a href="/courses/cisco-sdwan-certification" class="text-indigo-600 font-semibold hover:underline" itemprop="url">Learn More</a>
+      </div>
+
+      <!-- Course 4 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg border-4 border-blue-600" itemscope itemtype="https://schema.org/Course">
+        <meta itemprop="name" content="PCNSE - Palo Alto">
+        <meta itemprop="description" content="Become proficient in Palo Alto Networks security solutions and protect enterprise environments from evolving cyber threats.">
+        <h3 class="text-2xl font-bold text-blue-800 mb-2" itemprop="name">PCNSE - PALO ALTO</h3>
+        <p class="text-gray-600 mb-4" itemprop="courseMode">
+          Become proficient in Palo Alto Networks security solutions and protect enterprise environments from evolving cyber threats.
+        </p>
+        <a href="/courses/pcnse-palo-alto-certification" class="text-indigo-600 font-semibold hover:underline" itemprop="url">Learn More</a>
+      </div>
+
+      <!-- Course 5 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg border-4 border-blue-600" itemscope itemtype="https://schema.org/Course">
+        <meta itemprop="name" content="CCIE Enterprise Certification">
+        <meta itemprop="description" content="Achieve expert-level knowledge in enterprise infrastructure with CCIE Enterprise certification, mastering complex network solutions.">
+        <h3 class="text-2xl font-bold text-blue-800 mb-2" itemprop="name">CCIE Enterprise</h3>
+        <p class="text-gray-600 mb-4" itemprop="courseMode">
+          Achieve expert-level knowledge in enterprise infrastructure with CCIE Enterprise certification, mastering complex network solutions.
+        </p>
+        <a href="/courses/ccie-enterprise-certification" class="text-indigo-600 font-semibold hover:underline" itemprop="url">Learn More</a>
+      </div>
+
+      <!-- Course 6 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg border-4 border-blue-600" itemscope itemtype="https://schema.org/Course">
+        <meta itemprop="name" content="CCIE Security Certification">
+        <meta itemprop="description" content="Secure networks with advanced knowledge from CCIE Security certification. Learn to design, implement, and troubleshoot complex security solutions.">
+        <h3 class="text-2xl font-bold text-blue-800 mb-2" itemprop="name">CCIE Security</h3>
+        <p class="text-gray-600 mb-4" itemprop="courseMode">
+          Secure networks with advanced knowledge from CCIE Security certification. Learn to design, implement, and troubleshoot complex security solutions.
+        </p>
+        <a href="/courses/ccie-security-certification" class="text-indigo-600 font-semibold hover:underline" itemprop="url">Learn More</a>
+      </div>
+
+      <!-- Course 7 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg border-4 border-blue-600" itemscope itemtype="https://schema.org/Course">
+        <meta itemprop="name" content="Cisco ISE+DNAC">
+        <meta itemprop="description" content="Implement and manage identity services and network automation using Cisco ISE and DNAC for secure, efficient network operations.">
+        <h3 class="text-2xl font-bold text-blue-800 mb-2" itemprop="name">Cisco ISE+DNAC</h3>
+        <p class="text-gray-600 mb-4" itemprop="courseMode">
+          Implement and manage identity services and network automation using Cisco ISE and DNAC for secure, efficient network operations.
+        </p>
+        <a href="/courses/cisco-ise-dnac-certification" class="text-indigo-600 font-semibold hover:underline" itemprop="url">Learn More</a>
+      </div>
+
+      <!-- Course 8 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg border-4 border-blue-600" itemscope itemtype="https://schema.org/Course">
+        <meta itemprop="name" content="Cisco ACI">
+        <meta itemprop="description" content="Learn how to deploy and manage Cisco ACI to streamline data center operations, improve security, and enable automation.">
+        <h3 class="text-2xl font-bold text-blue-800 mb-2" itemprop="name">Cisco ACI</h3>
+        <p class="text-gray-600 mb-4" itemprop="courseMode">
+          Learn how to deploy and manage Cisco ACI to streamline data center operations, improve security, and enable automation.
+        </p>
+        <a href="/courses/cisco-aci-certification" class="text-indigo-600 font-semibold hover:underline" itemprop="url">Learn More</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Team Section with Strong Borders -->
+<section class="w-full bg-white py-16 border-b border-gray-300">
+    <div class="max-w-7xl mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-12">Meet Our Team</h2>
+
+        <!-- Team Members Row -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Team Member 1 -->
+            <div class="text-center bg-white p-6 rounded-lg shadow-lg border-4 border-blue-600">
+                <img src="images/trainer1.webp" alt="Team Member 1" class="w-full h-80 object-cover rounded-lg shadow-lg mb-4">
+                <h3 class="text-2xl font-bold">Vikas Swami</h3>
+                <p class="text-gray-500">CCIE #22239 (Enterprise,Security)</p>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="text-center bg-white p-6 rounded-lg shadow-lg border-4 border-blue-600">
+                <img src="images/trainer2.webp" alt="Team Member 2" class="w-full h-80 object-cover rounded-lg shadow-lg mb-4">
+                <h3 class="text-2xl font-bold">Sushil Mahto</h3>
+                <p class="text-gray-500">Senior Trainer- CCIE Security+DNAC/ISE</p>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="text-center bg-white p-6 rounded-lg shadow-lg border-4 border-blue-600">
+                <img src="images/trainer3.webp" alt="Team Member 3" class="w-full h-80 object-cover rounded-lg shadow-lg mb-4">
+                <h3 class="text-2xl font-bold">Amit Tanwar</h3>
+                <p class="text-gray-500">CCIE Security# 63532</p>
+            </div>
+
+            <!-- Team Member 4 -->
+            <div class="text-center bg-white p-6 rounded-lg shadow-lg border-4 border-blue-600">
+                <img src="images/trainer4.webp" alt="Team Member 4" class="w-full h-80 object-cover rounded-lg shadow-lg mb-4">
+                <h3 class="text-2xl font-bold">Nikunj</h3>
+                <p class="text-gray-500">Senior Cyber security Trainer</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Google Reviews Section with Strong Borders -->
+<section class="bg-white py-12" itemscope itemtype="https://schema.org/Review">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+            <h2 class="text-3xl leading-9 font-extrabold text-gray-900" itemprop="name">Google Reviews for Networkers Home</h2>
+            <meta name="description" content="Read verified Google reviews about Networkers Home, the best networking and CCIE training institute. Hear from students who have completed CCNA, CCNP, and CCIE certifications and landed top jobs in the networking field.">
+        </div>
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Review 1 -->
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md border-4 border-blue-600" itemprop="review">
+                <meta itemprop="itemReviewed" content="Networkers Home">
+                <p class="text-lg leading-6 text-gray-600" itemprop="reviewBody">"I completed CCNA Course, CCNP Enterprise Training, PCNSE training from Networkershome. They are the best networking course training and placement institute for networking courses. I know many students from different background are placed at big companies."</p>
+                <div class="mt-4">
+                    <p class="text-base font-semibold text-gray-900" itemprop="author">Kiran Vishnu</p>
+                    <p class="text-sm text-gray-600">CCNA, CCNP Enterprise, PCNSE</p>
+                    <meta itemprop="reviewRating" content="5">
+                </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md border-4 border-blue-600" itemprop="review">
+                <meta itemprop="itemReviewed" content="Networkers Home">
+                <p class="text-lg leading-6 text-gray-600" itemprop="reviewBody">"If anyone wants to start a career in networking, especially Cisco courses like CCNA to CCIE Enterprise, then it's a perfect place. The environment for networking lab practices and self-studies is excellent."</p>
+                <div class="mt-4">
+                    <p class="text-base font-semibold text-gray-900" itemprop="author">Sri Chakraverthi</p>
+                    <p class="text-sm text-gray-600">CCNA to CCIE Enterprise</p>
+                    <meta itemprop="reviewRating" content="5">
+                </div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md border-4 border-blue-600" itemprop="review">
+                <meta itemprop="itemReviewed" content="Networkers Home">
+                <p class="text-lg leading-6 text-gray-600" itemprop="reviewBody">"My personal experience in Networkers Home CCIE Training is very, very good. I joined for CCNA to CCIE training and received two job offers immediately after completing my course."</p>
+                <div class="mt-4">
+                    <p class="text-base font-semibold text-gray-900" itemprop="author">Sachin Bangari</p>
+                    <p class="text-sm text-gray-600">CCNA to CCIE Training</p>
+                    <meta itemprop="reviewRating" content="5">
+                </div>
+            </div>
+
+            <!-- Review 4 -->
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md border-4 border-blue-600" itemprop="review">
+                <meta itemprop="itemReviewed" content="Networkers Home">
+                <p class="text-lg leading-6 text-gray-600" itemprop="reviewBody">"I enrolled for CCIE Security Integrated training, which included CCNA, CCNP, and CCIE Training. I recently got placed at Capgemini through Networkers Home. The training is thorough, and the lab facilities are top-notch."</p>
+                <div class="mt-4">
+                    <p class="text-base font-semibold text-gray-900" itemprop="author">Purthviraj BN</p>
+                    <p class="text-sm text-gray-600">CCIE Security Integrated Training</p>
+                    <meta itemprop="reviewRating" content="5">
+                </div>
+            </div>
+
+            <!-- Review 5 -->
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md border-4 border-blue-600" itemprop="review">
+                <meta itemprop="itemReviewed" content="Networkers Home">
+                <p class="text-lg leading-6 text-gray-600" itemprop="reviewBody">"If you are looking to start a career in networking, I highly recommend Networkers Home. Their trainers teach from the basics and offer in-depth knowledge, especially for CCIE Security integrated courses."</p>
+                <div class="mt-4">
+                    <p class="text-base font-semibold text-gray-900" itemprop="author">Alekh Parekh</p>
+                    <p class="text-sm text-gray-600">CCIE Security Integrated Course</p>
+                    <meta itemprop="reviewRating" content="5">
+                </div>
+            </div>
+
+            <!-- Review 6 -->
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md border-4 border-blue-600" itemprop="review">
+                <meta itemprop="itemReviewed" content="Networkers Home">
+                <p class="text-lg leading-6 text-gray-600" itemprop="reviewBody">"I enrolled in the CCIE Security Integrated program and got placed at Tejas Networks Ltd with an excellent package. Networkers Home offers quality training and lab facilities, with trainers who are experts in the field."</p>
+                <div class="mt-4">
+                    <p class="text-base font-semibold text-gray-900" itemprop="author">Belari Kiran</p>
+                    <p class="text-sm text-gray-600">CCIE Security Integrated Program</p>
+                    <meta itemprop="reviewRating" content="5">
+                </div>
+            </div>
+
+            <!-- Review 7 -->
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md border-4 border-blue-600" itemprop="review">
+                <meta itemprop="itemReviewed" content="Networkers Home">
+                <p class="text-lg leading-6 text-gray-600" itemprop="reviewBody">"Coming from a different domain, Networkers Home helped me transition into the networking field. I enrolled in the CCNP Enterprise course and improved my technical skills significantly, thanks to their support."</p>
+                <div class="mt-4">
+                    <p class="text-base font-semibold text-gray-900" itemprop="author">Sunil Sundar U</p>
+                    <p class="text-sm text-gray-600">CCNP Enterprise</p>
+                    <meta itemprop="reviewRating" content="5">
+                </div>
+            </div>
+
+            <!-- Review 8 -->
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md border-4 border-blue-600" itemprop="review">
+                <meta itemprop="itemReviewed" content="Networkers Home">
+                <p class="text-lg leading-6 text-gray-600" itemprop="reviewBody">"The institute suggested I pursue CCNA to CCIE Security training. Their trainers are excellent, and they offer many certifications, including CCNA, CCNP, CCIE, Cybersecurity, and AWS training."</p>
+                <div class="mt-4">
+                    <p class="text-base font-semibold text-gray-900" itemprop="author">Girish Dhini</p>
+                    <p class="text-sm text-gray-600">CCNA to CCIE Security</p>
+                    <meta itemprop="reviewRating" content="5">
+                </div>
+            </div>
+
+            <!-- Review 9 -->
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md border-4 border-blue-600" itemprop="review">
+                <meta itemprop="itemReviewed" content="Networkers Home">
+                <p class="text-lg leading-6 text-gray-600" itemprop="reviewBody">"I completed CCIE Security training and got placed as a network security engineer with a good package. Networkers Home provides quality training and lab access, and the faculty is incredibly supportive."</p>
+                <div class="mt-4">
+                    <p class="text-base font-semibold text-gray-900" itemprop="author">Vinod Ravi</p>
+                    <p class="text-sm text-gray-600">CCIE Security Training</p>
+                    <meta itemprop="reviewRating" content="5">
+                </div>
+            </div>
+
+            <!-- Review 10 -->
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md border-4 border-blue-600" itemprop="review">
+                <meta itemprop="itemReviewed" content="Networkers Home">
+                <p class="text-lg leading-6 text-gray-600" itemprop="reviewBody">"I completed CCNA and CCNP Switching and Routing at Networkers Home and got placed at IBM as a network analyst. The training is high-quality, and the faculty is very supportive."</p>
+                <div class="mt-4">
+                    <p class="text-base font-semibold text-gray-900" itemprop="author">Divakar Naik K</p>
+                    <p class="text-sm text-gray-600">CCNA, CCNP Switching and Routing</p>
+                    <meta itemprop="reviewRating" content="5">
+                </div>
+            </div>
+
+             <!-- Review 11 -->
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md border-4 border-blue-600" itemprop="review">
+                <meta itemprop="itemReviewed" content="Networkers Home">
+                <p class="text-lg leading-6 text-gray-600" itemprop="reviewBody">"Networkers Home offers the best CCIE Certification training in India. I enrolled in their CCIE Security program and found their trainers to be highly knowledgeable and supportive. I passed my CCIE exam on the first try, and it was all thanks to their 24/7 lab access and expert guidance."</p>
+                <div class="mt-4">
+                    <p class="text-base font-semibold text-gray-900" itemprop="author">Anjali Verma</p>
+                    <p class="text-sm text-gray-600">CCIE Security</p>
+                    <meta itemprop="reviewRating" content="5">
+                </div>
+            </div>
+
+            <!-- Review 12 -->
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md border-4 border-blue-600" itemprop="review">
+                <meta itemprop="itemReviewed" content="Networkers Home">
+                <p class="text-lg leading-6 text-gray-600" itemprop="reviewBody">"I completed the CCIE Enterprise training at Networkers Home, and it was an incredible experience. Their labs are equipped with the latest devices, and the trainers provide hands-on training that makes even the toughest CCIE concepts easy to understand."</p>
+                <div class="mt-4">
+                    <p class="text-base font-semibold text-gray-900" itemprop="author">Rakesh Patel</p>
+                    <p class="text-sm text-gray-600">CCIE Enterprise</p>
+                    <meta itemprop="reviewRating" content="5">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+    
+
+<!-- FAQ and Blog Section with Dark Gradient Blue Borders for SEO Optimization and Mobile Responsiveness -->
+<section class="w-full bg-white py-16 border-b border-gray-300">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row">
+    
+    <!-- FAQs Section (70%) -->
+    <div class="w-full lg:w-7/10 lg:pr-6 mb-12 lg:mb-0" style="width: 100%; lg:width: 70%;">
+      <h2 class="text-4xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+
+      <div class="space-y-6">
+        
+        <!-- FAQ 1 with Dark Gradient Blue Border -->
+        <div class="bg-white p-6 rounded-lg shadow-md border-4 border-gradient-to-r from-blue-900 to-blue-500">
+          <h3 class="text-2xl font-semibold mb-2">What types of courses are offered at Networkers Home?</h3>
+          <p class="text-gray-600">Networkers Home offers a wide range of networking, security, and cloud certifications, including popular options like CCNA, CCNP, CCIE, and courses in cybersecurity, ethical hacking, and cloud technologies.</p>
+        </div>
+
+        <!-- FAQ 2 with Dark Gradient Blue Border -->
+        <div class="bg-white p-6 rounded-lg shadow-md border-4 border-gradient-to-r from-blue-900 to-blue-500">
+          <h3 class="text-2xl font-semibold mb-2">What certifications can I achieve through Networkers Home?</h3>
+          <p class="text-gray-600">Certifications like CCNA, CCNP, CCIE, AWS Certified Solutions Architect, CompTIA Security+, CEH, CISSP, and CISM are available at Networkers Home.</p>
+        </div>
+
+        <!-- FAQ 3 with Dark Gradient Blue Border -->
+        <div class="bg-white p-6 rounded-lg shadow-md border-4 border-gradient-to-r from-blue-900 to-blue-500">
+          <h3 class="text-2xl font-semibold mb-2">What kind of certification will I receive after completing the course?</h3>
+          <p class="text-gray-600">You will receive an industry-recognized certification that can boost your career prospects in various AI-related roles.</p>
+        </div>
+
+        <!-- FAQ 4 with Dark Gradient Blue Border -->
+        <div class="bg-white p-6 rounded-lg shadow-md border-4 border-gradient-to-r from-blue-900 to-blue-500">
+          <h3 class="text-2xl font-semibold mb-2">Is the training available online, or do I need to attend in person?</h3>
+          <p class="text-gray-600">Both online and in-person training programs are available, with live virtual classes for global accessibility.</p>
+        </div>
+
+        <!-- FAQ 5 with Dark Gradient Blue Border -->
+        <div class="bg-white p-6 rounded-lg shadow-md border-4 border-gradient-to-r from-blue-900 to-blue-500">
+          <h3 class="text-2xl font-semibold mb-2">What are the prerequisites for enrolling in a CCIE course?</h3>
+          <p class="text-gray-600">Candidates should have a solid understanding of networking fundamentals and should ideally have completed CCNA and CCNP certifications.</p>
+        </div>
+
+        <!-- FAQ 6 with Dark Gradient Blue Border -->
+        <div class="bg-white p-6 rounded-lg shadow-md border-4 border-gradient-to-r from-blue-900 to-blue-500">
+          <h3 class="text-2xl font-semibold mb-2">Does Networkers Home provide job placement assistance after training?</h3>
+          <p class="text-gray-600">Yes, Networkers Home offers job placement assistance, including partnerships with IT companies and resume-building guidance.</p>
+        </div>
+
+        <!-- FAQ 7 with Dark Gradient Blue Border -->
+        <div class="bg-white p-6 rounded-lg shadow-md border-4 border-gradient-to-r from-blue-900 to-blue-500">
+          <h3 class="text-2xl font-semibold mb-2">What is included in the course materials and training resources?</h3>
+          <p class="text-gray-600">Course materials include access to labs, study materials, virtual labs, and real-world network configurations with 24/7 practice lab access.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Blog Sidebar (30%) -->
+    <aside class="w-full lg:w-3/10" style="width: 100%; lg:width: 30%;">
+      <h3 class="text-3xl font-bold mb-6">Latest Blogs</h3>
+
+      <!-- Blog 1 with Dark Gradient Blue Border -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-6 border-4 border-gradient-to-r from-blue-900 to-blue-500">
+        <img src="images/blog2.webp" alt="CCIE Scope Blog Image" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h4 class="text-xl font-bold mb-2">CCIE Scope- Increasing Day by Day</h4>
+          <p class="text-gray-600 mb-2">Discover how Networkers Home can elevate your career with networking certifications and hands-on training, from CCNA to CCIE.</p>
+          <a href="https://www.networkershome.com/ccie-scope-career-opportunities" class="text-indigo-600 hover:underline font-semibold">Read More</a>
+        </div>
+      </div>
+
+      <!-- Blog 2 with Dark Gradient Blue Border -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-6 border-4 border-gradient-to-r from-blue-900 to-blue-500">
+        <img src="images/blog1.webp" alt="Cloud Certifications Blog Image" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h4 class="text-xl font-bold mb-2">Cloud Certifications- Future of IT Industry</h4>
+          <p class="text-gray-600 mb-2">Explore how cloud certifications are shaping the IT industry, providing professionals with valuable cloud-driven skills.</p>
+          <a href="https://www.networkershome.com/cloud-certifications-future-of-it-industry" class="text-indigo-600 hover:underline font-semibold">Read More</a>
+        </div>
+      </div>
+
+      <!-- Blog 3 with Dark Gradient Blue Border -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden border-4 border-gradient-to-r from-blue-900 to-blue-500">
+        <img src="images/blog3.webp" alt="Top Placement Courses Blog Image" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h4 class="text-xl font-bold mb-2">Top Placement Courses for Non-Programmers</h4>
+          <p class="text-gray-600 mb-2">Discover top placement courses for non-programmers, opening doors to high-demand careers in networking, cybersecurity, and cloud computing.</p>
+          <a href="https://www.networkershome.com/ccie-scope-career-opportunities" class="text-indigo-600 hover:underline font-semibold">Read More</a>
+        </div>
+      </div>
+
+    </aside>
+
+  </div>
+</section>
+
+    
+<!-- Combined Hero Banner Section -->
+<section class="relative text-gray-900 h-[85vh] flex flex-col justify-center items-center mb-16 px-6">
+  <!-- Heading Container -->
+  <div class="flex flex-col justify-center items-center w-full max-w-6xl mb-10">
+    <!-- Text Section (100%) -->
+    <div class="w-full text-center">
+      <!-- Main Heading -->
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">
+        Trusted by Thousands of Professionals Worldwide 🚀
+      </h1>
+      <!-- Subheading -->
+      <h2 class="text-xl md:text-2xl text-gray-800 mb-8">
+        Real Skills, Real Results
+      </h2>
+    </div>
+  </div>
+
+  <!-- SaaS Style Course Features -->
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+      <div class="p-3 text-left border-2 border-gray-400 rounded-lg shadow-md">
+        <div class="text-2xl text-blue-500 mb-2">📚</div>
+        <h3 class="text-md font-semibold text-gray-900">Expert-Led Courses</h3>
+        <p class="text-sm text-gray-600">Learn from certified professionals with years of industry experience.</p>
+      </div>
+      <div class="p-3 text-left border-2 border-gray-400 rounded-lg shadow-md">
+        <div class="text-2xl text-blue-500 mb-2">💻</div>
+        <h3 class="text-md font-semibold text-gray-900">Hands-On Labs</h3>
+        <p class="text-sm text-gray-600">Practice real-world scenarios with our state-of-the-art virtual labs.</p>
+      </div>
+      <div class="p-3 text-left border-2 border-gray-400 rounded-lg shadow-md">
+        <div class="text-2xl text-blue-500 mb-2">🕒</div>
+        <h3 class="text-md font-semibold text-gray-900">Flexible Schedule</h3>
+        <p class="text-sm text-gray-600">Weekday or weekend; morning or evening. Multiple options for everyone.</p>
+      </div>
+      <div class="p-3 text-left border-2 border-gray-400 rounded-lg shadow-md">
+        <div class="text-2xl text-blue-500 mb-2">🔄</div>
+        <h3 class="text-md font-semibold text-gray-900">Never Miss a Class</h3>
+        <p class="text-sm text-gray-600">You can always switch to another batch, depending upon your availability.</p>
+      </div>
+      <div class="p-3 text-left border-2 border-gray-400 rounded-lg shadow-md">
+        <div class="text-2xl text-blue-500 mb-2">🤝</div>
+        <h3 class="text-md font-semibold text-gray-900">Personal Learning Manager</h3>
+        <p class="text-sm text-gray-600">A human, who is Ridiculously Committed to answer all your queries.</p>
+      </div>
+      <div class="p-3 text-left border-2 border-gray-400 rounded-lg shadow-md">
+        <div class="text-2xl text-blue-500 mb-2">🔑</div>
+        <h3 class="text-md font-semibold text-gray-900">Lifetime Access</h3>
+        <p class="text-sm text-gray-600">You'll have the keys to all our presentations, quizzes, installation guides. All for a lifetime!</p>
+      </div>
+
+      <!-- New Feature: 100% Dedicated Placement Cell -->
+      <div class="p-3 text-left border-2 border-gray-400 rounded-lg shadow-md">
+        <div class="text-2xl text-blue-500 mb-2">🎯</div>
+        <h3 class="text-md font-semibold text-gray-900">100% Dedicated Placement Cell</h3>
+        <p class="text-sm text-gray-600">Get personalized career guidance and placement support with our dedicated team.</p>
+      </div>
+
+      <!-- New Feature: 2 Years Repeat Classes -->
+      <div class="p-3 text-left border-2 border-gray-400 rounded-lg shadow-md">
+        <div class="text-2xl text-blue-500 mb-2">🔁</div>
+        <h3 class="text-md font-semibold text-gray-900">2 Years Repeat Classes</h3>
+        <p class="text-sm text-gray-600">Enjoy the flexibility of attending repeat classes for up to two years at no extra cost.</p>
+      </div>
+    </div>
+
+    <!-- Call to Action (Our Top Placement Courses Button) -->
+    <div class="text-center">
+      <a href="https://www.networkershome.com/contactus.html" class="bg-blue-600 text-white font-semibold py-2 px-6 rounded-lg shadow hover:bg-blue-500 transition duration-200 ease-in-out">
+        Our Top Placement Courses
+      </a>
+    </div>
+  </div>
+
+  <!-- Course Boxes -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 w-full max-w-6xl mt-12">
+    <!-- Course 1 -->
+    <a href="#" class="border-4 border-gray-800 bg-white rounded-lg p-6 text-center shadow-lg hover:bg-gray-100 transition duration-200">
+      <h3 class="text-lg font-bold text-gray-900 mb-2">CCNA Certification</h3>
+      <p class="text-gray-700">Start your networking career with CCNA.</p>
+    </a>
+
+    <!-- Course 2 -->
+    <a href="#" class="border-4 border-gray-800 bg-white rounded-lg p-6 text-center shadow-lg hover:bg-gray-100 transition duration-200">
+      <h3 class="text-lg font-bold text-gray-900 mb-2">CCNP Certification</h3>
+      <p class="text-gray-700">Advance your skills with CCNP-level training.</p>
+    </a>
+
+    <!-- Course 3 -->
+    <a href="#" class="border-4 border-gray-800 bg-white rounded-lg p-6 text-center shadow-lg hover:bg-gray-100 transition duration-200">
+      <h3 class="text-lg font-bold text-gray-900 mb-2">CCIE Enterprise</h3>
+      <p class="text-gray-700">Become a networking expert with CCIE Enterprise.</p>
+    </a>
+
+    <!-- Course 4 -->
+    <a href="#" class="border-4 border-gray-800 bg-white rounded-lg p-6 text-center shadow-lg hover:bg-gray-100 transition duration-200">
+      <h3 class="text-lg font-bold text-gray-900 mb-2">CCIE Security</h3>
+      <p class="text-gray-700">Master security technologies with CCIE Security.</p>
+    </a>
+  </div>
+</section>
+
+<!-- Additional CSS for Button Hover and Layout -->
+<style>
+  /* Button Hover Effect */
+  .hover\:bg-blue-500:hover {
+    background-color: #3b82f6;
+  }
+
+  /* Strong border for the feature boxes */
+  .border-2 {
+    border-width: 2px; /* Strong border */
+  }
+
+  /* Shadow effect for the boxes */
+  .shadow-md {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1); /* Stronger shadow */
+  }
+
+  /* Reduced padding inside the boxes */
+  .p-3 {
+    padding: 0.75rem; /* Reduced size by 10% to fit better in the smaller banner */
+  }
+
+  /* Styling for course boxes */
+  .border-4 {
+    border-width: 4px;
+  }
+</style>
+
+
+
+
+<!-- Footer Section -->
+<footer class="bg-white text-gray-900 py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Top Section: Company Info and Links -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+      
+      <!-- Company Info Section -->
+      <div>
+        <a href="/">
+          <img src="images/nh.webp" alt="Networkers Home" class="h-12 mb-4">
+        </a>
+        <p class="text-gray-700 text-sm mb-6">Networkers Home is a global leader in IT certifications, offering courses across Cisco, Cybersecurity, Cloud, and DevOps. Achieve your career goals with our world-class training and certification programs.</p>
+        <!-- Social Media Links -->
+        <div class="flex space-x-4">
+          <a href="#" class="text-gray-600 hover:text-gray-500" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M22 12c0-5.522-4.477-10-10-10s-10 4.478-10 10c0 5.021 3.722 9.167 8.527 9.878v-6.987h-2.563v-2.89h2.563v-2.205c0-2.55 1.494-3.953 3.781-3.953 1.095 0 2.238.195 2.238.195v2.462h-1.261c-1.242 0-1.631.771-1.631 1.562v1.939h2.773l-.444 2.89h-2.329v6.987c4.804-.711 8.526-4.857 8.526-9.878z" />
+            </svg>
+          </a>
+          <a href="#" class="text-gray-600 hover:text-gray-500" aria-label="Twitter">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M19.633 7.997c.013.182.013.363.013.545 0 5.553-4.226 11.955-11.955 11.955-2.376 0-4.581-.697-6.438-1.897.328.037.644.051.983.051 1.971 0 3.785-.67 5.229-1.799-1.841-.036-3.39-1.25-3.922-2.919.257.051.521.081.8.081.379 0 .757-.051 1.108-.146-1.921-.388-3.367-2.082-3.367-4.111v-.051c.564.314 1.225.507 1.923.537-1.133-.757-1.867-2.051-1.867-3.512 0-.77.209-1.481.564-2.096 2.056 2.523 5.136 4.181 8.599 4.364-.072-.311-.102-.645-.102-.976 0-2.384 1.939-4.323 4.323-4.323 1.244 0 2.373.527 3.164 1.367 1.006-.195 1.951-.564 2.805-1.066-.33 1.013-1.027 1.865-1.937 2.403.895-.102 1.75-.344 2.544-.695-.594.88-1.337 1.656-2.19 2.274z" />
+            </svg>
+          </a>
+          <a href="#" class="text-gray-600 hover:text-gray-500" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11.5 20h-2v-10h2v10zm-1-11.5c-.828 0-1.5-.672-1.5-1.5s.672-1.5 1.5-1.5 1.5.672 1.5 1.5-.672 1.5-1.5 1.5zm13.5 11.5h-2v-5c0-1.103-.897-2-2-2h-.001c-1.103 0-1.999.897-1.999 2v5h-2v-10h2v1.353c.418-.755 1.259-1.353 2.299-1.353 1.494 0 2.701 1.206 2.701 2.701v7.299z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Certifications Section -->
+      <div>
+        <h4 class="font-semibold text-xl mb-4">Certifications</h4>
+        <ul class="space-y-2 text-gray-600 text-sm">
+          <li><a href="/ccna-training" class="hover:text-black">CCNA Certification Training</a></li>
+          <li><a href="/ccnp-enterprise-certification" class="hover:text-black">CCNP Enterprise Certification</a></li>
+          <li><a href="/ccie-security-certification" class="hover:text-black">CCIE Security Certification</a></li>
+          <li><a href="/ccie-enterprise-certification" class="hover:text-black">CCIE Enterprise Certification</a></li>
+          <li><a href="/palo-alto-pcnse-certification" class="hover:text-black">Palo Alto PCNSE Certification</a></li>
+          <li><a href="/aws-solutions-architect-certification" class="hover:text-black">AWS Solutions Architect Certification</a></li>
+        </ul>
+      </div>
+
+      <!-- Placement Programs Section -->
+      <div>
+        <h4 class="font-semibold text-xl mb-4">Placement Programs</h4>
+        <ul class="space-y-2 text-gray-600 text-sm">
+          <li><a href="/ccna-training" class="hover:text-black">CCNA</a></li>
+          <li><a href="/ccnp-enterprise-certification" class="hover:text-black">CCNA+CCNP Combo</a></li>
+          <li><a href="/ccie-security-certification" class="hover:text-black">CCIE Security Placement</a></li>
+          <li><a href="/ccie-enterprise-certification" class="hover:text-black">CCIE Enterprise Placement</a></li>
+          <li><a href="/aws-devops-engineer-certification" class="hover:text-black">DevOps Placement</a></li>
+          <li><a href="/aws-solutions-architect-certification" class="hover:text-black">Cloud Placement</a></li>
+        </ul>
+      </div>
+
+    </div>
+    
+    <!-- Bottom Section: Privacy Links and Copyright -->
+    <div class="border-t border-gray-300 pt-8 flex flex-col lg:flex-row justify-between items-center">
+      <p class="text-gray-600 text-sm">&copy; 2024 Networkers Home. All rights reserved.</p>
+      <ul class="flex space-x-4 mt-4 lg:mt-0 text-gray-600 text-sm">
+        <li><a href="/privacy-policy" class="hover:text-black">Privacy Policy</a></li>
+        <li><a href="/terms-of-service" class="hover:text-black">Terms of Service</a></li>
+        <li><a href="/support" class="hover:text-black">Support</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<!-- Side Popup Banner (Even Smaller Size) -->
+<div id="sidePopup" class="fixed right-0 bottom-10 hidden w-56 bg-white shadow-lg rounded-lg p-2 z-50">
+    <!-- Clickable Call Section -->
+    <div class="flex justify-between items-center">
+        <a href="tel:+919611027980" class="text-sm font-bold text-red-600 hover:text-red-800">Call us: +91-9611027980</a>
+        <button onclick="closePopup()" class="text-gray-500 hover:text-gray-800">&times;</button>
+    </div>
+
+    <!-- Enquiry Form using Formspree -->
+    <form class="mt-2" id="enquiryForm" action="https://formspree.io/f/mjkvvnkn" method="POST">
+        <div class="mb-2">
+            <label for="name" class="block text-xs font-medium text-gray-700">Name</label>
+            <input type="text" id="name" name="name" class="w-full p-1 border border-gray-300 rounded-lg text-xs" placeholder="Your Name" required>
+        </div>
+
+        <div class="mb-2">
+            <label for="phone" class="block text-xs font-medium text-gray-700">Phone Number</label>
+            <input type="tel" id="phone" name="phone" class="w-full p-1 border border-gray-300 rounded-lg text-xs" placeholder="Your Phone Number" required>
+        </div>
+
+        <div class="mb-2">
+            <label for="email" class="block text-xs font-medium text-gray-700">Email</label>
+            <input type="email" id="email" name="email" class="w-full p-1 border border-gray-300 rounded-lg text-xs" placeholder="Your Email" required>
+        </div>
+
+        <div class="mb-2">
+            <label for="course" class="block text-xs font-medium text-gray-700">Course Enquiry</label>
+            <textarea id="course" name="course" class="w-full p-1 border border-gray-300 rounded-lg text-xs" placeholder="Course Enquiry Details" rows="2" required></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="w-full bg-red-600 text-white font-semibold py-1.5 text-sm rounded-lg hover:bg-red-500 transition duration-200">Submit Enquiry</button>
+    </form>
+
+    <!-- WhatsApp Section -->
+    <div class="mt-2 text-center">
+        <a href="https://wa.me/919611027980" target="_blank" class="inline-block bg-green-500 text-white font-semibold py-1 px-3 text-sm rounded-lg hover:bg-green-400 transition duration-200">WhatsApp Us</a>
+    </div>
+</div>
+
+<!-- Popup Styles and Script -->
+<style>
+    /* Responsive adjustment for mobile */
+    @media (max-width: 768px) {
+        #sidePopup {
+            width: 100%;
+            right: 0;
+            bottom: 0;
+        }
+    }
+</style>
+
+<script>
+    // Show popup after 5 seconds
+    setTimeout(function() {
+        document.getElementById('sidePopup').classList.remove('hidden');
+    }, 5000);
+
+    // Close the popup
+    function closePopup() {
+        document.getElementById('sidePopup').classList.add('hidden');
+    }
+
+    // Formspree form submission
+    document.getElementById('enquiryForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Thank you for your enquiry! We will contact you soon.');
+        // After submission, close the popup
+        closePopup();
+    });
+</script>
+
+</body>
+</html>
+
