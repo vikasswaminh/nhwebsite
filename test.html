@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Become a certified Palo Alto Networks expert with Networkers Home’s PCNSE course. Our Palo Alto PCNSE certification training covers firewall configuration, security policies, and advanced threat management, offering hands-on labs and flexible online learning. Enroll now and secure your PCNSE certification.">
+    <meta name="keywords" content="Palo Alto PCNSE course, PCNSE certification, PCNSE training, online PCNSE course, Palo Alto Networks certification, PCNSE exam prep, Palo Alto firewall course, PCNSE certification online, advanced firewall security, network security training, PCNSE course with placement">
+    <title>Palo Alto PCNSE Course Online - Master PCNSE Certification</title>
+
+    <!-- Tailwind CSS for Modern, Responsive Design -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/nh2.webp" type="image/webp">
+
+    <!-- Animate.css for Animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Top Notification Bar for Diwali Offer -->
+    <div class="fixed top-0 left-0 right-0 bg-gradient-to-r from-blue-500 to-blue-700 text-white px-5 py-3 text-center z-50">
+        <div class="flex justify-between items-center w-full max-w-7xl mx-auto">
+            <span class="text-sm font-medium">🎉 Special Diwali Offer! 20% Off on All Courses. Use Code: DIWALI20</span>
+            <a href="tel:+919611027980" class="text-sm font-medium hover:underline">📞 Call Us: +91-9611027980</a>
+            <a href="https://wa.me/919611027980" target="_blank" class="text-sm font-medium hover:underline">💬 WhatsApp Us</a>
+        </div>
+    </div>
+
+    <!-- Header with Logo and Navigation (With Desktop-Only Contact Us Button) -->
+    <section class="h-auto bg-white px-4 sm:px-6 lg:px-8 shadow-sm mt-16"> <!-- Added margin-top to compensate for the fixed notification bar -->
+        <div class="py-6">
+            <div class="mx-auto max-w-7xl flex justify-between items-center">
+
+                <!-- Logo and Navbar -->
+                <div class="flex items-center gap-x-8">
+                    <a href="https://www.networkershome.com">
+                        <img src="images/nh1.webp" alt="Networkers Home" class="h-auto w-auto" style="width: 100%; max-width: 300px; height: auto;"> <!-- Responsive Logo -->
+                    </a>
+                    <nav class="hidden md:flex gap-x-6">
+                        <a href="https://www.networkershome.com/networkershome-all-courses.html" class="text-slate-500 hover:text-slate-900 transition duration-300">Courses</a>
+                        <a href="https://ccie.networkershome.com" class="text-slate-500 hover:text-slate-900 transition duration-300">LMS</a>
+                        <a href="https://www.networkershome.com/placements" class="text-slate-500 hover:text-slate-900 transition duration-300">Placements</a>
+                        <a href="https://www.networkershome.com/contactus" class="text-slate-500 hover:text-slate-900 transition duration-300">Contact Us</a>
+                    </nav>
+                </div>
+
+                <!-- Call to Action & Mobile Menu -->
+                <div class="flex items-center gap-x-5 md:gap-x-6">
+                    <!-- Mobile Menu Toggle -->
+                    <button id="menu-open" onclick="toggleMenu()" class="md:hidden">
+                        <svg class="h-6 w-6 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"></path></svg>
+                    </button>
+
+                    <button id="menu-close" onclick="toggleMenu()" class="hidden md:hidden">
+                        <svg class="h-6 w-6 text-slate-700" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+
+                    <!-- Desktop Only Contact Us Button -->
+                    <a href="https://www.networkershome.com/contactus" class="hidden md:inline-block bg-gradient-to-r from-blue-500 to-blue-700 text-white px-5 py-2 rounded-md text-sm font-medium hover:from-blue-600 hover:to-blue-800 transition duration-300">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Menu -->
+    <nav id="menu" class="hidden md:hidden flex flex-col items-center bg-white shadow-md w-full p-6">
+        <a href="https://www.networkershome.com/networkershome-all-courses.html" class="block py-2 text-slate-500 hover:text-slate-900">Courses</a>
+        <a href="https://ccie.networkershome.com" class="block py-2 text-slate-500 hover:text-slate-900">LMS</a>
+        <a href="https://www.networkershome.com/placements" class="block py-2 text-slate-500 hover:text-slate-900">Placements</a>
+        <a href="https://www.networkershome.com/contactus" class="block py-2 text-slate-500 hover:text-slate-900">Contact Us</a>
+        <a href="https://www.networkershome.com/jobs" class="block py-2 text-slate-500 hover:text-slate-900">Jobs</a>
+    </nav>
+
+    <!-- Diwali Offer Section (Moved to Top Notification Bar) -->
+    <!-- Removed bottom Diwali offer popup since it's now at the top -->
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            var openBtn = document.getElementById('menu-open');
+            var closeBtn = document.getElementById('menu-close');
+
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                openBtn.classList.add('hidden');
+                closeBtn.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+                openBtn.classList.remove('hidden');
+                closeBtn.classList.add('hidden');
+            }
+        }
+    </script>
+    
+
+
+<!-- Combined Hero Banner Section -->
+<section class="relative text-gray-900 h-[85vh] flex flex-col justify-center items-center mb-16 px-6">
+  <!-- Heading Container -->
+  <div class="flex flex-col justify-center items-center w-full max-w-6xl mb-10">
+    <!-- Text Section (100%) -->
+    <div class="w-full text-center">
+      <!-- Main Heading -->
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">
+        Trusted by Thousands of Professionals Worldwide 🚀
+      </h1>
+      <!-- Subheading -->
+      <h2 class="text-xl md:text-2xl text-gray-800 mb-8">
+        Real Skills, Real Results
+      </h2>
+    </div>
+  </div>
+
+  <!-- SaaS Style Course Features -->
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+      <div class="p-3 text-left border-2 border-gray-400 rounded-lg shadow-md">
+        <div class="text-2xl text-blue-500 mb-2">📚</div>
+        <h3 class="text-md font-semibold text-gray-900">Expert-Led Courses</h3>
+        <p class="text-sm text-gray-600">Learn from certified professionals with years of industry experience.</p>
+      </div>
+      <div class="p-3 text-left border-2 border-gray-400 rounded-lg shadow-md">
+        <div class="text-2xl text-blue-500 mb-2">💻</div>
+        <h3 class="text-md font-semibold text-gray-900">Hands-On Labs</h3>
+        <p class="text-sm text-gray-600">Practice real-world scenarios with our state-of-the-art virtual labs.</p>
+      </div>
+      <div class="p-3 text-left border-2 border-gray-400 rounded-lg shadow-md">
+        <div class="text-2xl text-blue-500 mb-2">🕒</div>
+        <h3 class="text-md font-semibold text-gray-900">Flexible Schedule</h3>
+        <p class="text-sm text-gray-600">Weekday or weekend; morning or evening. Multiple options for everyone.</p>
+      </div>
+      <div class="p-3 text-left border-2 border-gray-400 rounded-lg shadow-md">
+        <div class="text-2xl text-blue-500 mb-2">🔄</div>
+        <h3 class="text-md font-semibold text-gray-900">Never Miss a Class</h3>
+        <p class="text-sm text-gray-600">You can always switch to another batch, depending upon your availability.</p>
+      </div>
+      <div class="p-3 text-left border-2 border-gray-400 rounded-lg shadow-md">
+        <div class="text-2xl text-blue-500 mb-2">🤝</div>
+        <h3 class="text-md font-semibold text-gray-900">Personal Learning Manager</h3>
+        <p class="text-sm text-gray-600">A human, who is Ridiculously Committed to answer all your queries.</p>
+      </div>
+      <div class="p-3 text-left border-2 border-gray-400 rounded-lg shadow-md">
+        <div class="text-2xl text-blue-500 mb-2">🔑</div>
+        <h3 class="text-md font-semibold text-gray-900">Lifetime Access</h3>
+        <p class="text-sm text-gray-600">You'll have the keys to all our presentations, quizzes, installation guides. All for a lifetime!</p>
+      </div>
+
+      <!-- New Feature: 100% Dedicated Placement Cell -->
+      <div class="p-3 text-left border-2 border-gray-400 rounded-lg shadow-md">
+        <div class="text-2xl text-blue-500 mb-2">🎯</div>
+        <h3 class="text-md font-semibold text-gray-900">100% Dedicated Placement Cell</h3>
+        <p class="text-sm text-gray-600">Get personalized career guidance and placement support with our dedicated team.</p>
+      </div>
+
+      <!-- New Feature: 2 Years Repeat Classes -->
+      <div class="p-3 text-left border-2 border-gray-400 rounded-lg shadow-md">
+        <div class="text-2xl text-blue-500 mb-2">🔁</div>
+        <h3 class="text-md font-semibold text-gray-900">2 Years Repeat Classes</h3>
+        <p class="text-sm text-gray-600">Enjoy the flexibility of attending repeat classes for up to two years at no extra cost.</p>
+      </div>
+    </div>
+
+    <!-- Call to Action (Our Top Placement Courses Button) -->
+    <div class="text-center">
+      <a href="https://www.networkershome.com/contactus.html" class="bg-blue-600 text-white font-semibold py-2 px-6 rounded-lg shadow hover:bg-blue-500 transition duration-200 ease-in-out">
+        Our Top Placement Courses
+      </a>
+    </div>
+  </div>
+
+  <!-- Course Boxes -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 w-full max-w-6xl mt-12">
+    <!-- Course 1 -->
+    <a href="/ccna-training" class="border-4 border-gray-800 bg-white rounded-lg p-6 text-center shadow-lg hover:bg-gray-100 transition duration-200">
+      <h3 class="text-lg font-bold text-gray-900 mb-2">CCNA Certification</h3>
+      <p class="text-gray-700">Start your networking career with CCNA.</p>
+    </a>
+
+    <!-- Course 2 -->
+    <a href="/ccnp-enterprise-certification" class="border-4 border-gray-800 bg-white rounded-lg p-6 text-center shadow-lg hover:bg-gray-100 transition duration-200">
+      <h3 class="text-lg font-bold text-gray-900 mb-2">CCNP Certification</h3>
+      <p class="text-gray-700">Advance your skills with CCNP-level training.</p>
+    </a>
+
+    <!-- Course 3 -->
+    <a href="ccie-enterprise-certification" class="border-4 border-gray-800 bg-white rounded-lg p-6 text-center shadow-lg hover:bg-gray-100 transition duration-200">
+      <h3 class="text-lg font-bold text-gray-900 mb-2">CCIE Enterprise</h3>
+      <p class="text-gray-700">Become a networking expert with CCIE Enterprise.</p>
+    </a>
+
+    <!-- Course 4 -->
+    <a href="/ccie-security-training-online-bangalore-india" class="border-4 border-gray-800 bg-white rounded-lg p-6 text-center shadow-lg hover:bg-gray-100 transition duration-200">
+      <h3 class="text-lg font-bold text-gray-900 mb-2">CCIE Security</h3>
+      <p class="text-gray-700">Master security technologies with CCIE Security.</p>
+    </a>
+  </div>
+</section>
+
+<!-- Additional CSS for Button Hover and Layout -->
+<style>
+  /* Button Hover Effect */
+  .hover\:bg-blue-500:hover {
+    background-color: #3b82f6;
+  }
+
+  /* Strong border for the feature boxes */
+  .border-2 {
+    border-width: 2px; /* Strong border */
+  }
+
+  /* Shadow effect for the boxes */
+  .shadow-md {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1); /* Stronger shadow */
+  }
+
+  /* Reduced padding inside the boxes */
+  .p-3 {
+    padding: 0.75rem; /* Reduced size by 10% to fit better in the smaller banner */
+  }
+
+  /* Styling for course boxes */
+  .border-4 {
+    border-width: 4px;
+  }
+</style>
+
+
+
+     
+<!-- Team Section with Strong Borders -->
+<section class="w-full bg-white py-16 border-b border-gray-300">
+    <div class="max-w-7xl mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-12">Meet Our Team</h2>
+
+        <!-- Team Members Row -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Team Member 1 -->
+            <div class="text-center bg-white p-6 rounded-lg shadow-lg border-4 border-blue-600">
+                <img src="images/trainer1.webp" alt="Team Member 1" class="w-full h-80 object-cover rounded-lg shadow-lg mb-4">
+                <h3 class="text-2xl font-bold">Vikas Swami</h3>
+                <p class="text-gray-500">CCIE #22239 (Enterprise,Security)</p>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="text-center bg-white p-6 rounded-lg shadow-lg border-4 border-blue-600">
+                <img src="images/trainer2.webp" alt="Team Member 2" class="w-full h-80 object-cover rounded-lg shadow-lg mb-4">
+                <h3 class="text-2xl font-bold">Sushil Mahto</h3>
+                <p class="text-gray-500">Senior Trainer- CCIE Security+DNAC/ISE</p>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="text-center bg-white p-6 rounded-lg shadow-lg border-4 border-blue-600">
+                <img src="images/trainer3.webp" alt="Team Member 3" class="w-full h-80 object-cover rounded-lg shadow-lg mb-4">
+                <h3 class="text-2xl font-bold">Amit Tanwar</h3>
+                <p class="text-gray-500">CCIE Security# 63532</p>
+            </div>
+
+            <!-- Team Member 4 -->
+            <div class="text-center bg-white p-6 rounded-lg shadow-lg border-4 border-blue-600">
+                <img src="images/trainer4.webp" alt="Team Member 4" class="w-full h-80 object-cover rounded-lg shadow-lg mb-4">
+                <h3 class="text-2xl font-bold">Nikunj</h3>
+                <p class="text-gray-500">Senior Cyber security Trainer</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Google Reviews Section with Strong Borders -->
+<section class="bg-white py-12" itemscope itemtype="https://schema.org/Review">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+            <h2 class="text-3xl leading-9 font-extrabold text-gray-900" itemprop="name">Google Reviews for Networkers Home</h2>
+            <meta name="description" content="Read verified Google reviews about Networkers Home, the best networking and CCIE training institute. Hear from students who have completed CCNA, CCNP, and CCIE certifications and landed top jobs in the networking field.">
+        </div>
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Review 1 -->
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md border-4 border-blue-600" itemprop="review">
+                <meta itemprop="itemReviewed" content="Networkers Home">
+                <p class="text-lg leading-6 text-gray-600" itemprop="reviewBody">"I completed CCNA Course, CCNP Enterprise Training, PCNSE training from Networkershome. They are the best networking course training and placement institute for networking courses. I know many students from different background are placed at big companies."</p>
+                <div class="mt-4">
+                    <p class="text-base font-semibold text-gray-900" itemprop="author">Kiran Vishnu</p>
+                    <p class="text-sm text-gray-600">CCNA, CCNP Enterprise, PCNSE</p>
+                    <meta itemprop="reviewRating" content="5">
+                </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md border-4 border-blue-600" itemprop="review">
+                <meta itemprop="itemReviewed" content="Networkers Home">
+                <p class="text-lg leading-6 text-gray-600" itemprop="reviewBody">"If anyone wants to start a career in networking, especially Cisco courses like CCNA to CCIE Enterprise, then it's a perfect place. The environment for networking lab practices and self-studies is excellent."</p>
+                <div class="mt-4">
+                    <p class="text-base font-semibold text-gray-900" itemprop="author">Sri Chakraverthi</p>
+                    <p class="text-sm text-gray-600">CCNA to CCIE Enterprise</p>
+                    <meta itemprop="reviewRating" content="5">
+                </div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md border-4 border-blue-600" itemprop="review">
+                <meta itemprop="itemReviewed" content="Networkers Home">
+                <p class="text-lg leading-6 text-gray-600" itemprop="reviewBody">"My personal experience in Networkers Home CCIE Training is very, very good. I joined for CCNA to CCIE training and received two job offers immediately after completing my course."</p>
+                <div class="mt-4">
+                    <p class="text-base font-semibold text-gray-900" itemprop="author">Sachin Bangari</p>
+                    <p class="text-sm text-gray-600">CCNA to CCIE Training</p>
+                    <meta itemprop="reviewRating" content="5">
+                </div>
+            </div>
+
+            <!-- Review 4 -->
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md border-4 border-blue-600" itemprop="review">
+                <meta itemprop="itemReviewed" content="Networkers Home">
+                <p class="text-lg leading-6 text-gray-600" itemprop="reviewBody">"I enrolled for CCIE Security Integrated training, which included CCNA, CCNP, and CCIE Training. I recently got placed at Capgemini through Networkers Home. The training is thorough, and the lab facilities are top-notch."</p>
+                <div class="mt-4">
+                    <p class="text-base font-semibold text-gray-900" itemprop="author">Purthviraj BN</p>
+                    <p class="text-sm text-gray-600">CCIE Security Integrated Training</p>
+                    <meta itemprop="reviewRating" content="5">
+                </div>
+            </div>
+
+            <!-- Review 5 -->
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md border-4 border-blue-600" itemprop="review">
+                <meta itemprop="itemReviewed" content="Networkers Home">
+                <p class="text-lg leading-6 text-gray-600" itemprop="reviewBody">"If you are looking to start a career in networking, I highly recommend Networkers Home. Their trainers teach from the basics and offer in-depth knowledge, especially for CCIE Security integrated courses."</p>
+                <div class="mt-4">
+                    <p class="text-base font-semibold text-gray-900" itemprop="author">Alekh Parekh</p>
+                    <p class="text-sm text-gray-600">CCIE Security Integrated Course</p>
+                    <meta itemprop="reviewRating" content="5">
+                </div>
+            </div>
+
+            <!-- Review 6 -->
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md border-4 border-blue-600" itemprop="review">
+                <meta itemprop="itemReviewed" content="Networkers Home">
+                <p class="text-lg leading-6 text-gray-600" itemprop="reviewBody">"I enrolled in the CCIE Security Integrated program and got placed at Tejas Networks Ltd with an excellent package. Networkers Home offers quality training and lab facilities, with trainers who are experts in the field."</p>
+                <div class="mt-4">
+                    <p class="text-base font-semibold text-gray-900" itemprop="author">Belari Kiran</p>
+                    <p class="text-sm text-gray-600">CCIE Security Integrated Program</p>
+                    <meta itemprop="reviewRating" content="5">
+                </div>
+            </div>
+
+            <!-- Review 7 -->
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md border-4 border-blue-600" itemprop="review">
+                <meta itemprop="itemReviewed" content="Networkers Home">
+                <p class="text-lg leading-6 text-gray-600" itemprop="reviewBody">"Coming from a different domain, Networkers Home helped me transition into the networking field. I enrolled in the CCNP Enterprise course and improved my technical skills significantly, thanks to their support."</p>
+                <div class="mt-4">
+                    <p class="text-base font-semibold text-gray-900" itemprop="author">Sunil Sundar U</p>
+                    <p class="text-sm text-gray-600">CCNP Enterprise</p>
+                    <meta itemprop="reviewRating" content="5">
+                </div>
+            </div>
+
+            <!-- Review 8 -->
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md border-4 border-blue-600" itemprop="review">
+                <meta itemprop="itemReviewed" content="Networkers Home">
+                <p class="text-lg leading-6 text-gray-600" itemprop="reviewBody">"The institute suggested I pursue CCNA to CCIE Security training. Their trainers are excellent, and they offer many certifications, including CCNA, CCNP, CCIE, Cybersecurity, and AWS training."</p>
+                <div class="mt-4">
+                    <p class="text-base font-semibold text-gray-900" itemprop="author">Girish Dhini</p>
+                    <p class="text-sm text-gray-600">CCNA to CCIE Security</p>
+                    <meta itemprop="reviewRating" content="5">
+                </div>
+            </div>
+
+            <!-- Review 9 -->
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md border-4 border-blue-600" itemprop="review">
+                <meta itemprop="itemReviewed" content="Networkers Home">
+                <p class="text-lg leading-6 text-gray-600" itemprop="reviewBody">"I completed CCIE Security training and got placed as a network security engineer with a good package. Networkers Home provides quality training and lab access, and the faculty is incredibly supportive."</p>
+                <div class="mt-4">
+                    <p class="text-base font-semibold text-gray-900" itemprop="author">Vinod Ravi</p>
+                    <p class="text-sm text-gray-600">CCIE Security Training</p>
+                    <meta itemprop="reviewRating" content="5">
+                </div>
+            </div>
+
+            <!-- Review 10 -->
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md border-4 border-blue-600" itemprop="review">
+                <meta itemprop="itemReviewed" content="Networkers Home">
+                <p class="text-lg leading-6 text-gray-600" itemprop="reviewBody">"I completed CCNA and CCNP Switching and Routing at Networkers Home and got placed at IBM as a network analyst. The training is high-quality, and the faculty is very supportive."</p>
+                <div class="mt-4">
+                    <p class="text-base font-semibold text-gray-900" itemprop="author">Divakar Naik K</p>
+                    <p class="text-sm text-gray-600">CCNA, CCNP Switching and Routing</p>
+                    <meta itemprop="reviewRating" content="5">
+                </div>
+            </div>
+
+             <!-- Review 11 -->
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md border-4 border-blue-600" itemprop="review">
+                <meta itemprop="itemReviewed" content="Networkers Home">
+                <p class="text-lg leading-6 text-gray-600" itemprop="reviewBody">"Networkers Home offers the best CCIE Certification training in India. I enrolled in their CCIE Security program and found their trainers to be highly knowledgeable and supportive. I passed my CCIE exam on the first try, and it was all thanks to their 24/7 lab access and expert guidance."</p>
+                <div class="mt-4">
+                    <p class="text-base font-semibold text-gray-900" itemprop="author">Anjali Verma</p>
+                    <p class="text-sm text-gray-600">CCIE Security</p>
+                    <meta itemprop="reviewRating" content="5">
+                </div>
+            </div>
+
+            <!-- Review 12 -->
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md border-4 border-blue-600" itemprop="review">
+                <meta itemprop="itemReviewed" content="Networkers Home">
+                <p class="text-lg leading-6 text-gray-600" itemprop="reviewBody">"I completed the CCIE Enterprise training at Networkers Home, and it was an incredible experience. Their labs are equipped with the latest devices, and the trainers provide hands-on training that makes even the toughest CCIE concepts easy to understand."</p>
+                <div class="mt-4">
+                    <p class="text-base font-semibold text-gray-900" itemprop="author">Rakesh Patel</p>
+                    <p class="text-sm text-gray-600">CCIE Enterprise</p>
+                    <meta itemprop="reviewRating" content="5">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+  <!-- Video Gallery Section -->
+<section class="bg-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-10">
+            <h2 class="text-2xl font-bold text-gray-900">🎥 Success Stories - Watch Our Alumni in Action</h2>
+            <p class="mt-2 text-gray-600">📺 Hear from our placed candidates about their journey and success with Networkers Home.</p>
+        </div>
+
+        <!-- First Row of Videos -->
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+            <div class="video-container">
+                <iframe class="w-full h-56" src="https://www.youtube.com/embed/hAt37FlOUSM?start=14" title="YouTube video" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <iframe class="w-full h-56" src="https://www.youtube.com/embed/_s3N2OoU-OU?start=21" title="YouTube video" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <iframe class="w-full h-56" src="https://www.youtube.com/embed/hfLTAimZsak" title="YouTube video" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <iframe class="w-full h-56" src="https://www.youtube.com/embed/aajMAtpYZOc" title="YouTube video" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- Second Row of Videos -->
+        <div class="grid gap-8 mt-8 md:grid-cols-2 lg:grid-cols-4">
+            <div class="video-container">
+                <iframe class="w-full h-56" src="https://www.youtube.com/embed/DwrxQ3nnDoU" title="YouTube video" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <iframe class="w-full h-56" src="https://www.youtube.com/embed/E7CL4t_HsNc" title="YouTube video" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <iframe class="w-full h-56" src="https://www.youtube.com/embed/hmyMt6RTM6E" title="YouTube video" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <iframe class="w-full h-56" src="https://www.youtube.com/embed/seNtWPFmWog" title="YouTube video" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Custom CSS for Responsive Video Embeds -->
+<style>
+    .video-container {
+        position: relative;
+        overflow: hidden;
+        padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    }
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+</style>
+
+
+<section class="bg-blue-50 py-10 text-center">
+    <h1 class="text-3xl font-bold text-gray-800">🎉 Placed Candidates - 18 Years of Proven Success 🎉</h1>
+    <p class="mt-2 text-gray-600">🌍 Thousands of candidates placed in top IT roles globally 🌍</p>
+</section>
+
+<!-- Placement Process Section -->
+<section class="bg-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-10">
+            <h2 class="text-2xl font-bold text-gray-900">📈 Our Placement Process 📈</h2>
+            <p class="mt-2 text-gray-600">Your journey from learning to landing a dream job 💼.</p>
+        </div>
+
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <!-- Step 1 -->
+            <div class="p-6 bg-blue-50 rounded-lg shadow-lg text-center">
+                <h3 class="text-lg font-semibold text-gray-800">👨‍🏫 Personalized Career Guidance</h3>
+                <p class="mt-2 text-gray-600">🎯 We assess your career goals and provide tailored advice.</p>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="p-6 bg-blue-50 rounded-lg shadow-lg text-center">
+                <h3 class="text-lg font-semibold text-gray-800">💻 Industry-Relevant Training</h3>
+                <p class="mt-2 text-gray-600">⚙️ Real-world labs with hands-on learning experiences.</p>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="p-6 bg-blue-50 rounded-lg shadow-lg text-center">
+                <h3 class="text-lg font-semibold text-gray-800">🗣️ Soft Skills Development</h3>
+                <p class="mt-2 text-gray-600">📝 Enhance your interview, communication, and resume skills.</p>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="p-6 bg-blue-50 rounded-lg shadow-lg text-center">
+                <h3 class="text-lg font-semibold text-gray-800">🔗 Placement Assistance</h3>
+                <p class="mt-2 text-gray-600">🤝 Connect with top employers for job opportunities.</p>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="p-6 bg-blue-50 rounded-lg shadow-lg text-center">
+                <h3 class="text-lg font-semibold text-gray-800">🌐 Global Alumni Support</h3>
+                <p class="mt-2 text-gray-600">💬 Benefit from mentorship and a global network of professionals.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Success Recipe Section -->
+<section class="bg-gray-100 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">💡 Our Success Recipe 💡</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto mb-8">🔑 The secret to our placement success lies in our holistic approach, from expert training to strong industry connections.</p>
+
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <!-- Success Factor 1 -->
+            <div class="p-6 bg-white rounded-lg shadow-lg text-center">
+                <h3 class="text-lg font-semibold text-gray-800">🎓 Expert Trainers</h3>
+                <p class="mt-2 text-gray-600">👨‍🏫 Industry experts and CCIE-certified professionals.</p>
+            </div>
+
+            <!-- Success Factor 2 -->
+            <div class="p-6 bg-white rounded-lg shadow-lg text-center">
+                <h3 class="text-lg font-semibold text-gray-800">🛠️ Real-World Labs</h3>
+                <p class="mt-2 text-gray-600">⚙️ Gain practical, hands-on experience in real-world environments.</p>
+            </div>
+
+            <!-- Success Factor 3 -->
+            <div class="p-6 bg-white rounded-lg shadow-lg text-center">
+                <h3 class="text-lg font-semibold text-gray-800">📚 Continuous Learning Support</h3>
+                <p class="mt-2 text-gray-600">🕒 24/7 access to study materials, labs, and exam prep tools.</p>
+            </div>
+
+            <!-- Success Factor 4 -->
+            <div class="p-6 bg-white rounded-lg shadow-lg text-center">
+                <h3 class="text-lg font-semibold text-gray-800">🏢 Strong Industry Partnerships</h3>
+                <p class="mt-2 text-gray-600">🌍 Trusted by leading global companies for top talent.</p>
+            </div>
+
+            <!-- Success Factor 5 -->
+            <div class="p-6 bg-white rounded-lg shadow-lg text-center">
+                <h3 class="text-lg font-semibold text-gray-800">🌟 Alumni Network</h3>
+                <p class="mt-2 text-gray-600">💼 Leverage our alumni network for mentorship and referrals.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+
+  <!-- FAQ and Blog Section with Dark Gradient Blue Borders for SEO Optimization and Mobile Responsiveness -->
+<section class="w-full bg-white py-16 border-b border-gray-300">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row">
+    
+    <!-- FAQs Section (70%) -->
+    <div class="w-full lg:w-7/10 lg:pr-6 mb-12 lg:mb-0" style="width: 100%; lg:width: 70%;">
+      <h2 class="text-4xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+
+      <div class="space-y-6">
+        
+        <!-- FAQ 1 with Dark Gradient Blue Border -->
+        <div class="bg-white p-6 rounded-lg shadow-md border-4 border-gradient-to-r from-blue-900 to-blue-500">
+          <h3 class="text-2xl font-semibold mb-2">What types of courses are offered at Networkers Home?</h3>
+          <p class="text-gray-600">Networkers Home offers a wide range of networking, security, and cloud certifications, including popular options like CCNA, CCNP, CCIE, and courses in cybersecurity, ethical hacking, and cloud technologies.</p>
+        </div>
+
+        <!-- FAQ 2 with Dark Gradient Blue Border -->
+        <div class="bg-white p-6 rounded-lg shadow-md border-4 border-gradient-to-r from-blue-900 to-blue-500">
+          <h3 class="text-2xl font-semibold mb-2">What certifications can I achieve through Networkers Home?</h3>
+          <p class="text-gray-600">Certifications like CCNA, CCNP, CCIE, AWS Certified Solutions Architect, CompTIA Security+, CEH, CISSP, and CISM are available at Networkers Home.</p>
+        </div>
+
+        <!-- FAQ 3 with Dark Gradient Blue Border -->
+        <div class="bg-white p-6 rounded-lg shadow-md border-4 border-gradient-to-r from-blue-900 to-blue-500">
+          <h3 class="text-2xl font-semibold mb-2">What kind of certification will I receive after completing the course?</h3>
+          <p class="text-gray-600">You will receive an industry-recognized certification that can boost your career prospects in various AI-related roles.</p>
+        </div>
+
+        <!-- FAQ 4 with Dark Gradient Blue Border -->
+        <div class="bg-white p-6 rounded-lg shadow-md border-4 border-gradient-to-r from-blue-900 to-blue-500">
+          <h3 class="text-2xl font-semibold mb-2">Is the training available online, or do I need to attend in person?</h3>
+          <p class="text-gray-600">Both online and in-person training programs are available, with live virtual classes for global accessibility.</p>
+        </div>
+
+        <!-- FAQ 5 with Dark Gradient Blue Border -->
+        <div class="bg-white p-6 rounded-lg shadow-md border-4 border-gradient-to-r from-blue-900 to-blue-500">
+          <h3 class="text-2xl font-semibold mb-2">What are the prerequisites for enrolling in a CCIE course?</h3>
+          <p class="text-gray-600">Candidates should have a solid understanding of networking fundamentals and should ideally have completed CCNA and CCNP certifications.</p>
+        </div>
+
+        <!-- FAQ 6 with Dark Gradient Blue Border -->
+        <div class="bg-white p-6 rounded-lg shadow-md border-4 border-gradient-to-r from-blue-900 to-blue-500">
+          <h3 class="text-2xl font-semibold mb-2">Does Networkers Home provide job placement assistance after training?</h3>
+          <p class="text-gray-600">Yes, Networkers Home offers job placement assistance, including partnerships with IT companies and resume-building guidance.</p>
+        </div>
+
+        <!-- FAQ 7 with Dark Gradient Blue Border -->
+        <div class="bg-white p-6 rounded-lg shadow-md border-4 border-gradient-to-r from-blue-900 to-blue-500">
+          <h3 class="text-2xl font-semibold mb-2">What is included in the course materials and training resources?</h3>
+          <p class="text-gray-600">Course materials include access to labs, study materials, virtual labs, and real-world network configurations with 24/7 practice lab access.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Blog Sidebar (30%) -->
+    <aside class="w-full lg:w-3/10" style="width: 100%; lg:width: 30%;">
+      <h3 class="text-3xl font-bold mb-6">Latest Blogs</h3>
+
+      <!-- Blog 1 with Dark Gradient Blue Border -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-6 border-4 border-gradient-to-r from-blue-900 to-blue-500">
+        <img src="images/blog2.webp" alt="CCIE Scope Blog Image" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h4 class="text-xl font-bold mb-2">CCIE Scope- Increasing Day by Day</h4>
+          <p class="text-gray-600 mb-2">Discover how Networkers Home can elevate your career with networking certifications and hands-on training, from CCNA to CCIE.</p>
+          <a href="https://www.networkershome.com/ccie-scope-career-opportunities" class="text-indigo-600 hover:underline font-semibold">Read More</a>
+        </div>
+      </div>
+
+      <!-- Blog 2 with Dark Gradient Blue Border -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-6 border-4 border-gradient-to-r from-blue-900 to-blue-500">
+        <img src="images/blog1.webp" alt="Cloud Certifications Blog Image" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h4 class="text-xl font-bold mb-2">Cloud Certifications- Future of IT Industry</h4>
+          <p class="text-gray-600 mb-2">Explore how cloud certifications are shaping the IT industry, providing professionals with valuable cloud-driven skills.</p>
+          <a href="https://www.networkershome.com/cloud-certifications-future-of-it-industry" class="text-indigo-600 hover:underline font-semibold">Read More</a>
+        </div>
+      </div>
+
+      <!-- Blog 3 with Dark Gradient Blue Border -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden border-4 border-gradient-to-r from-blue-900 to-blue-500">
+        <img src="images/blog3.webp" alt="Top Placement Courses Blog Image" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h4 class="text-xl font-bold mb-2">Top Placement Courses for Non-Programmers</h4>
+          <p class="text-gray-600 mb-2">Discover top placement courses for non-programmers, opening doors to high-demand careers in networking, cybersecurity, and cloud computing.</p>
+          <a href="https://www.networkershome.com/ccie-scope-career-opportunities" class="text-indigo-600 hover:underline font-semibold">Read More</a>
+        </div>
+      </div>
+
+    </aside>
+
+  </div>
+</section>
+
+
+<!-- Footer Section -->
+<footer class="bg-white text-gray-900 py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Top Section: Company Info and Links -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+      
+      <!-- Company Info Section -->
+      <div>
+        <a href="/">
+          <img src="images/nh.webp" alt="Networkers Home" class="h-12 mb-4">
+        </a>
+        <p class="text-gray-700 text-sm mb-6">Networkers Home is a global leader in IT certifications, offering courses across Cisco, Cybersecurity, Cloud, and DevOps. Achieve your career goals with our world-class training and certification programs.</p>
+        <!-- Social Media Links -->
+        <div class="flex space-x-4">
+          <a href="#" class="text-gray-600 hover:text-gray-500" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M22 12c0-5.522-4.477-10-10-10s-10 4.478-10 10c0 5.021 3.722 9.167 8.527 9.878v-6.987h-2.563v-2.89h2.563v-2.205c0-2.55 1.494-3.953 3.781-3.953 1.095 0 2.238.195 2.238.195v2.462h-1.261c-1.242 0-1.631.771-1.631 1.562v1.939h2.773l-.444 2.89h-2.329v6.987c4.804-.711 8.526-4.857 8.526-9.878z" />
+            </svg>
+          </a>
+          <a href="#" class="text-gray-600 hover:text-gray-500" aria-label="Twitter">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M19.633 7.997c.013.182.013.363.013.545 0 5.553-4.226 11.955-11.955 11.955-2.376 0-4.581-.697-6.438-1.897.328.037.644.051.983.051 1.971 0 3.785-.67 5.229-1.799-1.841-.036-3.39-1.25-3.922-2.919.257.051.521.081.8.081.379 0 .757-.051 1.108-.146-1.921-.388-3.367-2.082-3.367-4.111v-.051c.564.314 1.225.507 1.923.537-1.133-.757-1.867-2.051-1.867-3.512 0-.77.209-1.481.564-2.096 2.056 2.523 5.136 4.181 8.599 4.364-.072-.311-.102-.645-.102-.976 0-2.384 1.939-4.323 4.323-4.323 1.244 0 2.373.527 3.164 1.367 1.006-.195 1.951-.564 2.805-1.066-.33 1.013-1.027 1.865-1.937 2.403.895-.102 1.75-.344 2.544-.695-.594.88-1.337 1.656-2.19 2.274z" />
+            </svg>
+          </a>
+          <a href="#" class="text-gray-600 hover:text-gray-500" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11.5 20h-2v-10h2v10zm-1-11.5c-.828 0-1.5-.672-1.5-1.5s.672-1.5 1.5-1.5 1.5.672 1.5 1.5-.672 1.5-1.5 1.5zm13.5 11.5h-2v-5c0-1.103-.897-2-2-2h-.001c-1.103 0-1.999.897-1.999 2v5h-2v-10h2v1.353c.418-.755 1.259-1.353 2.299-1.353 1.494 0 2.701 1.206 2.701 2.701v7.299z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Certifications Section -->
+      <div>
+        <h4 class="font-semibold text-xl mb-4">Certifications</h4>
+        <ul class="space-y-2 text-gray-600 text-sm">
+          <li><a href="/ccna-training" class="hover:text-black">CCNA Certification Training</a></li>
+          <li><a href="/ccnp-enterprise-certification" class="hover:text-black">CCNP Enterprise Certification</a></li>
+          <li><a href="/ccie-security-certification" class="hover:text-black">CCIE Security Certification</a></li>
+          <li><a href="/ccie-enterprise-certification" class="hover:text-black">CCIE Enterprise Certification</a></li>
+          <li><a href="/palo-alto-pcnse-certification" class="hover:text-black">Palo Alto PCNSE Certification</a></li>
+          <li><a href="/aws-solutions-architect-certification" class="hover:text-black">AWS Solutions Architect Certification</a></li>
+        </ul>
+      </div>
+
+      <!-- Placement Programs Section -->
+      <div>
+        <h4 class="font-semibold text-xl mb-4">Placement Programs</h4>
+        <ul class="space-y-2 text-gray-600 text-sm">
+          <li><a href="/ccna-training" class="hover:text-black">CCNA</a></li>
+          <li><a href="/ccnp-enterprise-certification" class="hover:text-black">CCNA+CCNP Combo</a></li>
+          <li><a href="/ccie-security-certification" class="hover:text-black">CCIE Security Placement</a></li>
+          <li><a href="/ccie-enterprise-certification" class="hover:text-black">CCIE Enterprise Placement</a></li>
+          <li><a href="/aws-devops-engineer-certification" class="hover:text-black">DevOps Placement</a></li>
+          <li><a href="/aws-solutions-architect-certification" class="hover:text-black">Cloud Placement</a></li>
+        </ul>
+      </div>
+
+    </div>
+    
+    <!-- Bottom Section: Privacy Links and Copyright -->
+    <div class="border-t border-gray-300 pt-8 flex flex-col lg:flex-row justify-between items-center">
+      <p class="text-gray-600 text-sm">&copy; 2024 Networkers Home. All rights reserved.</p>
+      <ul class="flex space-x-4 mt-4 lg:mt-0 text-gray-600 text-sm">
+        <li><a href="/privacy-policy" class="hover:text-black">Privacy Policy</a></li>
+        <li><a href="/terms-of-service" class="hover:text-black">Terms of Service</a></li>
+        <li><a href="/support" class="hover:text-black">Support</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById('menu');
+        const menuOpen = document.getElementById('menu-open');
+        const menuClose = document.getElementById('menu-close');
+        if (menu.classList.contains('hidden')) {
+            menu.classList.remove('hidden');
+            menuOpen.classList.add('hidden');
+            menuClose.classList.remove('hidden');
+        } else {
+            menu.classList.add('hidden');
+            menuOpen.classList.remove('hidden');
+            menuClose.classList.add('hidden');
+        }
+    }
+
+    function showTab(tabId) {
+        const tabs = document.querySelectorAll('.tab-content');
+        tabs.forEach(tab => tab.classList.add('hidden'));
+        document.getElementById(tabId).classList.remove('hidden');
+    }
+</script>
+
+
+
+<!-- Side Popup Banner (Responsive Design) -->
+<div id="sidePopup" class="fixed right-0 bottom-10 hidden w-56 lg:w-64 bg-white shadow-lg rounded-lg p-3 z-50">
+    <!-- Clickable Call Section -->
+    <div class="flex justify-between items-center">
+        <a href="tel:+919611027980" class="text-sm font-bold text-red-600 hover:text-red-800">Call us: +91-9611027980</a>
+        <button onclick="closePopup()" class="text-gray-500 hover:text-gray-800">&times;</button>
+    </div>
+
+    <!-- Enquiry Form using Formspree -->
+    <form class="mt-3" id="enquiryForm" action="https://formspree.io/f/mjkvvnkn" method="POST">
+        <div class="mb-3">
+            <label for="name" class="block text-xs font-medium text-gray-700">Name</label>
+            <input type="text" id="name" name="name" class="w-full p-2 border border-gray-300 rounded-lg text-xs" placeholder="Your Name" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="phone" class="block text-xs font-medium text-gray-700">Phone Number</label>
+            <input type="tel" id="phone" name="phone" class="w-full p-2 border border-gray-300 rounded-lg text-xs" placeholder="Your Phone Number" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="email" class="block text-xs font-medium text-gray-700">Email</label>
+            <input type="email" id="email" name="email" class="w-full p-2 border border-gray-300 rounded-lg text-xs" placeholder="Your Email" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="course" class="block text-xs font-medium text-gray-700">Course Enquiry</label>
+            <textarea id="course" name="course" class="w-full p-2 border border-gray-300 rounded-lg text-xs" placeholder="Course Enquiry Details" rows="2" required></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="w-full bg-red-600 text-white font-semibold py-2 text-sm rounded-lg hover:bg-red-500 transition duration-200">Submit Enquiry</button>
+    </form>
+
+    <!-- WhatsApp Section -->
+    <div class="mt-3 text-center">
+        <a href="https://wa.me/919611027980" target="_blank" class="inline-block bg-green-500 text-white font-semibold py-2 px-4 text-sm rounded-lg hover:bg-green-400 transition duration-200">WhatsApp Us</a>
+    </div>
+</div>
+
+<!-- Popup Styles and Script -->
+<style>
+    /* Responsive adjustment for mobile */
+    @media (max-width: 768px) {
+        #sidePopup {
+            width: 100%;
+            right: 0;
+            bottom: 0;
+            border-radius: 0;
+        }
+
+        /* Ensure text fits well on smaller screens */
+        #sidePopup input, #sidePopup textarea, #sidePopup button {
+            font-size: 0.875rem;
+        }
+    }
+</style>
+
+<script>
+    // Show popup after 5 seconds
+    setTimeout(function() {
+        document.getElementById('sidePopup').classList.remove('hidden');
+    }, 5000);
+
+    // Close the popup
+    function closePopup() {
+        document.getElementById('sidePopup').classList.add('hidden');
+    }
+
+    // Formspree form submission
+    document.getElementById('enquiryForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Thank you for your enquiry! We will contact you soon.');
+        // After submission, close the popup
+        closePopup();
+    });
+</script>
+
+
+</body>
+</html>
