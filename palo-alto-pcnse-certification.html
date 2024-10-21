@@ -290,106 +290,177 @@
 </script>
 
 
-<!-- CCIE Security Placement Program Section with Gradient Blue Background -->
+<!-- PCNSE Course Section with Gradient Blue Background -->
 <section class="p-8 rounded-lg bg-gradient-to-r from-blue-500 to-blue-800">
     <!-- Section Heading and Subheading -->
     <div class="max-w-7xl mx-auto text-center mb-12">
-        <h2 class="text-4xl font-extrabold text-white">CCIE Security Placement Program</h2>
-        <p class="text-lg text-white mt-4 font-semibold">A comprehensive training program covering CCNA to CCIE Security certifications, ensuring mastery in network security and guaranteed placement.</p>
+        <h2 class="text-4xl font-extrabold text-white">Palo Alto PCNSE Certification Course</h2>
+        <p class="text-lg text-white mt-4 font-semibold">A comprehensive training program covering the essential skills to become a certified Palo Alto Networks security engineer, ensuring expertise in network security.</p>
     </div>
 
     <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
         <!-- Left Column Accordion Items -->
         <div>
-            <!-- Accordion Item 1: CCNA (Cisco Certified Network Associate) -->
+            <!-- Accordion Item 1: Introduction to Palo Alto Networks and Security Platform -->
             <div class="mb-4">
-                <button class="w-full text-left py-4 px-6 text-lg font-bold bg-white text-gray-900 hover:bg-gray-100 focus:outline-none rounded-lg" onclick="toggleAccordion('ccna')">
-                    CCNA (Cisco Certified Network Associate)
+                <button class="w-full text-left py-4 px-6 text-lg font-bold bg-white text-gray-900 hover:bg-gray-100 focus:outline-none rounded-lg" onclick="toggleAccordion('palo-intro')">
+                    Introduction to Palo Alto Networks and Security Platform
                 </button>
-                <div id="ccna" class="hidden px-6 py-4 text-gray-200 bg-blue-900 rounded-lg mt-2">
-                    <p class="text-md mb-4">Gain foundational networking knowledge with the CCNA certification, including the following topics:</p>
+                <div id="palo-intro" class="hidden px-6 py-4 text-gray-200 bg-blue-900 rounded-lg mt-2">
+                    <p class="text-md mb-4">
+                        This section provides an overview of Palo Alto Networks and its industry-leading security platform. You will learn about the company's role in securing enterprise networks and the architecture of their security products.
+                    </p>
                     <ul class="list-disc pl-5 space-y-2">
-                        <li><strong>Network Fundamentals:</strong> OSI & TCP/IP Models, routers, switches, and IP addressing (IPv4/IPv6).</li>
-                        <li><strong>Routing & Switching:</strong> VLANs, Spanning Tree Protocol, NAT, and ACLs.</li>
-                        <li><strong>IP Services & Security:</strong> DHCP, DNS, firewalls, VPNs, and basic encryption.</li>
+                        <li><strong>Palo Alto Overview:</strong> Understand the background of Palo Alto Networks, its evolution in the security industry, and its key products.</li>
+                        <li><strong>Next-Generation Firewall (NGFW):</strong> Learn about Palo Alto’s NGFW capabilities, including deep packet inspection, advanced threat protection, and application visibility.</li>
+                        <li><strong>Security Operations Center (SOC):</strong> Introduction to Palo Alto’s role in supporting SOC operations, threat management, and response strategies.</li>
                     </ul>
+                    <p class="text-md mt-4">
+                        By the end of this section, you will have a solid understanding of Palo Alto’s security platform and its role in protecting modern enterprise networks.
+                    </p>
                 </div>
             </div>
 
-            <!-- Accordion Item 2: CCNP Enterprise (3 Modules) -->
+            <!-- Accordion Item 2: Firewall Essentials and Initial Configuration -->
             <div class="mb-4">
-                <button class="w-full text-left py-4 px-6 text-lg font-bold bg-white text-gray-900 hover:bg-gray-100 focus:outline-none rounded-lg" onclick="toggleAccordion('ccnp-enterprise')">
-                    CCNP Enterprise (3 Modules)
+                <button class="w-full text-left py-4 px-6 text-lg font-bold bg-white text-gray-900 hover:bg-gray-100 focus:outline-none rounded-lg" onclick="toggleAccordion('firewall-essentials')">
+                    Firewall Essentials and Initial Configuration
                 </button>
-                <div id="ccnp-enterprise" class="hidden px-6 py-4 text-gray-200 bg-blue-900 rounded-lg mt-2">
-                    <p class="text-md mb-4">Advance your networking skills with the following three modules in CCNP Enterprise:</p>
+                <div id="firewall-essentials" class="hidden px-6 py-4 text-gray-200 bg-blue-900 rounded-lg mt-2">
+                    <p class="text-md mb-4">
+                        In this section, you will explore the essentials of configuring and managing a Palo Alto firewall. Learn how to perform the initial setup, configure administrative access, and create secure policies.
+                    </p>
                     <ul class="list-disc pl-5 space-y-2">
-                        <li><strong>ENCOR (Enterprise Core):</strong> Layer 2/3 technologies, automation, and programmability.</li>
-                        <li><strong>ENARSI (Advanced Routing):</strong> OSPF, EIGRP, BGP, and VPN solutions.</li>
-                        <li><strong>Cisco SD-WAN:</strong> SD-WAN architecture, policies, and vManage configuration.</li>
+                        <li><strong>Initial Setup:</strong> Understand how to install, configure, and connect Palo Alto firewalls to networks.</li>
+                        <li><strong>Security Policies:</strong> Learn to create and manage security policies for traffic control, packet filtering, and access control.</li>
+                        <li><strong>Address and Service Objects:</strong> Configure address objects, service objects, and security zones to logically segment the network and apply security policies effectively.</li>
                     </ul>
+                    <p class="text-md mt-4">
+                        By the end of this section, you will be able to configure a Palo Alto firewall and set up policies that ensure robust protection for your network.
+                    </p>
                 </div>
             </div>
 
-            <!-- Accordion Item 3: CCNP Security (3 Modules) -->
+            <!-- Accordion Item 3: Application Identification (App-ID) and User Identification (User-ID) -->
             <div class="mb-4">
-                <button class="w-full text-left py-4 px-6 text-lg font-bold bg-white text-gray-900 hover:bg-gray-100 focus:outline-none rounded-lg" onclick="toggleAccordion('ccnp-security')">
-                    CCNP Security (3 Modules)
+                <button class="w-full text-left py-4 px-6 text-lg font-bold bg-white text-gray-900 hover:bg-gray-100 focus:outline-none rounded-lg" onclick="toggleAccordion('app-user-id')">
+                    Application Identification (App-ID) and User Identification (User-ID)
                 </button>
-                <div id="ccnp-security" class="hidden px-6 py-4 text-gray-200 bg-blue-900 rounded-lg mt-2">
-                    <p class="text-md mb-4">Prepare for advanced security roles with the following CCNP Security modules:</p>
+                <div id="app-user-id" class="hidden px-6 py-4 text-gray-200 bg-blue-900 rounded-lg mt-2">
+                    <p class="text-md mb-4">
+                        In this section, you will learn about Palo Alto’s App-ID and User-ID features, which are used to control traffic based on applications and user identities rather than just IP addresses and ports.
+                    </p>
                     <ul class="list-disc pl-5 space-y-2">
-                        <li><strong>Secure Network Infrastructure:</strong> Layer 2/3 security, firewalls, and VPNs.</li>
-                        <li><strong>Cisco ISE:</strong> Identity Services Engine for role-based access and device authentication.</li>
-                        <li><strong>Security Operations:</strong> Firewall monitoring, orchestration, and response.</li>
+                        <li><strong>App-ID:</strong> Understand how Palo Alto’s App-ID identifies traffic based on applications rather than just ports or protocols, allowing for more precise security policies.</li>
+                        <li><strong>App Control:</strong> Learn to create policies that permit or deny access based on specific applications, improving security without sacrificing performance.</li>
+                        <li><strong>User-ID:</strong> Discover how User-ID integrates with Active Directory and other identity services to control access based on individual user identity.</li>
                     </ul>
+                    <p class="text-md mt-4">
+                        By the end of this section, you will have the skills to implement application- and user-based traffic control, providing a higher level of network security.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Accordion Item 4: Threat Prevention and Content-ID -->
+            <div class="mb-4">
+                <button class="w-full text-left py-4 px-6 text-lg font-bold bg-white text-gray-900 hover:bg-gray-100 focus:outline-none rounded-lg" onclick="toggleAccordion('threat-prevention')">
+                    Threat Prevention and Content-ID
+                </button>
+                <div id="threat-prevention" class="hidden px-6 py-4 text-gray-200 bg-blue-900 rounded-lg mt-2">
+                    <p class="text-md mb-4">
+                        In this section, we’ll explore Palo Alto’s advanced threat prevention technologies, including Content-ID, which is designed to detect and block malware, spyware, and other threats.
+                    </p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>Content-ID:</strong> Learn how Palo Alto uses Content-ID to inspect traffic and prevent threats such as malware, phishing attacks, and ransomware.</li>
+                        <li><strong>Intrusion Prevention System (IPS):</strong> Understand how to configure and manage Palo Alto’s built-in IPS to detect and mitigate network intrusions.</li>
+                        <li><strong>URL Filtering:</strong> Implement URL filtering policies to block access to malicious or inappropriate websites based on categories and custom lists.</li>
+                    </ul>
+                    <p class="text-md mt-4">
+                        By the end of this section, you will have the knowledge to configure advanced threat prevention mechanisms to protect against modern cyberattacks.
+                    </p>
                 </div>
             </div>
         </div>
 
         <!-- Right Column Accordion Items -->
         <div>
-            <!-- Accordion Item 4: CCIE Security Written Exam Preparation -->
+            <!-- Accordion Item 5: VPN Configuration and Management -->
             <div class="mb-4">
-                <button class="w-full text-left py-4 px-6 text-lg font-bold bg-white text-gray-900 hover:bg-gray-100 focus:outline-none rounded-lg" onclick="toggleAccordion('ccie-written')">
-                    CCIE Security Written Exam Preparation
+                <button class="w-full text-left py-4 px-6 text-lg font-bold bg-white text-gray-900 hover:bg-gray-100 focus:outline-none rounded-lg" onclick="toggleAccordion('vpn-config')">
+                    VPN Configuration and Management
                 </button>
-                <div id="ccie-written" class="hidden px-6 py-4 text-gray-200 bg-blue-900 rounded-lg mt-2">
-                    <p class="text-md mb-4">Master security concepts in preparation for the CCIE Security written exam, including:</p>
+                <div id="vpn-config" class="hidden px-6 py-4 text-gray-200 bg-blue-900 rounded-lg mt-2">
+                    <p class="text-md mb-4">
+                        This section focuses on Virtual Private Networks (VPNs) and how to configure Palo Alto devices to secure remote access and site-to-site communications.
+                    </p>
                     <ul class="list-disc pl-5 space-y-2">
-                        <li><strong>Advanced Security Protocols:</strong> AAA, VPNs, firewalls, and Cisco Stealthwatch.</li>
-                        <li><strong>Network Threats & Mitigation:</strong> Best practices for securing networks against cyber risks.</li>
-                        <li><strong>Secure Network Design:</strong> End-to-end security architecture, policy management, and firewalls.</li>
+                        <li><strong>IPSec VPNs:</strong> Learn how to configure IPSec VPNs to securely connect remote sites and provide secure communication over public networks.</li>
+                        <li><strong>SSL VPNs:</strong> Explore how to set up GlobalProtect SSL VPNs to provide secure remote access for users and devices.</li>
+                        <li><strong>VPN Monitoring:</strong> Discover the tools and techniques for monitoring VPN connections, troubleshooting issues, and optimizing performance.</li>
                     </ul>
+                    <p class="text-md mt-4">
+                        By the end of this section, you will be able to configure and manage both IPSec and SSL VPNs, ensuring secure connectivity across different networks.
+                    </p>
                 </div>
             </div>
 
-            <!-- Accordion Item 5: CCIE Security Lab Preparation -->
+            <!-- Accordion Item 6: High Availability (HA) and Redundancy -->
             <div class="mb-4">
-                <button class="w-full text-left py-4 px-6 text-lg font-bold bg-white text-gray-900 hover:bg-gray-100 focus:outline-none rounded-lg" onclick="toggleAccordion('ccie-lab')">
-                    CCIE Security Lab Preparation
+                <button class="w-full text-left py-4 px-6 text-lg font-bold bg-white text-gray-900 hover:bg-gray-100 focus:outline-none rounded-lg" onclick="toggleAccordion('high-availability')">
+                    High Availability (HA) and Redundancy
                 </button>
-                <div id="ccie-lab" class="hidden px-6 py-4 text-gray-200 bg-blue-900 rounded-lg mt-2">
-                    <p class="text-md mb-4">Get ready for the practical CCIE Security Lab exam with hands-on training in:</p>
+                <div id="high-availability" class="hidden px-6 py-4 text-gray-200 bg-blue-900 rounded-lg mt-2">
+                    <p class="text-md mb-4">
+                        In this section, you will learn how to configure Palo Alto firewalls for high availability (HA) and redundancy to ensure network uptime and resilience in case of failure.
+                    </p>
                     <ul class="list-disc pl-5 space-y-2">
-                        <li><strong>Firewalls & VPNs:</strong> Real-world configuration of Cisco ASA and Firepower firewalls, and VPN solutions.</li>
-                        <li><strong>Intrusion Detection & Prevention:</strong> Implementing and managing Cisco ISE for network security.</li>
-                        <li><strong>Mock Labs & Simulation:</strong> Simulate lab scenarios and real exam environments for ultimate preparation.</li>
+                        <li><strong>HA Basics:</strong> Understand the concepts behind active/passive and active/active HA configurations, and their importance in network resilience.</li>
+                        <li><strong>HA Configuration:</strong> Learn how to configure Palo Alto firewalls for high availability, ensuring failover in case of device or link failures.</li>
+                        <li><strong>Failover Testing:</strong> Discover how to test and validate your HA setup to ensure that failover mechanisms are working as expected.</li>
                     </ul>
+                    <p class="text-md mt-4">
+                        By the end of this section, you will be able to configure and manage HA environments for seamless and resilient network security operations.
+                    </p>
                 </div>
             </div>
 
-            <!-- Accordion Item 6: Network Automation and Programmability -->
+            <!-- Accordion Item 7: Panorama Management and Monitoring -->
             <div class="mb-4">
-                <button class="w-full text-left py-4 px-6 text-lg font-bold bg-white text-gray-900 hover:bg-gray-100 focus:outline-none rounded-lg" onclick="toggleAccordion('automation')">
-                    Network Automation and Programmability
+                <button class="w-full text-left py-4 px-6 text-lg font-bold bg-white text-gray-900 hover:bg-gray-100 focus:outline-none rounded-lg" onclick="toggleAccordion('panorama')">
+                    Panorama Management and Monitoring
                 </button>
-                <div id="automation" class="hidden px-6 py-4 text-gray-200 bg-blue-900 rounded-lg mt-2">
-                    <p class="text-md mb-4">Learn how to automate and programmatically manage your network:</p>
+                <div id="panorama" class="hidden px-6 py-4 text-gray-200 bg-blue-900 rounded-lg mt-2">
+                    <p class="text-md mb-4">
+                        Panorama is Palo Alto's centralized management platform for managing multiple firewalls. In this section, you will learn how to use Panorama to monitor and manage network security across various environments.
+                    </p>
                     <ul class="list-disc pl-5 space-y-2">
-                        <li><strong>Python & Ansible:</strong> Automate network tasks using scripting and Ansible playbooks.</li>
-                        <li><strong>SDN & Telemetry:</strong> Centralized management using Cisco DNA Center and network telemetry.</li>
+                        <li><strong>Panorama Overview:</strong> Understand the architecture of Panorama and how it simplifies the management of multiple Palo Alto firewalls.</li>
+                        <li><strong>Centralized Management:</strong> Learn how to configure security policies, manage updates, and perform log analysis across all managed devices using Panorama.</li>
+                        <li><strong>Monitoring and Reporting:</strong> Discover the various monitoring and reporting tools available in Panorama for proactive network security management.</li>
                     </ul>
+                    <p class="text-md mt-4">
+                        By the end of this section, you will be proficient in using Panorama to streamline network management, ensuring consistent security across all devices.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Accordion Item 8: Troubleshooting and Exam Preparation -->
+            <div class="mb-4">
+                <button class="w-full text-left py-4 px-6 text-lg font-bold bg-white text-gray-900 hover:bg-gray-100 focus:outline-none rounded-lg" onclick="toggleAccordion('troubleshooting')">
+                    Troubleshooting and Exam Preparation
+                </button>
+                <div id="troubleshooting" class="hidden px-6 py-4 text-gray-200 bg-blue-900 rounded-lg mt-2">
+                    <p class="text-md mb-4">
+                        This final section focuses on troubleshooting network issues and preparing for the PCNSE certification exam. You will learn key troubleshooting techniques to resolve common firewall and network security problems.
+                    </p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>Firewall Troubleshooting:</strong> Learn how to diagnose and resolve issues related to firewall performance, policy conflicts, and traffic anomalies.</li>
+                        <li><strong>Connectivity Issues:</strong> Discover how to troubleshoot common connectivity problems, including VPN failures and routing issues.</li>
+                        <li><strong>Exam Preparation:</strong> Get tips and strategies to prepare for the PCNSE certification exam, including mock tests, study resources, and lab simulations.</li>
+                    </ul>
+                    <p class="text-md mt-4">
+                        By the end of this section, you will be ready to troubleshoot common network security issues and confidently take the PCNSE certification exam.
+                    </p>
                 </div>
             </div>
         </div>
@@ -403,6 +474,7 @@
         content.classList.toggle('hidden');
     }
 </script>
+
 
     
 <!-- Action Speaks Louder Than Words Section with 10 Placements and 10 CCIE Results -->
