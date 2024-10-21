@@ -18,8 +18,18 @@
 </head>
 <body class="bg-gray-50">
 
+    <!-- Top Notification Bar -->
+    <div class="hidden md:flex fixed top-0 left-0 right-0 bg-gradient-to-r from-blue-500 to-blue-700 text-white px-5 py-3 text-center z-50">
+        <div class="flex justify-between items-center w-full max-w-7xl mx-auto">
+            <span class="text-sm font-medium">Have questions? Get in touch with us!</span>
+            <a href="https://www.networkershome.com/contactus" class="bg-white text-blue-600 px-5 py-2 rounded-md text-sm font-medium hover:bg-gray-100 transition duration-300">
+                Contact Us
+            </a>
+        </div>
+    </div>
+
     <!-- Header with Logo and Navigation -->
-    <section class="h-auto bg-white px-4 sm:px-6 lg:px-8 shadow-sm">
+    <section class="h-auto bg-white px-4 sm:px-6 lg:px-8 shadow-sm mt-16"> <!-- Added margin-top to compensate for the fixed notification bar -->
         <div class="py-6">
             <div class="mx-auto max-w-7xl flex justify-between items-center">
 
