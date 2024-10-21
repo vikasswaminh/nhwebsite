@@ -34,10 +34,6 @@
             <a href="https://wa.me/919611027980" class="flex items-center space-x-1 hover:text-yellow-200 transition duration-300">
                 💬 <span>WhatsApp</span>
             </a>
-            <!-- Email -->
-            <a href="mailto:info@networkershome.com" class="flex items-center space-x-1 hover:text-yellow-200 transition duration-300">
-                ✉️ <span>info@networkershome.com</span>
-            </a>
         </div>
 
         <button class="absolute right-4 top-2 text-white font-bold text-lg" onclick="this.parentElement.style.display='none';">✕</button>
@@ -51,7 +47,7 @@
                 <!-- Logo and Navbar -->
                 <div class="flex items-center gap-x-8">
                     <a href="https://www.networkershome.com">
-                        <img src="images/nh1.webp" alt="Networkers Home" class="h-auto w-auto" style="width: 100%; max-width: 250px; height: auto;"> <!-- Responsive Logo -->
+                        <img src="images/nh1.webp" alt="Networkers Home" class="h-auto w-auto" style="width: 100%; max-width: 300px; height: auto;"> <!-- Responsive Logo -->
                     </a>
                     <nav class="hidden md:flex gap-x-6">
                         <a href="https://www.networkershome.com/networkershome-all-courses.html" class="text-slate-500 hover:text-slate-900 transition duration-300">Courses</a>
@@ -62,8 +58,8 @@
 
                 <!-- Call to Action & Mobile Menu -->
                 <div class="flex items-center gap-x-5 md:gap-x-6">
-                    <a href="https://www.networkershome.com/jobs" class="hidden md:inline-block py-2.5 px-4 bg-slate-100 text-slate-500 rounded-full hover:bg-slate-200 hover:text-slate-900 transition duration-300">Jobs</a>
-                    <a href="https://www.networkershome.com/contactus" class="py-2.5 px-5 bg-gradient-to-r from-indigo-600 to-blue-500 hover:from-indigo-500 hover:to-blue-400 text-white rounded-full font-semibold transition duration-300">Contact Us</a>
+                    <!-- "Contact Us" button hidden on mobile and visible on desktop -->
+                    <a href="https://www.networkershome.com/contactus" class="hidden md:inline-block py-2.5 px-5 bg-gradient-to-r from-indigo-600 to-blue-500 hover:from-indigo-500 hover:to-blue-400 text-white rounded-full font-semibold transition duration-300">Contact Us</a>
 
                     <!-- Mobile Menu Toggle -->
                     <button id="menu-open" onclick="toggleMenu()" class="md:hidden">
@@ -104,6 +100,8 @@
             }
         }
     </script>
+
+    
 
 
 <!-- Combined Hero Banner Section -->
