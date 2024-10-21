@@ -79,7 +79,7 @@
         }
     </script>
 
-<!-- All Courses Page Section with Background Images -->
+<!-- All Courses Page Section with Category Boxes and Individual Courses -->
 <section class="py-16 bg-gray-50 font-lato">
     <div class="max-w-7xl mx-auto px-6">
         <!-- Page Heading -->
@@ -88,67 +88,130 @@
             <p class="text-lg text-gray-600 mt-4">Explore a wide range of certifications designed to advance your career in networking, cybersecurity, cloud, and DevOps.</p>
         </div>
 
-        <!-- Courses Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
-            
-            <!-- Cisco Certifications -->
-            <div class="relative bg-cover bg-center rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 h-64" style="background-image: url('slide1.webp');">
-                <div class="absolute inset-0 bg-black bg-opacity-50 rounded-lg"></div>
-                <div class="relative z-10 p-8 text-white">
-                    <h2 class="text-2xl font-extrabold mb-4">Cisco Certifications</h2>
-                    <ul class="space-y-3 text-gray-300">
-                        <li><a href="https://www.networkershome.com/ccna-training" class="hover:text-yellow-400 font-medium">CCNA Certification Training</a></li>
-                        <li><a href="https://www.networkershome.com/ccnp-enterprise-certification" class="hover:text-yellow-400 font-medium">CCNP Enterprise Certification</a></li>
-                        <li><a href="https://www.networkershome.com/ccie-security-certification" class="hover:text-yellow-400 font-medium">CCIE Security Certification</a></li>
-                        <li><a href="https://www.networkershome.com/ccie-enterprise-certification" class="hover:text-yellow-400 font-medium">CCIE Enterprise Certification</a></li>
-                        <li><a href="https://www.networkershome.com/cisco-aci-certification" class="hover:text-yellow-400 font-medium">Cisco ACI Certification</a></li>
-                        <li><a href="https://www.networkershome.com/cisco-sdwan-certification" class="hover:text-yellow-400 font-medium">Cisco SD-WAN Certification</a></li>
-                        <li><a href="https://www.networkershome.com/cisco-dnac-certification" class="hover:text-yellow-400 font-medium">Cisco DNAC Certification</a></li>
-                    </ul>
+        <!-- Cisco Certifications Category -->
+        <div class="mb-12">
+            <h2 class="text-3xl font-extrabold text-gray-900 mb-8">Cisco Certifications</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- CCNA Certification -->
+                <div class="bg-white rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 overflow-hidden">
+                    <img src="slide1.webp" alt="CCNA Certification" class="w-full h-40 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">CCNA Certification Training</h3>
+                        <p class="text-gray-600 mb-4">Start your journey in networking with comprehensive CCNA training.</p>
+                        <a href="https://www.networkershome.com/ccna-training" class="text-blue-600 font-medium hover:underline">Learn More</a>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Cybersecurity Certifications -->
-            <div class="relative bg-cover bg-center rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 h-64" style="background-image: url('slide1.webp');">
-                <div class="absolute inset-0 bg-black bg-opacity-50 rounded-lg"></div>
-                <div class="relative z-10 p-8 text-white">
-                    <h2 class="text-2xl font-extrabold mb-4">Cybersecurity Certifications</h2>
-                    <ul class="space-y-3 text-gray-300">
-                        <li><a href="https://www.networkershome.com/palo-alto-pcnse-certification" class="hover:text-yellow-400 font-medium">Palo Alto PCNSE Certification</a></li>
-                        <li><a href="https://www.networkershome.com/ccie-security-certification" class="hover:text-yellow-400 font-medium">CCIE Security Certification</a></li>
-                    </ul>
+                <!-- CCNP Enterprise Certification -->
+                <div class="bg-white rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 overflow-hidden">
+                    <img src="slide1.webp" alt="CCNP Enterprise Certification" class="w-full h-40 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">CCNP Enterprise Certification</h3>
+                        <p class="text-gray-600 mb-4">Enhance your networking skills with CCNP Enterprise training.</p>
+                        <a href="https://www.networkershome.com/ccnp-enterprise-certification" class="text-blue-600 font-medium hover:underline">Learn More</a>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Cloud & DevOps Certifications -->
-            <div class="relative bg-cover bg-center rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 h-64" style="background-image: url('slide1.webp');">
-                <div class="absolute inset-0 bg-black bg-opacity-50 rounded-lg"></div>
-                <div class="relative z-10 p-8 text-white">
-                    <h2 class="text-2xl font-extrabold mb-4">Cloud & DevOps Certifications</h2>
-                    <ul class="space-y-3 text-gray-300">
-                        <li><a href="https://www.networkershome.com/aws-solutions-architect-certification" class="hover:text-yellow-400 font-medium">AWS Solutions Architect Certification</a></li>
-                        <li><a href="https://www.networkershome.com/aws-devops-engineer-certification" class="hover:text-yellow-400 font-medium">AWS DevOps Engineer Certification</a></li>
-                    </ul>
+                <!-- CCIE Security Certification -->
+                <div class="bg-white rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 overflow-hidden">
+                    <img src="slide1.webp" alt="CCIE Security Certification" class="w-full h-40 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">CCIE Security Certification</h3>
+                        <p class="text-gray-600 mb-4">Master security technologies with the CCIE Security program.</p>
+                        <a href="https://www.networkershome.com/ccie-security-certification" class="text-blue-600 font-medium hover:underline">Learn More</a>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Placement Programs -->
-            <div class="relative bg-cover bg-center rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 h-64" style="background-image: url('slide1.webp');">
-                <div class="absolute inset-0 bg-black bg-opacity-50 rounded-lg"></div>
-                <div class="relative z-10 p-8 text-white">
-                    <h2 class="text-2xl font-extrabold mb-4">Placement Programs</h2>
-                    <ul class="space-y-3 text-gray-300">
-                        <li><a href="https://www.networkershome.com/ccna-placement-program" class="hover:text-yellow-400 font-medium">CCNA Placement Program</a></li>
-                        <li><a href="https://www.networkershome.com/ccnp-enterprise-placement-program" class="hover:text-yellow-400 font-medium">CCNP Enterprise Placement Program</a></li>
-                        <li><a href="https://www.networkershome.com/ccie-security-placement-program" class="hover:text-yellow-400 font-medium">CCIE Security Placement Program</a></li>
-                        <li><a href="https://www.networkershome.com/ccie-enterprise-placement-program" class="hover:text-yellow-400 font-medium">CCIE Enterprise Placement Program</a></li>
-                        <li><a href="https://www.networkershome.com/cloud-placement-program" class="hover:text-yellow-400 font-medium">Cloud Placement Program</a></li>
-                        <li><a href="https://www.networkershome.com/devops-placement-program" class="hover:text-yellow-400 font-medium">DevOps Placement Program</a></li>
-                    </ul>
+                <!-- CCIE Enterprise Certification -->
+                <div class="bg-white rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 overflow-hidden">
+                    <img src="slide1.webp" alt="CCIE Enterprise Certification" class="w-full h-40 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">CCIE Enterprise Certification</h3>
+                        <p class="text-gray-600 mb-4">Become an expert in enterprise networking with CCIE Enterprise.</p>
+                        <a href="https://www.networkershome.com/ccie-enterprise-certification" class="text-blue-600 font-medium hover:underline">Learn More</a>
+                    </div>
                 </div>
-            </div>
 
+                <!-- Cisco ACI Certification -->
+                <div class="bg-white rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 overflow-hidden">
+                    <img src="slide1.webp" alt="Cisco ACI Certification" class="w-full h-40 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Cisco ACI Certification</h3>
+                        <p class="text-gray-600 mb-4">Learn Application Centric Infrastructure with Cisco ACI training.</p>
+                        <a href="https://www.networkershome.com/cisco-aci-certification" class="text-blue-600 font-medium hover:underline">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Cisco SD-WAN Certification -->
+                <div class="bg-white rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 overflow-hidden">
+                    <img src="slide1.webp" alt="Cisco SD-WAN Certification" class="w-full h-40 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Cisco SD-WAN Certification</h3>
+                        <p class="text-gray-600 mb-4">Master SD-WAN technologies with Cisco’s advanced certification.</p>
+                        <a href="https://www.networkershome.com/cisco-sdwan-certification" class="text-blue-600 font-medium hover:underline">Learn More</a>
+                    </div>
+                </div>
+
+            </div>
         </div>
+
+        <!-- Cybersecurity Certifications Category -->
+        <div class="mb-12">
+            <h2 class="text-3xl font-extrabold text-gray-900 mb-8">Cybersecurity Certifications</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Palo Alto PCNSE Certification -->
+                <div class="bg-white rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 overflow-hidden">
+                    <img src="slide1.webp" alt="Palo Alto PCNSE Certification" class="w-full h-40 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Palo Alto PCNSE Certification</h3>
+                        <p class="text-gray-600 mb-4">Specialize in firewall technologies with PCNSE certification.</p>
+                        <a href="https://www.networkershome.com/palo-alto-pcnse-certification" class="text-blue-600 font-medium hover:underline">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- CCIE Security Certification -->
+                <div class="bg-white rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 overflow-hidden">
+                    <img src="slide1.webp" alt="CCIE Security Certification" class="w-full h-40 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">CCIE Security Certification</h3>
+                        <p class="text-gray-600 mb-4">Master security technologies with the CCIE Security program.</p>
+                        <a href="https://www.networkershome.com/ccie-security-certification" class="text-blue-600 font-medium hover:underline">Learn More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Cloud & DevOps Certifications Category -->
+        <div class="mb-12">
+            <h2 class="text-3xl font-extrabold text-gray-900 mb-8">Cloud & DevOps Certifications</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- AWS Solutions Architect Certification -->
+                <div class="bg-white rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 overflow-hidden">
+                    <img src="slide1.webp" alt="AWS Solutions Architect Certification" class="w-full h-40 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">AWS Solutions Architect Certification</h3>
+                        <p class="text-gray-600 mb-4">Learn how to architect and deploy secure cloud solutions with AWS.</p>
+                        <a href="https://www.networkershome.com/aws-solutions-architect-certification" class="text-blue-600 font-medium hover:underline">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- AWS DevOps Engineer Certification -->
+                <div class="bg-white rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 overflow-hidden">
+                    <img src="slide1.webp" alt="AWS DevOps Engineer Certification" class="w-full h-40 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">AWS DevOps Engineer Certification</h3>
+                        <p class="text-gray-600 mb-4">Master DevOps practices and tools with AWS DevOps training.</p>
+                        <a href="https://www.networkershome.com/aws-devops-engineer-certification" class="text-blue-600 font-medium hover:underline">Learn More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
     </div>
 </section>
 
@@ -161,7 +224,6 @@
 
 
     
-
 <!-- Footer Section -->
 <footer class="bg-white text-gray-900 py-16">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
